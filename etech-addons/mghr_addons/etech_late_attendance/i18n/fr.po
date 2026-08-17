@@ -1,0 +1,146 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sdoi_attendance
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0+e-20241114\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-06 05:21+0000\n"
+"PO-Revision-Date: 2025-03-06 05:21+0000\n"
+"Last-Translator: \n"
+"Language-Team: French\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sdoi_attendance
+#: model:ir.model,name:sdoi_attendance.model_hr_attendance
+msgid "Attendance"
+msgstr "Présences"
+
+#. module: sdoi_attendance
+#: model:ir.model,name:sdoi_attendance.model_res_company
+msgid "Companies"
+msgstr "Sociétés"
+
+#. module: sdoi_attendance
+#: model:ir.model.fields,help:sdoi_attendance.field_res_company__night_end
+msgid "End of night hours (eg 5.0 for 5h)"
+msgstr "Fin des heures de nuit (ex: 5.0 pour 5h)"
+
+#. module: sdoi_attendance
+#: model:ir.model.fields,field_description:sdoi_attendance.field_res_company__night_end
+msgid "Night End"
+msgstr "Fin de nuit"
+
+#. module: sdoi_attendance
+#: model:ir.model.fields,field_description:sdoi_attendance.field_hr_attendance__night_hours
+msgid "Night Hours"
+msgstr "Heures de nuit"
+
+#. module: sdoi_attendance
+#: model:ir.model.fields,field_description:sdoi_attendance.field_hr_attendance__night_hours_validation
+msgid "Night Hours Validation"
+msgstr "Validation des heures de nuit"
+
+#. module: sdoi_attendance
+#: model:ir.model.fields,field_description:sdoi_attendance.field_res_company__night_start
+msgid "Night Start"
+msgstr "Début de nuit"
+
+#. module: sdoi_attendance
+#: model_terms:ir.ui.view,arch_db:sdoi_attendance.view_company_form_inherit
+msgid "Night hours"
+msgstr "Heures de nuit"
+
+#. module: sdoi_attendance
+#: model_terms:ir.ui.view,arch_db:sdoi_attendance.view_company_form_inherit
+msgid "Night hours settings"
+msgstr "Paramètres des heures de nuit"
+
+#. module: sdoi_attendance
+#: model:ir.model.fields,help:sdoi_attendance.field_res_company__night_start
+msgid "Night hours start time (eg: 22.0 for 10 p.m.)"
+msgstr "Heure de début des heures de nuit (ex: 22.0 pour 22h)"
+
+#. module: sdoi_attendance
+#: model_terms:ir.ui.view,arch_db:sdoi_attendance.view_attendance_tree_inherit
+msgid "Validate night hours"
+msgstr "Valider les heures de nuit"
+
+#. module: sdoi_attendance
+#: model:ir.model.fields,field_description:sdoi_attendance.field_hr_attendance__validated_night_hours
+msgid "Validated Night Hours"
+msgstr "Heures de nuit validées"
+
+#. module: etech_late_attendance
+#: model:ir.model.fields.selection,name:etech_late_attendance.selection__hr_attendance__state__on_time
+msgid "On time"
+msgstr "A l'heure"
+
+#. module: etech_late_attendance
+#: model:ir.model.fields.selection,name:etech_late_attendance.selection__hr_attendance__state__late
+msgid "Late"
+msgstr "En retard"
+
+#. module: etech_late_attendance
+#: model:ir.model.fields,field_description:etech_late_attendance.field_hr_attendance__delay_time
+msgid "Delay time"
+msgstr "Temps de retard"
+
+#. module: etech_late_attendance
+#: model_terms:ir.ui.view,arch_db:etech_late_attendance.view_company_form_inherit
+msgid "Delay management"
+msgstr "Gestion de retard"
+
+#. module: etech_late_attendance
+#: model_terms:ir.ui.view,arch_db:etech_late_attendance.view_company_form_inherit
+msgid "Delay management settings"
+msgstr "Configuration gestion de retard"
+
+#. module: etech_late_attendance
+#: model:ir.model.fields,field_description:etech_late_attendance.field_res_company__minutes_late
+msgid "Minute late"
+msgstr "Minute de retard"
+
+#. module: etech_late_attendance
+#: model:ir.model.fields,field_description:etech_late_attendance.field_hr_attendance__expected_arrival
+msgid "Expected Arrival"
+msgstr "Arrivée prévue"
+
+#. module: etech_late_attendance
+#: model:ir.model.fields,field_description:etech_late_attendance.field_hr_attendance__state
+msgid "State"
+msgstr "Statut"
+
+#. module: etech_late_attendance
+#: model:ir.model.fields,field_description:etech_late_attendance.field_res_company__night_end
+msgid "Night End"
+msgstr "Fin nuit"
+
+#. module: etech_late_attendance
+#: model:ir.model.fields,field_description:etech_late_attendance.field_res_company__night_start
+msgid "Night Start"
+msgstr "Début nuit"
+
+#. module: etech_late_attendance
+#: model_terms:ir.ui.view,arch_db:etech_late_attendance.view_company_form_inherit
+msgid "Night hours"
+msgstr "Heure nuit"
+
+#. module: etech_late_attendance
+#: model_terms:ir.ui.view,arch_db:etech_late_attendance.view_company_form_inherit
+msgid "Night hours settings"
+msgstr "Configuration heure nuit"
+
+#. module: etech_late_attendance
+#: model:ir.model.fields,help:etech_late_attendance.field_res_company__night_start
+msgid "Night hours start time (eg: 22.0 for 10 p.m.)"
+msgstr "Heure de début nuit (ex: 22.0 pour 22h)"
+
+#. module: etech_late_attendance
+#: model_terms:ir.ui.view,arch_db:etech_late_attendance.view_attendance_tree_inherit
+msgid "Validate night hours"
+msgstr "Validation Heure nuit"

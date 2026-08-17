@@ -1,0 +1,121 @@
+<odoo>
+  <record model="ir.ui.view" id="hr_sanction_list">
+    <field name="name">hr.sanction.list.view</field>
+    <field name="model">hr.sanction</field>
+    <field name="arch" type="xml">
+      <list>
+        <field name="name"/>
+        <field name="motif"/>
+        <field name="delivery_date"/>
+        <field name="end_date"/>
+      </list>
+    </field>
+  </record>
+
+  <record id="hr_sanction_view_form" model="ir.ui.view">
+    <field name="name">view.hr.sanction.form</field>
+    <field name="model">hr.sanction</field>
+    <field name="arch" type="xml">
+      <form>
+        <sheet>
+          <group>
+            <h1 class="d-flex">
+              <field name="name" placeholder="Employee's Sanction"/>
+            </h1>
+            <group>
+              <field name="employee_id"/>
+              <field
+                  name="type_id"
+                  options="{'no_create': True, 'no_open': True}"
+              />
+              <field name="motif"/>
+            </group>
+            <group>
+              <field name="delivery_date"/>
+              <field name="end_date"/>
+              <field name="company_id" invisible="1"/>
+              <field name="department_id" string="Service"/>
+              <field
+                  name="department_parent_id"
+                  string="Parent department"
+              />
+            </group>
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+  <record id="hr_sanction_search" model="ir.ui.view">
+    <field name="name">hr.sanction.search</field>
+    <field name="model">hr.sanction</field>
+    <field name="arch" type="xml">
+      <search string="Sanction(s)">
+        <field name="employee_id"/>
+        <field name="type_id"/>
+        <field name="delivery_date"/>
+        <field name="end_date"/>
+        <field name="company_id"/>
+        <field
+            name="department_parent_id"
+            string="Parent department"
+        />
+        <group>
+          <filter
+              string="Type"
+              name="group_type_id"
+              domain="[]"
+              context="{'group_by':'type_id'}"
+          />
+          <filter
+              string="Employee"
+              name="group_employee_id"
+              domain="[]"
+              context="{'group_by':'employee_id'}"
+          />
+          <filter
+              string="Delivery date"
+              name="group_delivery_date"
+              domain="[]"
+              context="{'group_by':'delivery_date'}"
+          />
+          <filter
+              string="End date"
+              name="group_end_date"
+              domain="[]"
+              context="{'group_by':'end_date'}"
+          />
+          <filter
+              string="Company"
+              name="group_company_id"
+              domain="[]"
+              context="{'group_by':'company_id'}"
+          />
+          <filter
+              string="Parent department"
+              name="group_department_parent_id"
+              domain="[]"
+              context="{'group_by':'department_parent_id'}"
+          />
+        </group>
+      </search>
+    </field>
+  </record>
+
+  <record id="hr_sanction_view_pivot" model="ir.ui.view">
+    <field name="name">hr.sanction.view.pivot</field>
+    <field name="model">hr.sanction</field>
+    <field name="arch" type="xml">
+      <pivot string="Sanction" sample="1">
+        <field name="name"/>
+        <field name="employee_id" type="col"/>
+        <field name="department_id" string="Service"/>
+        <field name="delivery_date" type="row"/>
+        <field name="end_date" type="row"/>
+        <field name="type_id"/>
+        <field name="motif"/>
+        <field name="company_id"/>
+      </pivot>
+    </field>
+  </record>
+</odoo>

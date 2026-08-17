@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+  <template
+    id="portal_my_planning_menu"
+    name="Show planning"
+    inherit_id="portal.portal_my_home"
+    customize_show="True"
+    priority="30"
+  >
+    <xpath expr="//div[@id='portal_common_category']" position="before">
+      <div
+        t-if="employee_id"
+        id="portal_my_planning_menu"
+        class="o_portal_category row g-2 mt-3"
+      >
+        <t t-call="portal.portal_docs_entry">
+          <t t-set="icon" t-value="'/etech_planning_portal/static/src/img/icon.svg'"/>
+          <t t-set="title">Planning</t>
+          <t t-set="url" t-value="'/my/planning'"/>
+          <t t-set="text">Planning management</t>
+          <t t-set="config_card" t-value="True"/>
+        </t>
+      </div>
+    </xpath>
+  </template>
+</odoo>
+

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+  <record id="view_health_organization_list" model="ir.ui.view">
+    <field name="name">health.organization.list</field>
+    <field name="model">health.organization</field>
+    <field name="arch" type="xml">
+      <list editable="bottom">
+        <field name="name" required="1"/>
+        <field name="code" required="1"/>
+        <field
+            name="work_location_id"
+            options="{'no_create': True, 'no_open': True}"
+            required="1"
+        />
+        <field
+            name="work_zone_id"
+            string="Zone"
+            options="{'no_create': True, 'no_open': True}"
+        />
+        <field name="employer_rate" required="1"/>
+        <field name="employee_rate" required="1"/>
+        <field name="is_capped"/>
+      </list>
+    </field>
+  </record>
+</odoo>

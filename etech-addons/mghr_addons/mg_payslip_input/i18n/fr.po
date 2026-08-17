@@ -1,0 +1,74 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* mg_payslip_input
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0+e-20251015\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-01 11:46+0000\n"
+"PO-Revision-Date: 2025-12-01 11:46+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: mg_payslip_input
+#: model:ir.model.fields,field_description:mg_payslip_input.field_hr_payslip_input__company_id
+msgid "Company"
+msgstr "Société"
+
+#. module: mg_payslip_input
+#: model:ir.model.fields,field_description:mg_payslip_input.field_hr_payslip_input__date
+msgid "Date From"
+msgstr "Début"
+
+#. module: mg_payslip_input
+#: model:ir.model.fields,field_description:mg_payslip_input.field_hr_payslip_input__date_to
+msgid "Date to"
+msgstr "Fin"
+
+#. module: mg_payslip_input
+#: model:ir.model.fields,field_description:mg_payslip_input.field_hr_payslip_input__employee_id
+msgid "Employee"
+msgstr "Employé(e)"
+
+#. module: mg_payslip_input
+#: model:ir.ui.menu,name:mg_payslip_input.menu_payslip_input
+msgid "Import Payslip Input"
+msgstr "Importation des autres types d'entrées"
+
+#. module: mg_payslip_input
+#: model:ir.actions.act_window,name:mg_payslip_input.action_mg_payslip_input
+#: model:ir.actions.server,name:mg_payslip_input.action_import_paylisp_input
+#: model_terms:ir.actions.act_window,help:mg_payslip_input.action_mg_payslip_input
+msgid "Import payslip input"
+msgstr "Mettre à jour ligne d'autres types d'entrées de la fiche de paie"
+
+#. module: mg_payslip_input
+#: model:ir.model.fields,field_description:mg_payslip_input.field_hr_payslip__is_imported
+msgid "Importation"
+msgstr "Importé"
+
+#. module: mg_payslip_input
+#: model:ir.model.fields,field_description:mg_payslip_input.field_hr_payslip_input__is_imported
+msgid "Is Imported"
+msgstr "Importé"
+
+#. module: mg_payslip_input
+#: model:ir.model.fields,field_description:mg_payslip_input.field_hr_payslip_input__number
+msgid "Number"
+msgstr "Matricule"
+
+#. module: mg_payslip_input
+#: model:ir.model,name:mg_payslip_input.model_hr_payslip
+#: model:ir.model.fields,field_description:mg_payslip_input.field_hr_payslip_input__payslip_id
+msgid "Pay Slip"
+msgstr "Fiche de paie"
+
+#. module: mg_payslip_input
+#: model:ir.model,name:mg_payslip_input.model_hr_payslip_input
+msgid "Payslip Input"
+msgstr "Entrée de la fiche de paie"

@@ -1,0 +1,116 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* etech_attendance
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-16 09:03+0000\n"
+"PO-Revision-Date: 2026-06-16 09:03+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: etech_attendance
+#: model:ir.model,name:etech_attendance.model_hr_attendance
+msgid "Attendance"
+msgstr "Présences"
+
+#. module: etech_attendance
+#: model:ir.model,name:etech_attendance.model_res_company
+msgid "Companies"
+msgstr "Sociétés"
+
+#. module: etech_attendance
+#: model:ir.model.fields,help:etech_attendance.field_res_company__night_end
+msgid "End of night hours (eg 5.0 for 5h)"
+msgstr "Fin des heures de nuit (ex. 5.0 pour 5h)"
+
+#. module: etech_attendance
+#: model:ir.model.fields,field_description:etech_attendance.field_hr_attendance__is_public_holiday
+msgid "Is Public Holiday"
+msgstr "Jour férié"
+
+#. module: etech_attendance
+#: model:ir.model.fields,field_description:etech_attendance.field_hr_attendance__is_sunday
+msgid "Is Sunday"
+msgstr "Dimanche"
+
+#. module: etech_attendance
+#: model:ir.model.fields,field_description:etech_attendance.field_res_company__night_end
+msgid "Night End"
+msgstr "Fin heure de nuit"
+
+#. module: etech_attendance
+#: model:ir.model.fields,field_description:etech_attendance.field_hr_attendance__night_hours
+msgid "Night Hours"
+msgstr "Heures de nuit"
+
+#. module: etech_attendance
+#: model:ir.model.fields,field_description:etech_attendance.field_res_company__night_start
+msgid "Night Start"
+msgstr "Début heure de nuit"
+
+#. module: etech_attendance
+#: model_terms:ir.ui.view,arch_db:etech_attendance.view_company_form_inherit
+msgid "Night hours"
+msgstr "Heures de nuit"
+
+#. module: etech_attendance
+#: model_terms:ir.ui.view,arch_db:etech_attendance.view_company_form_inherit
+msgid "Night hours settings"
+msgstr "Paramètres heures de nuit"
+
+#. module: etech_attendance
+#: model:ir.model.fields,help:etech_attendance.field_res_company__night_start
+msgid "Night hours start time (eg: 22.0 for 10 p.m.)"
+msgstr "Début des heures de nuit (ex. 22.0 pour 22h)"
+
+#. module: etech_attendance
+#: model:ir.model.fields,help:etech_attendance.field_hr_attendance__sunday_hours
+msgid "Number of hours worked on Sundays"
+msgstr "Nombre d'heures travaillées le dimanche"
+
+#. module: etech_attendance
+#: model:ir.model.fields,help:etech_attendance.field_hr_attendance__public_holiday_hours
+msgid "Number of hours worked on public holidays"
+msgstr "Nombre d'heures travaillées le férié"
+
+#. module: etech_attendance
+#: model:ir.model.fields,field_description:etech_attendance.field_hr_attendance__public_holiday_hours
+msgid "Public Holiday Hours"
+msgstr "Heures des jours fériés"
+
+#. module: etech_attendance
+#: model:ir.model.fields,field_description:etech_attendance.field_hr_attendance__sunday_hours
+msgid "Sunday Hours"
+msgstr "Heures du dimanche"
+
+#. module: etech_attendance
+#: model_terms:ir.ui.view,arch_db:etech_attendance.view_attendance_tree_inherit
+msgid "Validate public holidays hours"
+msgstr "Valider les heures des jours fériés"
+
+#. module: etech_attendance
+#: model_terms:ir.ui.view,arch_db:etech_attendance.view_attendance_tree_inherit
+msgid "Validate sunday hours"
+msgstr "Valider les heures du dimanche"
+
+#. module: etech_attendance
+#: model:ir.model.fields,field_description:etech_attendance.field_hr_attendance__validated_night_hours
+msgid "Validated Night Hours"
+msgstr "Heures de nuit validées"
+
+#. module: etech_attendance
+#: model:ir.model.fields,field_description:etech_attendance.field_hr_attendance__validated_public_holidays_hours
+msgid "Validated Public Holidays Hours"
+msgstr "Heures des jours fériés validées"
+
+#. module: etech_attendance
+#: model:ir.model.fields,field_description:etech_attendance.field_hr_attendance__validated_sunday_hours
+msgid "Validated Sunday Hours"
+msgstr "Heures du dimanche validées"

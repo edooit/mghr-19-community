@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_hr_document_type_manager,hr.document.type.manager,model_hr_document_type,hr.group_hr_manager,1,1,1,1
+access_hr_document_type_user,hr.document.type.user,model_hr_document_type,hr.group_hr_user,1,0,0,0
+access_hr_document_request_manager,hr.document.request.manager,model_hr_document_request,hr.group_hr_manager,1,1,1,1
+access_hr_document_request_user,hr.document.request.user,model_hr_document_request,hr.group_hr_user,1,1,1,1
+access_hr_document_request_line_manager,hr.document.request.line.manager,model_hr_document_request_line,hr.group_hr_manager,1,1,1,1
+access_hr_document_request_line_user,hr.document.request.line.user,model_hr_document_request_line,hr.group_hr_user,1,1,1,1

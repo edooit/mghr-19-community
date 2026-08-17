@@ -1,0 +1,16 @@
+<odoo>
+  <record id="hr_sanction_type_view_form" model="ir.ui.view">
+    <field name="name">view.hr.sanction.type.form</field>
+    <field name="model">hr.sanction.type</field>
+    <field name="arch" type="xml">
+      <form string="Sanction">
+        <sheet>
+          <group>
+            <field name="name" placeholder="Sanction name"/>
+            <field name="type"/>
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
+</odoo>

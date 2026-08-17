@@ -1,0 +1,247 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* etech_attendance_portal
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-07-30 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: etech_attendance_portal
+#: model_terms:ir.ui.view,arch_db:etech_attendance_portal.attendance_table
+msgid "Active"
+msgstr "En cours"
+
+#. module: etech_attendance_portal
+#. odoo-python
+#: code:addons/etech_attendance_portal/controllers/my_attendance_controller.py:0
+msgid "All"
+msgstr "Toutes"
+
+#. module: etech_attendance_portal
+#: model_terms:ir.ui.view,arch_db:etech_attendance_portal.portal_my_attendance
+msgid "Attendance"
+msgstr "Présences"
+
+#. module: etech_attendance_portal
+#: model_terms:ir.ui.view,arch_db:etech_attendance_portal.attendance_list_view
+msgid "Attendance Records"
+msgstr "Présences"
+
+#. module: etech_attendance_portal
+#: model_terms:ir.ui.view,arch_db:etech_attendance_portal.portal_my_attendance
+msgid "Attendance Story"
+msgstr "Historique de présences"
+
+#. module: etech_attendance_portal
+#: model_terms:ir.ui.view,arch_db:etech_attendance_portal.attendance_table
+msgid "Check In"
+msgstr "Arrivée"
+
+#. module: etech_attendance_portal
+#: model_terms:ir.ui.view,arch_db:etech_attendance_portal.attendance_table
+msgid "Check Out"
+msgstr "Départ"
+
+#. module: etech_attendance_portal
+#: model_terms:ir.ui.view,arch_db:etech_attendance_portal.attendance_table
+msgid "Delay"
+msgstr "Retard"
+
+#. module: etech_attendance_portal
+#. odoo-python
+#: code:addons/etech_attendance_portal/controllers/my_attendance_controller.py:0
+#: model_terms:ir.ui.view,arch_db:etech_attendance_portal.attendance_table
+msgid "Department"
+msgstr "Département"
+
+#. module: etech_attendance_portal
+#. odoo-python
+#: code:addons/etech_attendance_portal/controllers/my_attendance_controller.py:0
+msgid "Employee"
+msgstr "Employé"
+
+#. module: etech_attendance_portal
+#: model_terms:ir.ui.view,arch_db:etech_attendance_portal.attendance_table
+msgid "Expected"
+msgstr "Arrivée prévue"
+
+#. module: etech_attendance_portal
+#. odoo-python
+#: code:addons/etech_attendance_portal/controllers/my_attendance_controller.py:0
+msgid "Last month"
+msgstr "Le mois dernier"
+
+#. module: etech_attendance_portal
+#. odoo-python
+#: code:addons/etech_attendance_portal/controllers/my_attendance_controller.py:0
+msgid "Last week"
+msgstr "La semaine dernière"
+
+#. module: etech_attendance_portal
+#. odoo-python
+#: code:addons/etech_attendance_portal/controllers/my_attendance_controller.py:0
+msgid "Last year"
+msgstr "L'année dernière"
+
+#. module: etech_attendance_portal
+#. odoo-python
+#: code:addons/etech_attendance_portal/controllers/my_attendance_controller.py:0
+#: model_terms:ir.ui.view,arch_db:etech_attendance_portal.attendance_list_view
+#: model_terms:ir.ui.view,arch_db:etech_attendance_portal.attendance_table
+msgid "Late"
+msgstr "En retard"
+
+#. module: etech_attendance_portal
+#: model_terms:ir.ui.view,arch_db:etech_attendance_portal.attendance_list_view
+msgid "Late Arrivals"
+msgstr "Arrivées en retard"
+
+#. module: etech_attendance_portal
+#: model_terms:ir.ui.view,arch_db:etech_attendance_portal.attendance_table
+msgid "Matricule"
+msgstr "Matricule"
+
+#. module: etech_attendance_portal
+#. odoo-python
+#: code:addons/etech_attendance_portal/controllers/my_attendance_controller.py:0
+msgid "No Department"
+msgstr "Aucun département"
+
+#. module: etech_attendance_portal
+#. odoo-python
+#: code:addons/etech_attendance_portal/controllers/my_attendance_controller.py:0
+msgid "No Registration Number"
+msgstr "Aucun matricule"
+
+#. module: etech_attendance_portal
+#: model_terms:ir.ui.view,arch_db:etech_attendance_portal.attendance_list_view
+msgid "No attendance records found"
+msgstr "Aucune présence trouvée"
+
+#. module: etech_attendance_portal
+#. odoo-python
+#: code:addons/etech_attendance_portal/controllers/my_attendance_controller.py:0
+msgid "None"
+msgstr "Aucun"
+
+#. module: etech_attendance_portal
+#. odoo-python
+#: code:addons/etech_attendance_portal/controllers/my_attendance_controller.py:0
+#: model_terms:ir.ui.view,arch_db:etech_attendance_portal.attendance_list_view
+#: model_terms:ir.ui.view,arch_db:etech_attendance_portal.attendance_table
+msgid "On Time"
+msgstr "À l'heure"
+
+#. module: etech_attendance_portal
+#. odoo-python
+#: code:addons/etech_attendance_portal/controllers/my_attendance_controller.py:0
+msgid "Registration Number"
+msgstr "Matricule"
+
+#. module: etech_attendance_portal
+#. odoo-python
+#: code:addons/etech_attendance_portal/controllers/my_attendance_controller.py:0
+msgid "Search in All"
+msgstr "Rechercher dans tout"
+
+#. module: etech_attendance_portal
+#. odoo-python
+#: code:addons/etech_attendance_portal/controllers/my_attendance_controller.py:0
+msgid "Search in Check In"
+msgstr "Rechercher dans l'arrivée"
+
+#. module: etech_attendance_portal
+#. odoo-python
+#: code:addons/etech_attendance_portal/controllers/my_attendance_controller.py:0
+msgid "Search in Check Out"
+msgstr "Rechercher dans le départ"
+
+#. module: etech_attendance_portal
+#. odoo-python
+#: code:addons/etech_attendance_portal/controllers/my_attendance_controller.py:0
+msgid "Search in Employee"
+msgstr "Rechercher dans les employés"
+
+#. module: etech_attendance_portal
+#. odoo-python
+#: code:addons/etech_attendance_portal/controllers/my_attendance_controller.py:0
+msgid "Search in Re. Number"
+msgstr "Rechercher dans le matricule"
+
+#. module: etech_attendance_portal
+#. odoo-python
+#: code:addons/etech_attendance_portal/controllers/my_attendance_controller.py:0
+#: model_terms:ir.ui.view,arch_db:etech_attendance_portal.attendance_table
+msgid "Status"
+msgstr "Statut"
+
+#. module: etech_attendance_portal
+#. odoo-python
+#: code:addons/etech_attendance_portal/controllers/my_attendance_controller.py:0
+msgid "This Quarter"
+msgstr "Ce trimestre"
+
+#. module: etech_attendance_portal
+#. odoo-python
+#: code:addons/etech_attendance_portal/controllers/my_attendance_controller.py:0
+msgid "This month"
+msgstr "Ce mois-ci"
+
+#. module: etech_attendance_portal
+#. odoo-python
+#: code:addons/etech_attendance_portal/controllers/my_attendance_controller.py:0
+msgid "This week"
+msgstr "Cette semaine"
+
+#. module: etech_attendance_portal
+#. odoo-python
+#: code:addons/etech_attendance_portal/controllers/my_attendance_controller.py:0
+msgid "This year"
+msgstr "Cette année"
+
+#. module: etech_attendance_portal
+#. odoo-python
+#: code:addons/etech_attendance_portal/controllers/my_attendance_controller.py:0
+msgid "Today"
+msgstr "Aujourd'hui"
+
+#. module: etech_attendance_portal
+#: model_terms:ir.ui.view,arch_db:etech_attendance_portal.attendance_list_view
+msgid "Total Hours"
+msgstr "Total d'heures"
+
+#. module: etech_attendance_portal
+#: model_terms:ir.ui.view,arch_db:etech_attendance_portal.attendance_list_view
+msgid "Total Records"
+msgstr "Total"
+
+#. module: etech_attendance_portal
+#: model_terms:ir.ui.view,arch_db:etech_attendance_portal.attendance_list_view
+msgid "Try adjusting your search or filter criteria"
+msgstr "Essayez d'ajuster vos critères de recherche ou de filtre"
+
+#. module: etech_attendance_portal
+#. odoo-python
+#: code:addons/etech_attendance_portal/controllers/my_attendance_controller.py:0
+msgid "Ungrouped"
+msgstr "Non groupé"
+
+#. module: etech_attendance_portal
+#. odoo-python
+#: code:addons/etech_attendance_portal/controllers/my_attendance_controller.py:0
+#: model_terms:ir.ui.view,arch_db:etech_attendance_portal.attendance_table
+msgid "Unknown"
+msgstr "Inconnu"
+
+#. module: etech_attendance_portal
+#: model_terms:ir.ui.view,arch_db:etech_attendance_portal.attendance_table
+msgid "Work Hours"
+msgstr "Heures travaillées"

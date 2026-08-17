@@ -1,0 +1,26 @@
+<odoo>
+  <menuitem
+      name="Contrat"
+      id="contrat_root"
+      parent="hr.menu_human_resources_configuration"
+  />
+  <menuitem
+      id="menu_category_view"
+      name="Professional category"
+      parent="contrat_root"
+      action="mg_hr_category.hr_contract_category_view_action"
+  />
+  <menuitem
+      id="menu_group_view"
+      name="Category Group"
+      parent="contrat_root"
+      action="mg_hr_category.hr_contract_group_view_action"
+  />
+
+  <menuitem
+    id="menu_hr_contract_index_view"
+    name="Group Index"
+    parent="contrat_root"
+    action="mg_hr_category.hr_contract_index_view_action"
+  />
+</odoo>

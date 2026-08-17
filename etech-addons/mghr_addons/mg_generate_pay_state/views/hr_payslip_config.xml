@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+  <record id="hr_payslip_config_view_form" model="ir.ui.view">
+    <field name="name">hr.payslip.config.form</field>
+    <field name="model">hr.payslip.config</field>
+    <field name="arch" type="xml">
+      <form>
+        <header>
+          <button
+            name="mg_generate_payslip_resume"
+            string="Generate pay state"
+            type="object"
+            class="btn-primary"
+          />
+        </header>
+        <sheet>
+          <div class="oe_button_box" name="button_box">
+            <button
+              class="oe_stat_button"
+              name="view_payslip_resume"
+              type="object"
+              invisible="payslip_resume_count==0"
+              icon="fa-bars"
+            >
+              <div class="o_field_widget o_stat_info">
+                <span class="o_stat_value">
+                  <field
+                    name="payslip_resume_count"
+                    widget="statinfo"
+                    nolabel="1"
+                    class="mr4"
+                  />
+                </span>
+                <span class="o_stat_text">Pay state</span>
+              </div>
+            </button>
+          </div>
+          <group>
+            <group>
+              <field name="date_from" />
+              <field name="date_to" />
+              <field name="department_id" />
+              <field name="work_location_id" />
+              <field name="work_zone_id" />
+              <field name="company_id" />
+            </group>
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+  <record id="payslip_config_view_list" model="ir.ui.view">
+    <field name="name">hr.payslip.config.list</field>
+    <field name="model">hr.payslip.config</field>
+    <field name="arch" type="xml">
+      <list>
+        <field name="date_from" />
+        <field name="date_to" />
+        <field name="company_id" />
+      </list>
+    </field>
+  </record>
+
+</odoo>

@@ -1,0 +1,30 @@
+{
+    'name': "Mg hr",
+    'version': '19.0.1.0.0',
+    'license': 'LGPL-3',
+    'category': 'Human Resources/Employees',
+    'sequence': 10,
+    'summary': 'Customization of HR module',
+    'author': 'eTech Consulting',
+    'website': 'https://www.etechconsulting-mg.com',
+    'depends': [
+        'hr',
+        'hr_payroll',
+        'hr_registration_number_filter',
+    ],
+    'data': [
+        'security/ir.model.access.csv',
+        'data/hr_work_zone.xml',
+        'views/res_company.xml',
+        'views/hr_job.xml',
+        'views/hr_employee.xml',
+        'views/hr_internale_classification.xml',
+        'views/hr_dependent.xml',
+        'views/hr_work_zone.xml',
+        'views/hr_work_location.xml',
+        'views/ir_actions_act_window.xml',
+        'views/ir_ui_menu.xml'
+    ],
+    'installable': True,
+    'application': False,
+}

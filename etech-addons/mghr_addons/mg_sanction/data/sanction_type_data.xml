@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+  <record model="hr.sanction.type" id="sanction_type_order">
+    <field name="name">call to order</field>
+  </record>
+  <record model="hr.sanction.type" id="sanction_type_warning">
+    <field name="name">Warning</field>
+  </record>
+  <record model="hr.sanction.type" id="sanction_type_dismissal">
+    <field name="name">Dismissal</field>
+  </record>
+  <record model="hr.sanction.type" id="sanction_information">
+    <field name="name">Requests for information</field>
+  </record>
+</odoo>

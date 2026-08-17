@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+     <record model="hr.leave.accrual.plan" id="employee_accrual_plan">
+        <field name="name">Add 2.5 days per months</field>
+    </record>
+</odoo>

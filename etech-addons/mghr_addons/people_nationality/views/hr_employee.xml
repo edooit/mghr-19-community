@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+  <record id="nationality_view_employee_form_inherit" model="ir.ui.view">
+    <field name="name">nationality.view.employee.form.inherit</field>
+    <field name="model">hr.employee</field>
+    <field name="inherit_id" ref="hr.view_employee_form" />
+    <field name="arch" type="xml">
+       <field name="country_id" position="attributes">
+         <attribute name="invisible">1</attribute>
+      </field>
+      <field name="country_id" position="after">
+        <field name="nationality_id" />
+      </field>
+    </field>
+</record>
+</odoo>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <menuitem
+      id="menu_payslip_input"
+      name="Import Payslip Input"
+      parent="hr_payroll.menu_hr_payroll_payslips"
+      action="action_mg_payslip_input"
+      sequence="80"
+  />
+</odoo>

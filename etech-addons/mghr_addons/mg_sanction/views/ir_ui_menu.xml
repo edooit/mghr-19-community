@@ -1,0 +1,19 @@
+<odoo>
+  <menuitem
+      name="Sanction"
+      id="sanction_root"
+      parent="hr.menu_human_resources_configuration"
+  />
+  <menuitem
+      id="menu_sanction_view"
+      name="Sanction"
+      parent="sanction_root"
+      action="action_sanction_view"
+  />
+  <menuitem
+      id="menu_sanction_type_view"
+      name="Type de sanction"
+      parent="sanction_root"
+      action="action_sanction_type_view"
+  />
+</odoo>

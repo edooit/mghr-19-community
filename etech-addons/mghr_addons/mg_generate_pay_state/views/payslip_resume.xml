@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+  <record id="detailed_payslip_resume_view_list2" model="ir.ui.view">
+    <field name="name">payslip.resume.list.detailed</field>
+    <field name="model">payslip.resume</field>
+    <field name="arch" type="xml">
+      <list create="false" edit="false" delete="false">
+        <field name="start_date"/>
+        <field name="end_date"/>
+        <field name="properties"/>
+        <field name="payslip_reference"/>
+        <field name="registration_number"/>
+        <field name="employee_name"/>
+        <field name="work_zone_id"/>
+        <field name="work_location_id"/>
+        <field name="department_id" optional="show"/>
+        <field name="parent_department_id" optional="hide"/>
+        <field name="group" optional="show"/>
+        <field name="category" optional="show"/>
+        <field name="job_position" optional="show"/>
+        <field name="cnaps_number" optional="show"/>
+        <field name="bank_name" optional="show"/>
+        <field name="bank_code" optional="hide"/>
+        <field name="branch_code" optional="hide"/>
+        <field name="account_number" optional="hide"/>
+        <field name="work_days" optional="show"/>
+        <field name="work_hours" optional="show"/>
+        <field name="net_salary" optional="show"/>
+        <field
+            name="payslip_state"
+            optional="show"
+            widget="badge"
+            decoration-info="payslip_state == 'draft'"
+            decoration-warning="payslip_state == 'verify'"
+            decoration-success="payslip_state == 'done'"
+            decoration-primary="payslip_state == 'paid'"
+            decoration-muted="payslip_state == 'cancel'"
+        />
+      </list>
+    </field>
+  </record>
+</odoo>

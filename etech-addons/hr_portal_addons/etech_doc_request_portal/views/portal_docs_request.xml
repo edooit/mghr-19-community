@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+  <template id="doc_request_line_row">
+    <div class="o_etech_doc_line d-flex justify-content-between align-items-center py-2 border-bottom">
+      <div class="d-flex align-items-center gap-2">
+        <span class="o_etech_doc_line_icon">
+          <i t-attf-class="fa #{'fa-laptop' if line.delivery_mode == 'electronic' else 'fa-hand-paper-o'}" />
+        </span>
+        <div>
+          <strong t-field="line.document_type_id.name" />
+          <div class="small text-muted">
+            <t t-if="line.delivery_mode == 'electronic'">Électronique</t>
+            <t t-else="">Physique</t>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex align-items-center gap-2">
+        <span t-attf-class="o_etech_chip-#{'success' if line.state == 'done' else ('warning' if line.state == 'in_progress' else 'secondary')} badge rounded-pill">
+          <t t-if="line.state == 'draft'">Brouillon</t>
+          <t t-elif="line.state == 'in_progress'">En cours</t>
+          <t t-else="">Traité</t>
+        </span>
+        <a t-if="line.state == 'done' and line.delivery_mode == 'electronic'"
+           t-attf-href="/my/documents/#{line.request_id.id}/line/#{line.id}/download"
+           class="btn-etech-outline btn btn-sm" title="Télécharger">
+          <i class="fa fa-download" />
+        </a>
+        <span t-if="line.state == 'done' and line.delivery_mode == 'physical' and line.pickup_date"
+              class="small text-muted">
+          <i class="fa fa-calendar me-1" />Retrait : <span t-field="line.pickup_date" />
+        </span>
+      </div>
+    </div>
+  </template>
+
+  <template id="doc_request_card">
+    <div class="o_etech_card o_etech_request_card p-3 mb-3">
+      <div class="d-flex justify-content-between align-items-center mb-2">
+        <div class="d-flex align-items-center gap-3">
+          <span class="o_etech_request_icon">
+            <i class="fa fa-folder-o" />
+          </span>
+          <div>
+            <a t-attf-href="/my/documents/#{doc_request.id}" class="fw-bold text-decoration-none">
+              <t t-esc="doc_request.name" />
+            </a>
+            <div class="small text-muted">
+              <span t-field="doc_request.request_date" />
+              · <t t-esc="len(doc_request.line_ids)" /> document(s)
+            </div>
+          </div>
+        </div>
+        <span t-attf-class="o_etech_chip-#{'success' if doc_request.state == 'done' else ('warning' if doc_request.state == 'in_progress' else 'secondary')} badge rounded-pill">
+          <t t-if="doc_request.state == 'draft'">Brouillon</t>
+          <t t-elif="doc_request.state == 'in_progress'">En cours</t>
+          <t t-else="">Traité</t>
+        </span>
+      </div>
+      <t t-foreach="doc_request.line_ids" t-as="line">
+        <t t-call="etech_doc_request_portal.doc_request_line_row" />
+      </t>
+    </div>
+  </template>
+
+  <template id="portal_docs_request">
+    <t t-call="portal.portal_layout">
+      <t t-set="breadcrumbs_searchbar" t-value="False" />
+
+      <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-4">
+        <div>
+          <h2 class="mb-1">Demande de documents</h2>
+          <p class="text-muted mb-0">Sélectionnez les documents dont vous avez besoin et suivez leur traitement.</p>
+        </div>
+      </div>
+
+      <div class="o_etech_leave_stats mb-4">
+        <div class="o_etech_stat_tile">
+          <span class="stat-icon o_etech_chip-secondary"><i class="fa fa-folder-o" /></span>
+          <div>
+            <div class="stat-number" t-esc="stats_total" />
+            <div class="stat-label">Demandes</div>
+          </div>
+        </div>
+        <div class="o_etech_stat_tile">
+          <span class="stat-icon o_etech_chip-warning"><i class="fa fa-clock-o" /></span>
+          <div>
+            <div class="stat-number" t-esc="stats_in_progress" />
+            <div class="stat-label">En cours</div>
+          </div>
+        </div>
+        <div class="o_etech_stat_tile">
+          <span class="stat-icon o_etech_chip-success"><i class="fa fa-check" /></span>
+          <div>
+            <div class="stat-number" t-esc="stats_done" />
+            <div class="stat-label">Traitées</div>
+          </div>
+        </div>
+      </div>
+
+      <div t-if="error" class="alert alert-danger d-flex align-items-center gap-2" role="alert">
+        <i class="fa fa-exclamation-triangle" />
+        <t t-esc="error" />
+      </div>
+
+      <div class="o_etech_card p-4 mb-4">
+        <h4 class="mb-1">Nouvelle demande</h4>
+        <p class="text-muted small mb-3">Cochez un ou plusieurs documents et choisissez, pour chacun, le mode de remise souhaité.</p>
+        <form action="/my/documents/new" method="post">
+          <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
+
+          <div t-if="not document_types" class="o_etech_empty_state">
+            <div class="o_etech_empty_icon"><i class="fa fa-file-text-o" /></div>
+            <p>Aucun type de document n'est configuré pour le moment.</p>
+          </div>
+
+          <div t-if="document_types" class="o_etech_doc_type_grid">
+            <div t-foreach="document_types" t-as="doc_type" class="o_etech_doc_type_card">
+              <label class="o_etech_doc_type_check">
+                <input type="checkbox" name="document_type_id" t-att-value="doc_type.id" />
+                <span class="o_etech_doc_type_icon"><i class="fa fa-file-text-o" /></span>
+                <span class="o_etech_doc_type_name"><t t-esc="doc_type.name" /></span>
+              </label>
+              <div class="o_etech_delivery_toggle" t-attf-data-name="delivery_mode_#{doc_type.id}">
+                <input type="radio" checked="checked" t-attf-name="delivery_mode_#{doc_type.id}"
+                       value="electronic" t-attf-id="elec_#{doc_type.id}" />
+                <label t-attf-for="elec_#{doc_type.id}"><i class="fa fa-laptop me-1" />Électronique</label>
+                <input type="radio" t-attf-name="delivery_mode_#{doc_type.id}"
+                       value="physical" t-attf-id="phys_#{doc_type.id}" />
+                <label t-attf-for="phys_#{doc_type.id}"><i class="fa fa-hand-paper-o me-1" />Physique</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-4" t-if="document_types">
+            <button type="submit" class="btn-etech-outline btn">
+              <i class="fa fa-paper-plane me-1" />Envoyer la demande
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <t t-call="portal.portal_searchbar">
+        <t t-set="title">Mes demandes</t>
+      </t>
+
+      <div t-if="not requests" class="o_etech_empty_state">
+        <div class="o_etech_empty_icon"><i class="fa fa-folder-open-o" /></div>
+        <p>Aucune demande ne correspond à ce filtre.</p>
+      </div>
+
+      <t t-if="requests and has_grouping">
+        <t t-foreach="grouped_requests" t-as="group">
+          <div class="d-flex align-items-center gap-2 mb-2 mt-1">
+            <span class="fw-bold" t-esc="group[0]" />
+            <span class="badge rounded-pill o_etech_chip-secondary" t-esc="len(group[1])" />
+          </div>
+          <t t-foreach="group[1]" t-as="doc_request">
+            <t t-call="etech_doc_request_portal.doc_request_card" />
+          </t>
+        </t>
+      </t>
+      <t t-elif="requests">
+        <t t-foreach="requests" t-as="doc_request">
+          <t t-call="etech_doc_request_portal.doc_request_card" />
+        </t>
+      </t>
+
+      <div class="mt-3" t-if="requests">
+        <t t-call="portal.pager" />
+      </div>
+    </t>
+  </template>
+
+  <template id="portal_docs_request_detail">
+    <t t-call="portal.portal_layout">
+      <t t-set="breadcrumbs_searchbar" t-value="False" />
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+          <a href="/my/documents" class="small text-decoration-none text-muted">
+            <i class="fa fa-arrow-left me-1" />Mes demandes
+          </a>
+          <h2 class="mb-0 mt-1">
+            <t t-esc="doc_request.name" />
+          </h2>
+        </div>
+      </div>
+      <t t-call="etech_doc_request_portal.doc_request_card" />
+    </t>
+  </template>
+</odoo>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+  <record model="hr.payslip.payment.mode" id="contract_payment_mobile_banking">
+    <field name="name">Mobile banking</field>
+    <field name="note">Mobile money payment method</field>
+  </record>
+
+  <record model="hr.payslip.payment.mode" id="contract_payment_transfer">
+    <field name="name">Transfer</field>
+    <field name="note">Payment method by bank transfer</field>
+  </record>
+
+  <record model="hr.payslip.payment.mode" id="contract_payment_cash">
+    <field name="name">Cash</field>
+    <field name="note">Cash payment method</field>
+  </record>
+
+  <record model="hr.payslip.payment.mode" id="contract_payment_cheque">
+    <field name="name">Check</field>
+    <field name="note">Payment method by check</field>
+  </record>
+</odoo>

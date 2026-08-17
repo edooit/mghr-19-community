@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+  <template id="portal_my_home_inherit" inherit_id="portal.portal_my_home">
+    <xpath expr="//div[@id='portal_common_category']/t[1]" position="attributes">
+      <attribute name="t-if">not employee_id</attribute>
+    </xpath>
+    <div id="portal_alert_category" position="attributes">
+      <attribute name="t-if">portal_alert_category_enable and not employee_id</attribute>
+    </div>
+    <div id="portal_client_category" position="attributes">
+      <attribute name="t-if">portal_client_category_enable and not employee_id</attribute>
+    </div>
+    <div id="portal_service_category" position="attributes">
+      <attribute name="t-if">portal_service_category_enable and not employee_id</attribute>
+    </div>
+    <div id="portal_vendor_category" position="attributes">
+      <attribute name="t-if">portal_vendor_category_enable and not employee_id</attribute>
+    </div>
+    <div id="portal_common_category" position="attributes">
+      <attribute name="t-if">not employee_id</attribute>
+    </div>
+    <xpath expr="//div[@id='oe_structure_portal_my_home_1']" position="before">
+      <t t-if="employee_id" t-call="etech_home_portal.emp_info_header" />
+    </xpath>
+  </template>
+
+  <template id="portal_breadcrumbs_inherit" inherit_id="portal.portal_breadcrumbs">
+    <xpath expr="//li[1]" position="attributes">
+      <attribute name="t-if">not employee_id</attribute>
+    </xpath>
+    <xpath expr="//li[1]" position="after">
+      <li t-if="employee_id" class="breadcrumb-item ms-1">
+        <a href="/my/home" aria-label="Home" title="Home">
+          <button type="button" class="btn btn-light rounded-pill">
+            <i class="fa fa-home fa-lg" />
+          </button>
+        </a>
+      </li>
+    </xpath>
+  </template>
+  
+  <template id="portal_docs_entry_inherit" inherit_id="portal.portal_docs_entry">
+    <xpath expr="//div[1]" position="attributes">
+      <attribute name="t-att-class">'o_portal_index_card ' + ('' if config_card else 'd-none ') + ('col-12 order-0' if show_count else 'col-10 order-0' if employee_id else 'col-md-6 order-2')</attribute>
+    </xpath>
+  </template>
+</odoo>

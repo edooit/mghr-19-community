@@ -1,0 +1,109 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* mg_hr_payroll
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0+e-20251015\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-21 07:42+0000\n"
+"PO-Revision-Date: 2025-10-21 07:42+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: mg_hr_payroll
+#: model:hr.payroll.structure,payslip_name:mg_hr_payroll.payroll_structure_cdd_cdi
+msgid "CDI ou CDD"
+msgstr ""
+
+#. module: mg_hr_payroll
+#: model:hr.leave.type,name:mg_hr_payroll.hr_leave_type_conge_mat
+msgid "Congé de maternité"
+msgstr ""
+
+#. module: mg_hr_payroll
+#: model:hr.work.entry.type,name:mg_hr_payroll.hr_work_entry_type_maternity
+msgid "Congés de maternité"
+msgstr ""
+
+#. module: mg_hr_payroll
+#: model:ir.model.fields,field_description:mg_hr_payroll.field_hr_payslip__department_id
+msgid "Department"
+msgstr "Département"
+
+#. module: mg_hr_payroll
+#: model:ir.model.fields,field_description:mg_hr_payroll.field_hr_payslip__index_id
+msgid "Index"
+msgstr ""
+
+#. module: mg_hr_payroll
+#: model:ir.model.fields,field_description:mg_hr_payroll.field_hr_salary_rule__is_rate
+msgid "Is Rate"
+msgstr "Est un taux?"
+
+#. module: mg_hr_payroll
+#: model:hr.leave.type,name:mg_hr_payroll.hr_leave_type_mise_a_p
+#: model:hr.work.entry.type,name:mg_hr_payroll.hr_work_entry_type_m_a_p
+msgid "Mise à pied"
+msgstr ""
+
+#. module: mg_hr_payroll
+#: model:ir.model.fields,field_description:mg_hr_payroll.field_hr_payslip__stc
+msgid "Number of days not worked"
+msgstr "Nombre de jours non travaillés"
+
+#. module: mg_hr_payroll
+#: model:ir.model,name:mg_hr_payroll.model_hr_payslip
+msgid "Pay Slip"
+msgstr "Fiche de paie"
+
+#. module: mg_hr_payroll
+#: model:ir.model.fields,field_description:mg_hr_payroll.field_hr_payslip__category_id
+msgid "Professional category"
+msgstr "Catégorie professionnelle"
+
+#. module: mg_hr_payroll
+#: model:ir.model.fields,field_description:mg_hr_payroll.field_hr_salary_rule__rate_id
+msgid "Rate"
+msgstr "Code taux"
+
+#. module: mg_hr_payroll
+#: model:ir.model,name:mg_hr_payroll.model_hr_salary_rule
+msgid "Salary Rule"
+msgstr "Règle salariale"
+
+#. module: mg_hr_payroll
+#: model:ir.model,name:mg_hr_payroll.model_hr_payroll_structure
+msgid "Salary Structure"
+msgstr "Structure salariale"
+
+#. module: mg_hr_payroll
+#: model:ir.model.fields,field_description:mg_hr_payroll.field_hr_payroll_structure__show_classification
+#: model:ir.model.fields,field_description:mg_hr_payroll.field_hr_payslip__show_classification
+msgid "Show classification"
+msgstr ""
+
+#. module: mg_hr_payroll
+#. odoo-python
+#: code:addons/mg_hr_payroll/models/hr_payslip.py:0
+msgid "The month is not valid"
+msgstr "Le mois n'est pas valide"
+
+#. module: mg_hr_payroll
+#: model:ir.model.fields,field_description:mg_hr_payroll.field_hr_payroll_structure__title
+msgid "Title"
+msgstr "Titre"
+
+#. module: mg_hr_payroll
+#: model:ir.model.fields,field_description:mg_hr_payroll.field_hr_payslip__work_location_id
+msgid "Work Location"
+msgstr "Lieu de travail"
+
+#. module: mg_hr_payroll
+#: model:ir.model.fields,field_description:mg_hr_payroll.field_hr_payslip__work_zone_id
+msgid "Work location zone"
+msgstr "Zone de travail"

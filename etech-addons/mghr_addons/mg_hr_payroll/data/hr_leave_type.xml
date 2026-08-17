@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+  <record id="hr_leave_type_conge_mat" model="hr.leave.type">
+    <field name="name">Congé de maternité</field>
+    <field name="work_entry_type_id" ref="mg_hr_payroll.hr_work_entry_type_maternity" />
+    <field name="leave_validation_type">no_validation</field>
+    <field name="requires_allocation">no</field>
+    <field name="weekend_consideration">True</field>
+  </record>
+  <record id="hr_leave_type_mise_a_p" model="hr.leave.type">
+    <field name="name">Mise à pied</field>
+    <field name="work_entry_type_id" ref="mg_hr_payroll.hr_work_entry_type_m_a_p" />
+  </record>
+</odoo>

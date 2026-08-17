@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+  <template id="mg_report_payslip_page">
+    <t t-set="emp" t-value="o.employee_id"/>
+    <t t-set="emp_name_parts" t-value="(emp.name or '').split(' ', 1)"/>
+    <t t-set="emp_firstname" t-value="emp_name_parts[0] if emp_name_parts else ''"/>
+    <t t-set="emp_lastname" t-value="emp_name_parts[1] if len(emp_name_parts) > 1 else ''"/>
+    <h4 style="font-weight: bold;">
+      <center>
+        Payslip
+        -
+        <span style="margin-left:15px;" t-field="o.date_from"/>
+        -
+        <span style="margin-left:15px;" t-field="o.date_to"/>
+      </center>
+
+    </h4>
+    <div class="row">
+      <style>
+        .table_1, .table_1 tr, .table_1 td{
+        border: 1px transparent;
+        font-size: 11pt;
+        }
+        b {
+        text-decoration: underline;
+        }
+      </style>
+      <div class="col-5">
+        <table class="table_1" style="border: 1px transparent;">
+          <tr t-if="emp.registration_number">
+            <td>
+              <b>Number:</b>
+            </td>
+            <td>
+              <span style="margin-left:15px;" t-field="emp.registration_number"/>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <b>Name:</b>
+            </td>
+            <td>
+              <span style="margin-left:15px;" t-esc="emp_lastname"/>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <b>Firstname:</b>
+            </td>
+            <td>
+              <span style="margin-left:15px;" t-esc="emp_firstname"/>
+            </td>
+          </tr>
+          <tr t-if="emp.department_id">
+            <td>
+              <b>Department:</b>
+            </td>
+            <td>
+              <span style="margin-left:15px;" t-field="emp.department_id"/>
+            </td>
+          </tr>
+          <tr t-if="emp.job_id">
+            <td>
+              <b>Job:</b>
+            </td>
+            <td>
+              <span style="margin-left:15px;" t-field="emp.job_id"/>
+            </td>
+          </tr>
+          <tr t-if="emp.category_id">
+            <td>
+              <b>Cat.Prof:</b>
+            </td>
+            <td>
+              <span style="margin-left:15px;" t-field="o.category_id"/>
+            </td>
+          </tr>
+          <tr t-if="o.index_id">
+            <td>
+              <b>Index:</b>
+            </td>
+            <td>
+              <span style="margin-left:15px;" t-field="o.index_id.index"/>
+            </td>
+          </tr>
+          <tr t-if="emp.identification_id">
+            <td>
+              <b>CIN:</b>
+            </td>
+            <td>
+              <span style="margin-left:15px;" t-field="emp.identification_id"/>
+            </td>
+          </tr>
+          <tr t-if="emp.passport_id">
+            <td>
+              <b>Passport:</b>
+            </td>
+            <td>
+              <span style="margin-left:15px;" t-field="emp.passport_id"/>
+            </td>
+          </tr>
+          <tr t-if="emp.hiring_date">
+            <td>
+              <b>Hiring date:</b>
+            </td>
+            <td>
+              <span style="margin-left:15px;" t-field="emp.hiring_date"/>
+            </td>
+          </tr>
+          <tr t-if="o.company_id.monthly_basic_schedule">
+            <td>
+              <b>Monthly schedule :</b>
+            </td>
+            <td>
+              <span
+                  style="margin-left:15px;"
+                  t-field="o.company_id.monthly_basic_schedule"
+              />
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="col-2">
+      </div>
+      <div class="col-5">
+        <table class="table_1" style="border: 1px transparent;">
+          <tr>
+            <td>
+              <b>CNaPs:</b>
+            </td>
+            <td>
+              <span style="margin-left:15px;" t-field="emp.cnaps_number"/>
+            </td>
+          </tr>
+          <tr t-if="emp.children">
+            <td>
+              <b>Dependent children:</b>
+            </td>
+            <td>
+              <span style="margin-left:15px;" t-field="emp.children"/>
+            </td>
+          </tr>
+          <tr t-if="emp.payslip_payment_mode_id">
+            <td>
+              <b>Payment method:</b>
+            </td>
+            <td>
+              <span
+                  style="margin-left:15px;"
+                  t-field="emp.payslip_payment_mode_id"
+              />
+            </td>
+          </tr>
+          <tr t-if="emp.work_location_id">
+            <td>
+              <b>Work location:</b>
+            </td>
+            <td>
+              <span style="margin-left:15px;" t-field="emp.work_location_id.name"/>
+            </td>
+          </tr>
+          <tr t-if="emp.work_zone_id">
+            <td>
+              <b>Zone:</b>
+            </td>
+            <td>
+              <span style="margin-left:15px;" t-field="emp.work_zone_id.name"/>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <b>Seniority:</b>
+            </td>
+            <td>
+              <span style="margin-left:15px;" t-field="emp.seniority"/>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <b>Current leave balance:</b>
+            </td>
+            <td>
+              <span style="margin-left:15px;" t-esc="o.leave_allocation"/>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div id="total" style="margin-top:50px;">
+      <table class="table table-sm">
+        <thead class="o_black_border">
+          <tr>
+            <th>Description</th>
+            <th>Rate</th>
+            <th>Base</th>
+            <th>Gains</th>
+            <th>Deductions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <span
+              t-foreach="o.line_ids.filtered(lambda line: line.amount != 0 and line.appears_on_payslip)"
+              t-as="line"
+          >
+            <t t-set="line_style"/>
+            <t t-set="line_class"/>
+            <t t-if="line.code == 'NET'">
+              <t t-set="line_style" t-value="'color:#875A7B;'"/>
+              <t t-set="line_class" t-value="'o_total o_border_bottom'"/>
+            </t>
+            <t t-if="(line.code == 'BASIC') or (line.code == 'GROSS')">
+              <t t-set="line_style" t-value="'color:#00A09D;'"/>
+              <t t-set="line_class" t-value="'o_subtotal o_border_bottom'"/>
+            </t>
+            <tr t-att-class="line_class" t-att-style="line_style">
+              <t
+                  t-set="rate"
+                  t-value="sum(o.line_ids.filtered(
+                      lambda l: l.salary_rule_id == line.salary_rule_id.rate_id
+                      ).mapped('total'))"
+              />
+              <td>
+                <span t-field="line.name"/>
+              </td>
+              <td style="text-align:right;">
+                <span t-esc="rate or ''"/>
+              </td>
+              <td t-if="rate" style="text-align:right;">
+                <t t-set="base" t-value="(line.total / rate)"/>
+                <span
+                    t-esc="base"
+                    t-options='{"widget": "monetary", "display_currency": o.company_id.currency_id}'
+                />
+              </td>
+              <td t-else="">
+                <span/>
+              </td>
+              <td style="text-align:right;">
+                <span
+                    t-esc="line.total"
+                    t-if="line.category_id.code not in ('DED', 'RETENUE')"
+                    t-options='{"widget": "monetary", "display_currency": o.company_id.currency_id}'
+                />
+                <span t-else=""/>
+              </td>
+              <td style="text-align:right;">
+                <span
+                    t-if="line.category_id.code in ('DED', 'RETENUE')"
+                    t-esc="line.total"
+                    t-options='{"widget": "monetary", "display_currency": o.company_id.currency_id}'
+                />
+                <span t-else=""/>
+              </td>
+            </tr>
+          </span>
+        </tbody>
+      </table>
+    </div>
+  </template>
+  <template id="mg_report_payslip">
+    <t t-call="web.html_container">
+      <t t-foreach="inside_foreach_docs or docs" t-as="o">
+        <t t-call="mg_payroll_pdf_report.custom_layout_standard">
+          <div class="page" style="font-size: 11pt;">
+            <div class="row">
+              <div class="col-6">
+                <t t-call="mg_payroll_pdf_report.mg_report_payslip_page"/>
+              </div>
+              <div class="col-6" style="margin-left:10px;">
+                <t t-call="mg_payroll_pdf_report.mg_report_payslip_page"/>
+              </div>
+            </div>
+          </div>
+        </t>
+      </t>
+    </t>
+  </template>
+  <template id="mg_report_payslip_lang">
+    <t t-foreach="docs" t-as="o">
+      <t t-set="o" t-value="o.with_context(lang=o.employee_id.lang or o.env.lang)"/>
+      <t t-call="mg_payroll_pdf_report.mg_report_payslip" t-lang="o.env.lang"/>
+    </t>
+  </template>
+</odoo>

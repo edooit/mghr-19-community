@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+  <record id="etech_view_company_form_inherit" model="ir.ui.view">
+    <field name="name">etech.view.company.form.inherit</field>
+    <field name="model">res.company</field>
+    <field name="inherit_id" ref="base.view_company_form" />
+    <field name="arch" type="xml">
+      <xpath expr="//field[@name='vat']" position="attributes">
+        <attribute name="string">NIF</attribute>
+      </xpath>
+      <xpath expr="//field[@name='vat']" position="after">
+        <field name="stat"/>
+      </xpath>
+      <field name="company_registry" position="attributes">
+        <attribute name="string">RCS</attribute>
+      </field>
+    </field>
+  </record>
+</odoo>

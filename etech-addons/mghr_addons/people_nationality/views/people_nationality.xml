@@ -1,0 +1,11 @@
+<odoo>
+   <record id="nationality_view_tree" model="ir.ui.view">
+      <field name="name">Nationality</field>
+      <field name="model">people.nationality</field>
+      <field name="arch" type="xml">
+        <list>
+          <field name="name" required="1" />
+        </list>
+      </field>
+    </record>
+</odoo>

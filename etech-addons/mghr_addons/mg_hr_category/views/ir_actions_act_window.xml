@@ -1,0 +1,23 @@
+<odoo>
+  <record id="hr_contract_group_view_action" model="ir.actions.act_window">
+    <field name="name">Contract Category Group</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="res_model">hr.contract.group</field>
+    <field name="view_mode">list,form</field>
+  </record>
+
+  <record id="hr_contract_category_view_action" model="ir.actions.act_window">
+    <field name="name">Contract category</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="res_model">hr.contract.category</field>
+    <field name="view_mode">list,form</field>
+  </record>
+
+   <record id="hr_contract_index_view_action" model="ir.actions.act_window">
+    <field name="name">Group index</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="res_model">hr.contract.index</field>
+    <field name="view_mode">list,form</field>
+  </record>
+
+</odoo>

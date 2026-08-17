@@ -1,0 +1,312 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* etech_planning_portal
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0+e-20251015\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 07:09+0000\n"
+"PO-Revision-Date: 2025-12-08 07:09+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: etech_planning_portal
+#. odoo-javascript
+#: code:addons/etech_planning_portal/static/src/js/planning_portal_gantt.js:0
+msgid "You"
+msgstr "Vous"
+
+#. module: etech_planning_portal
+#. odoo-javascript
+#: code:addons/etech_planning_portal/static/src/js/planning_portal_gantt.js:0
+#: code:addons/etech_planning_portal/static/src/js/planning_portal_gantt_t.js:0
+msgid "Are you sure you want to delete this time slot?"
+msgstr "Êtes-vous sûr de vouloir supprimer ce créneau ?"
+
+#. module: etech_planning_portal
+#. odoo-javascript
+#: code:addons/etech_planning_portal/static/src/js/planning_portal_gantt.js:0
+#: code:addons/etech_planning_portal/static/src/js/planning_portal_gantt_t.js:0
+msgid "Delete"
+msgstr "Supprimer"
+
+#. module: etech_planning_portal
+#. odoo-javascript
+#: code:addons/etech_planning_portal/static/src/js/planning_portal_gantt.js:0
+#: code:addons/etech_planning_portal/static/src/js/planning_portal_gantt_t.js:0
+msgid "Delete Confirmation"
+msgstr "Confirmation de suppression"
+
+#. module: etech_planning_portal
+#. odoo-javascript
+#: code:addons/etech_planning_portal/static/src/js/planning_portal_gantt.js:0
+#: code:addons/etech_planning_portal/static/src/js/planning_portal_gantt_t.js:0
+msgid "End date must be after start date"
+msgstr "La date de fin doit être après la date de début"
+
+#. module: etech_planning_portal
+#. odoo-javascript
+#: code:addons/etech_planning_portal/static/src/js/planning_portal_gantt.js:0
+#: code:addons/etech_planning_portal/static/src/js/planning_portal_gantt_t.js:0
+msgid "Error deleting time slot"
+msgstr "Erreur lors de la suppression du créneau"
+
+#. module: etech_planning_portal
+#. odoo-javascript
+#: code:addons/etech_planning_portal/static/src/js/planning_portal_gantt.js:0
+#: code:addons/etech_planning_portal/static/src/js/planning_portal_gantt_t.js:0
+msgid "Error loading data"
+msgstr "Erreur lors du chargement des données"
+
+#. module: etech_planning_portal
+#. odoo-javascript
+#: code:addons/etech_planning_portal/static/src/js/planning_portal_gantt.js:0
+#: code:addons/etech_planning_portal/static/src/js/planning_portal_gantt_t.js:0
+msgid "Error saving data"
+msgstr "Erreur lors de la sauvegarde"
+
+#. module: etech_planning_portal
+#. odoo-javascript
+#: code:addons/etech_planning_portal/static/src/js/planning_portal_gantt.js:0
+#: code:addons/etech_planning_portal/static/src/js/planning_portal_gantt_t.js:0
+msgid "Error saving time slot"
+msgstr "Erreur lors de la sauvegarde du créneau"
+
+#. module: etech_planning_portal
+#. odoo-javascript
+#: code:addons/etech_planning_portal/static/src/js/planning_portal_gantt.js:0
+#: code:addons/etech_planning_portal/static/src/js/planning_portal_gantt_t.js:0
+msgid "Invalid date format. Use dd/mm/yyyy hh:mm format"
+msgstr "Format de date invalide. Utilisez le format jj/mm/aaaa hh:mm"
+
+#. module: etech_planning_portal
+#: model_terms:ir.ui.view,arch_db:etech_planning_portal.planning_portal_page
+msgid "Visualisez et gérez les plannings de votre équipe."
+msgstr "Visualisez et gérez les plannings de votre équipe."
+
+#. module: etech_planning_portal
+#. odoo-javascript
+#: code:addons/etech_planning_portal/static/src/js/planning_portal_gantt.js:0
+#: code:addons/etech_planning_portal/static/src/js/planning_portal_gantt_t.js:0
+msgid "N/A"
+msgstr "N/D"
+
+#. module: etech_planning_portal
+#. odoo-javascript
+#: code:addons/etech_planning_portal/static/src/js/planning_portal_gantt.js:0
+#: code:addons/etech_planning_portal/static/src/js/planning_portal_gantt_t.js:0
+msgid "New Slot"
+msgstr "Nouveau créneau"
+
+#. module: etech_planning_portal
+#: model_terms:ir.ui.view,arch_db:etech_planning_portal.planning_portal_page
+#: model_terms:ir.ui.view,arch_db:etech_planning_portal.portal_my_planning_menu
+msgid "Planning"
+msgstr "Planning"
+
+#. module: etech_planning_portal
+#: model_terms:ir.ui.view,arch_db:etech_planning_portal.portal_my_planning_menu
+msgid "Planning management"
+msgstr "Gestion du planning"
+
+#. module: etech_planning_portal
+#. odoo-javascript
+#: code:addons/etech_planning_portal/static/src/js/planning_portal_gantt.js:0
+#: code:addons/etech_planning_portal/static/src/js/planning_portal_gantt_t.js:0
+msgid "Please fill in both start and end dates"
+msgstr "Veuillez remplir les dates de début et de fin"
+
+#. module: etech_planning_portal
+#. odoo-javascript
+#: code:addons/etech_planning_portal/static/src/js/planning_portal_gantt.js:0
+#: code:addons/etech_planning_portal/static/src/js/planning_portal_gantt_t.js:0
+msgid "Please select an employee"
+msgstr "Veuillez sélectionner un employé"
+
+#. module: etech_planning_portal
+#. odoo-javascript
+#: code:addons/etech_planning_portal/static/src/js/planning_portal_gantt.js:0
+#: code:addons/etech_planning_portal/static/src/js/planning_portal_gantt_t.js:0
+msgid "Time slot created successfully"
+msgstr "Créneau créé avec succès"
+
+#. module: etech_planning_portal
+#. odoo-javascript
+#: code:addons/etech_planning_portal/static/src/js/planning_portal_gantt.js:0
+#: code:addons/etech_planning_portal/static/src/js/planning_portal_gantt_t.js:0
+msgid "Time slot deleted successfully"
+msgstr "Créneau supprimé avec succès"
+
+#. module: etech_planning_portal
+#. odoo-javascript
+#: code:addons/etech_planning_portal/static/src/js/planning_portal_gantt.js:0
+#: code:addons/etech_planning_portal/static/src/js/planning_portal_gantt_t.js:0
+msgid "Time slot updated successfully"
+msgstr "Créneau modifié avec succès"
+
+#. module: etech_planning_portal
+#. odoo-javascript
+#: code:addons/etech_planning_portal/static/src/js/planning_portal_gantt.js:0
+#: code:addons/etech_planning_portal/static/src/js/planning_portal_gantt_t.js:0
+msgid "Week from %s to %s"
+msgstr "Semaine du %s au %s"
+
+#. module: etech_planning_portal
+#: model_terms:ir.ui.view,arch_db:etech_planning_portal.planning_portal_page
+msgid "planning"
+msgstr "planning"
+
+#. module: etech_planning_portal
+#. odoo-javascript
+#: code:addons/etech_planning_portal/static/src/js/planning_portal_gantt.js:0
+msgid "Cancel"
+msgstr "Annuler"
+
+#. module: etech_planning_portal
+#. odoo-javascript
+#: code:addons/etech_planning_portal/static/src/js/planning_portal_gantt.js:0
+msgid "Close"
+msgstr "Fermer"
+
+#. module: etech_planning_portal
+#. odoo-javascript
+#: code:addons/etech_planning_portal/static/src/js/planning_portal_gantt.js:0
+msgid "Create"
+msgstr "Créer"
+
+#. module: etech_planning_portal
+#. odoo-javascript
+#: code:addons/etech_planning_portal/static/src/js/planning_portal_gantt.js:0
+msgid "Create Time Slot"
+msgstr "Créer un créneau"
+
+#. module: etech_planning_portal
+#. odoo-javascript
+#: code:addons/etech_planning_portal/static/src/js/planning_portal_gantt.js:0
+msgid "Day"
+msgstr "Jour"
+
+#. module: etech_planning_portal
+#. odoo-javascript
+#: code:addons/etech_planning_portal/static/src/js/planning_portal_gantt.js:0
+msgid "dd/mm/yyyy hh:mm"
+msgstr "jj/mm/aaaa hh:mm"
+
+#. module: etech_planning_portal
+#. odoo-javascript
+#: code:addons/etech_planning_portal/static/src/js/planning_portal_gantt.js:0
+msgid "Edit Time Slot"
+msgstr "Modifier le créneau"
+
+#. module: etech_planning_portal
+#. odoo-javascript
+#: code:addons/etech_planning_portal/static/src/js/planning_portal_gantt.js:0
+msgid "Employee"
+msgstr "Employé"
+
+#. module: etech_planning_portal
+#. odoo-javascript
+#: code:addons/etech_planning_portal/static/src/js/planning_portal_gantt.js:0
+msgid "Employee ID"
+msgstr "Matricule"
+
+#. module: etech_planning_portal
+#. odoo-javascript
+#: code:addons/etech_planning_portal/static/src/js/planning_portal_gantt.js:0
+msgid "End Date and Time"
+msgstr "Date et heure de fin"
+
+#. module: etech_planning_portal
+#. odoo-javascript
+#: code:addons/etech_planning_portal/static/src/js/planning_portal_gantt.js:0
+msgid "Loading schedule..."
+msgstr "Chargement du planning..."
+
+#. module: etech_planning_portal
+#. odoo-javascript
+#: code:addons/etech_planning_portal/static/src/js/planning_portal_gantt.js:0
+msgid "Loading..."
+msgstr "Chargement..."
+
+#. module: etech_planning_portal
+#. odoo-javascript
+#: code:addons/etech_planning_portal/static/src/js/planning_portal_gantt.js:0
+msgid "Month"
+msgstr "Mois"
+
+#. module: etech_planning_portal
+#. odoo-javascript
+#: code:addons/etech_planning_portal/static/src/js/planning_portal_gantt.js:0
+msgid "Next"
+msgstr "Suivant"
+
+#. module: etech_planning_portal
+#. odoo-javascript
+#: code:addons/etech_planning_portal/static/src/js/planning_portal_gantt.js:0
+msgid "No employees found"
+msgstr "Aucun employé trouvé"
+
+#. module: etech_planning_portal
+#. odoo-javascript
+#: code:addons/etech_planning_portal/static/src/js/planning_portal_gantt.js:0
+msgid "Previous"
+msgstr "Précédent"
+
+#. module: etech_planning_portal
+#. odoo-javascript
+#: code:addons/etech_planning_portal/static/src/js/planning_portal_gantt.js:0
+msgid "Search"
+msgstr "Rechercher"
+
+#. module: etech_planning_portal
+#. odoo-javascript
+#: code:addons/etech_planning_portal/static/src/js/planning_portal_gantt.js:0
+msgid "Search by name or employee ID..."
+msgstr "Rechercher par nom ou matricule..."
+
+#. module: etech_planning_portal
+#. odoo-javascript
+#: code:addons/etech_planning_portal/static/src/js/planning_portal_gantt.js:0
+msgid "Select an employee"
+msgstr "Sélectionner un employé"
+
+#. module: etech_planning_portal
+#. odoo-javascript
+#: code:addons/etech_planning_portal/static/src/js/planning_portal_gantt.js:0
+msgid "Start Date and Time"
+msgstr "Date et heure de début"
+
+#. module: etech_planning_portal
+#. odoo-javascript
+#: code:addons/etech_planning_portal/static/src/js/planning_portal_gantt.js:0
+msgid "Update"
+msgstr "Modifier"
+
+#. module: etech_planning_portal
+#. odoo-javascript
+#: code:addons/etech_planning_portal/static/src/js/planning_portal_gantt.js:0
+msgid "Week"
+msgstr "Semaine"
+
+#. module: etech_planning_portal
+#. odoo-javascript
+#: code:addons/etech_planning_portal/static/src/js/planning_portal_gantt.js:0
+msgid "Apply"
+msgstr "Appliquer"
+
+#. module: etech_planning_portal
+#. odoo-javascript
+#: code:addons/etech_planning_portal/static/src/js/planning_portal_gantt.js:0
+msgid "Confirm"
+msgstr "Confirmer"
+
+#. module: etech_planning_portal
+#. odoo-javascript
+#: code:addons/etech_planning_portal/static/src/js/planning_portal_gantt.js:0
+msgid "Time:"
+msgstr "Heure :"

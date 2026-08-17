@@ -1,0 +1,491 @@
+<odoo noupdate="1">
+  <!-- Enregistrements des nationalités commençant par la lettre "A" -->
+  <record id="nationality_afghan" model="people.nationality">
+    <field name="name">Afghane</field>
+  </record>
+  <record id="nationality_albanian" model="people.nationality">
+    <field name="name">Albanais</field>
+  </record>
+  <record id="nationality_algerian" model="people.nationality">
+    <field name="name">Algérienne</field>
+  </record>
+  <record id="nationality_german" model="people.nationality">
+    <field name="name">Allemande</field>
+  </record>
+  <record id="nationality_american" model="people.nationality">
+    <field name="name">Américaine</field>
+  </record>
+  <record id="nationality_andorran" model="people.nationality">
+    <field name="name">Andorrane</field>
+  </record>
+  <record id="nationality_angolan" model="people.nationality">
+    <field name="name">Angolaise</field>
+  </record>
+  <record id="nationality_antiguan" model="people.nationality">
+    <field name="name">Antiguaise-et-Barbudienne</field>
+  </record>
+  <record id="nationality_argentine" model="people.nationality">
+    <field name="name">Argentine</field>
+  </record>
+  <record id="nationality_armenian" model="people.nationality">
+    <field name="name">Arménienne</field>
+  </record>
+
+  <!-- Enregistrements des nationalités commençant par la lettre "B" -->
+  <record id="nationality_bahamian" model="people.nationality">
+    <field name="name">Bahaméenne</field>
+  </record>
+  <record id="nationality_bahraini" model="people.nationality">
+    <field name="name">Bahreïnienne</field>
+  </record>
+  <record id="nationality_bangladeshi" model="people.nationality">
+    <field name="name">Bangladaise</field>
+  </record>
+  <record id="nationality_barbadian" model="people.nationality">
+    <field name="name">Barbadienne</field>
+  </record>
+  <record id="nationality_belarusian" model="people.nationality">
+    <field name="name">Biélorusse</field>
+  </record>
+  <record id="nationality_belgian" model="people.nationality">
+    <field name="name">Belge</field>
+  </record>
+  <record id="nationality_belizean" model="people.nationality">
+    <field name="name">Bélizienne</field>
+  </record>
+  <record id="nationality_beninese" model="people.nationality">
+    <field name="name">Béninoise</field>
+  </record>
+  <record id="nationality_bhutanese" model="people.nationality">
+    <field name="name">Bhoutanaise</field>
+  </record>
+  <record id="nationality_bolivian" model="people.nationality">
+    <field name="name">Bolivienne</field>
+  </record>
+  <record id="nationality_bosnian" model="people.nationality">
+    <field name="name">Bosniaque</field>
+  </record>
+  <record id="nationality_botswanan" model="people.nationality">
+    <field name="name">Botswanaise</field>
+  </record>
+  <record id="nationality_brazilian" model="people.nationality">
+    <field name="name">Brésilienne</field>
+  </record>
+  <record id="nationality_british" model="people.nationality">
+    <field name="name">Britannique</field>
+  </record>
+  <record id="nationality_bruneian" model="people.nationality">
+    <field name="name">Brunéienne</field>
+  </record>
+  <record id="nationality_bulgarian" model="people.nationality">
+    <field name="name">Bulgare</field>
+  </record>
+  <record id="nationality_burkinabe" model="people.nationality">
+    <field name="name">Burkinabée</field>
+  </record>
+  <record id="nationality_burundian" model="people.nationality">
+    <field name="name">Burundaise</field>
+  </record>
+
+  <!-- Enregistrements des nationalités commençant par la lettre "C" -->
+  <record id="nationality_cambodian" model="people.nationality">
+    <field name="name">Cambodgienne</field>
+  </record>
+  <record id="nationality_cameroonian" model="people.nationality">
+    <field name="name">Camerounaise</field>
+  </record>
+  <record id="nationality_canadian" model="people.nationality">
+    <field name="name">Canadienne</field>
+  </record>
+  <record id="nationality_cape_verdean" model="people.nationality">
+    <field name="name">Cap-verdienne</field>
+  </record>
+  <record id="nationality_central_african" model="people.nationality">
+    <field name="name">Centrafricaine</field>
+  </record>
+  <record id="nationality_chilean" model="people.nationality">
+    <field name="name">Chilienne</field>
+  </record>
+  <record id="nationality_chinese" model="people.nationality">
+    <field name="name">Chinoise</field>
+  </record>
+  <record id="nationality_cypriot" model="people.nationality">
+    <field name="name">Chypriote</field>
+  </record>
+  <record id="nationality_colombian" model="people.nationality">
+    <field name="name">Colombienne</field>
+  </record>
+  <record id="nationality_comorian" model="people.nationality">
+    <field name="name">Comorienne</field>
+  </record>
+  <record id="nationality_congolese_democratic" model="people.nationality">
+    <field name="name">Congolaise (République démocratique du Congo)</field>
+  </record>
+  <record id="nationality_congolese_republic" model="people.nationality">
+    <field name="name">Congolaise (République du Congo)</field>
+  </record>
+  <record id="nationality_costa_rican" model="people.nationality">
+    <field name="name">Costaricaine</field>
+  </record>
+  <record id="nationality_ivorian" model="people.nationality">
+    <field name="name">Ivoirienne</field>
+  </record>
+  <record id="nationality_croatian" model="people.nationality">
+    <field name="name">Croate</field>
+  </record>
+  <record id="nationality_cuban" model="people.nationality">
+    <field name="name">Cubaine</field>
+  </record>
+
+  <!-- Enregistrements des nationalités commençant par la lettre "D" -->
+  <record id="nationality_danish" model="people.nationality">
+    <field name="name">Danoise</field>
+  </record>
+  <record id="nationality_djiboutian" model="people.nationality">
+    <field name="name">Djiboutienne</field>
+  </record>
+  <record id="nationality_dominican" model="people.nationality">
+    <field name="name">Dominicaine</field>
+  </record>
+  <record id="nationality_dominican_republic" model="people.nationality">
+    <field name="name">Dominicaine</field>
+  </record>
+  <record id="nationality_egyptian" model="people.nationality">
+    <field name="name">Égyptienne</field>
+  </record>
+  <record id="nationality_emirati" model="people.nationality">
+    <field name="name">Émirienne</field>
+  </record>
+  <record id="nationality_equatorial_guinean" model="people.nationality">
+    <field name="name">Équato-guinéenne</field>
+  </record>
+  <record id="nationality_ecuadorian" model="people.nationality">
+    <field name="name">Équatorienne</field>
+  </record>
+  <record id="nationality_eritrean" model="people.nationality">
+    <field name="name">Érythréenne</field>
+  </record>
+  <record id="nationality_spanish" model="people.nationality">
+    <field name="name">Espagnole</field>
+  </record>
+  <record id="nationality_estonian" model="people.nationality">
+    <field name="name">Estonienne</field>
+  </record>
+  <record id="nationality_ethiopian" model="people.nationality">
+    <field name="name">Éthiopienne</field>
+  </record>
+
+  <!-- Enregistrements des nationalités commençant par la lettre "F" -->
+  <record id="nationality_fijian" model="people.nationality">
+    <field name="name">Fidjienne</field>
+  </record>
+  <record id="nationality_finnish" model="people.nationality">
+    <field name="name">Finlandaise</field>
+  </record>
+  <record id="nationality_french" model="people.nationality">
+    <field name="name">Française</field>
+  </record>
+
+  <!-- Enregistrements des nationalités commençant par la lettre "G" -->
+  <record id="nationality_gabonese" model="people.nationality">
+    <field name="name">Gabonaise</field>
+  </record>
+  <record id="nationality_gambian" model="people.nationality">
+    <field name="name">Gambienne</field>
+  </record>
+  <record id="nationality_georgian" model="people.nationality">
+    <field name="name">Géorgienne</field>
+  </record>
+  <record id="nationality_ghanaian" model="people.nationality">
+    <field name="name">Ghanéenne</field>
+  </record>
+  <record id="nationality_greek" model="people.nationality">
+    <field name="name">Grecque</field>
+  </record>
+  <record id="nationality_grenadian" model="people.nationality">
+    <field name="name">Grenadienne</field>
+  </record>
+  <record id="nationality_guatemalan" model="people.nationality">
+    <field name="name">Guatémaltèque</field>
+  </record>
+  <record id="nationality_guinean" model="people.nationality">
+    <field name="name">Guinéenne</field>
+  </record>
+
+  <!-- Enregistrements des nationalités commençant par la lettre "H" -->
+  <record id="nationality_haitian" model="people.nationality">
+    <field name="name">Haïtienne</field>
+  </record>
+  <record id="nationality_honduran" model="people.nationality">
+    <field name="name">Hondurienne</field>
+  </record>
+  <record id="nationality_hungarian" model="people.nationality">
+  <field name="name">Hongroise</field>
+  </record>
+  <record id="nationality_indian" model="people.nationality">
+    <field name="name">Indienne</field>
+  </record>
+  <record id="nationality_indonesian" model="people.nationality">
+    <field name="name">Indonésienne</field>
+  </record>
+  <record id="nationality_iraqi" model="people.nationality">
+    <field name="name">Irakienne</field>
+  </record>
+  <record id="nationality_iranian" model="people.nationality">
+    <field name="name">Iranienne</field>
+  </record>
+  <record id="nationality_irish" model="people.nationality">
+    <field name="name">Irlandaise</field>
+  </record>
+  <record id="nationality_icelandic" model="people.nationality">
+    <field name="name">Islandaise</field>
+  </record>
+  <record id="nationality_israeli" model="people.nationality">
+    <field name="name">Israélienne</field>
+  </record>
+  <record id="nationality_italian" model="people.nationality">
+    <field name="name">Italienne</field>
+  </record>
+  <!-- Enregistrements des nationalités commençant par la lettre "J" -->
+  <record id="nationality_jamaican" model="people.nationality">
+    <field name="name">Jamaïcaine</field>
+  </record>
+  <record id="nationality_japanese" model="people.nationality">
+    <field name="name">Japonaise</field>
+  </record>
+  <record id="nationality_jordanian" model="people.nationality">
+    <field name="name">Jordanienne</field>
+  </record>
+  <!-- Enregistrements des nationalités commençant par la lettre "K" -->
+  <record id="nationality_kazakhstani" model="people.nationality">
+    <field name="name">Kazakhstanaise</field>
+  </record>
+  <record id="nationality_kenyan" model="people.nationality">
+    <field name="name">Kényane</field>
+  </record>
+  <record id="nationality_kiribatian" model="people.nationality">
+    <field name="name">Kiribatienne</field>
+  </record>
+  <record id="nationality_kittian_and_nevisian" model="people.nationality">
+    <field name="name">Kittitienne-et-Névicienne</field>
+  </record>
+  <record id="nationality_kuwaiti" model="people.nationality">
+    <field name="name">Koweïtienne</field>
+  </record>
+  <record id="nationality_kyrgyz" model="people.nationality">
+    <field name="name">Kirghize</field>
+  </record>
+
+  <!-- Enregistrements des nationalités commençant par la lettre "L" -->
+  <record id="nationality_lao" model="people.nationality">
+    <field name="name">Laotienne</field>
+  </record>
+  <record id="nationality_latvian" model="people.nationality">
+    <field name="name">Lettone</field>
+  </record>
+  <record id="nationality_lebanese" model="people.nationality">
+    <field name="name">Libanaise</field>
+  </record>
+  <record id="nationality_liberian" model="people.nationality">
+    <field name="name">Libérienne</field>
+  </record>
+  <record id="nationality_libyan" model="people.nationality">
+    <field name="name">Libyenne</field>
+  </record>
+  <record id="nationality_liechtensteiner" model="people.nationality">
+    <field name="name">Liechtensteinoise</field>
+  </record>
+  <record id="nationality_lithuanian" model="people.nationality">
+    <field name="name">Lituanienne</field>
+  </record>
+  <record id="nationality_luxembourger" model="people.nationality">
+    <field name="name">Luxembourgeoise</field>
+  </record>
+
+  <!-- Enregistrements des nationalités commençant par la lettre "M" -->
+  <record id="nationality_macedonian" model="people.nationality">
+    <field name="name">Macédonienne</field>
+  </record>
+  <record id="nationality_malagasy" model="people.nationality">
+    <field name="name">Malagasy</field>
+  </record>
+  <record id="nationality_malaysian" model="people.nationality">
+    <field name="name">Malaisienne</field>
+  </record>
+  <record id="nationality_malawian" model="people.nationality">
+    <field name="name">Malawienne</field>
+  </record>
+  <record id="nationality_maldivian" model="people.nationality">
+    <field name="name">Maldivienne</field>
+  </record>
+  <record id="nationality_malian" model="people.nationality">
+    <field name="name">Malienne</field>
+  </record>
+  <record id="nationality_maltese" model="people.nationality">
+    <field name="name">Maltaise</field>
+  </record>
+  <record id="nationality_mauritanian" model="people.nationality">
+    <field name="name">Mauritanienne</field>
+  </record>
+  <record id="nationality_mauritian" model="people.nationality">
+    <field name="name">Mauricienne</field>
+  </record>
+  <record id="nationality_mexican" model="people.nationality">
+    <field name="name">Mexicaine</field>
+  </record>
+  <record id="nationality_micronesian" model="people.nationality">
+    <field name="name">Micronésienne</field>
+  </record>
+  <record id="nationality_moldovan" model="people.nationality">
+    <field name="name">Moldave</field>
+  </record>
+  <record id="nationality_monegasque" model="people.nationality">
+    <field name="name">Monégasque</field>
+  </record>
+  <!-- Enregistrements des nationalités commençant par la lettre "O" -->
+  <record id="nationality_oman" model="people.nationality">
+    <field name="name">Omani</field>
+  </record>
+
+  <!-- Enregistrements des nationalités commençant par la lettre "P" -->
+  <record id="nationality_pakistani" model="people.nationality">
+    <field name="name">Pakistanaise</field>
+  </record>
+  <record id="nationality_palauan" model="people.nationality">
+    <field name="name">Palaosienne</field>
+  </record>
+  <record id="nationality_palestinian" model="people.nationality">
+    <field name="name">Palestinienne</field>
+  </record>
+  <record id="nationality_panamanian" model="people.nationality">
+    <field name="name">Panaméenne</field>
+  </record>
+  <record id="nationality_papua_new_guinean" model="people.nationality">
+    <field name="name">Papouane-Néo-Guinéenne</field>
+  </record>
+  <record id="nationality_paraguayan" model="people.nationality">
+    <field name="name">Paraguayenne</field>
+  </record>
+  <record id="nationality_peruvian" model="people.nationality">
+    <field name="name">Péruvienne</field>
+  </record>
+  <record id="nationality_filipino" model="people.nationality">
+    <field name="name">Philippine</field>
+  </record>
+  <record id="nationality_polish" model="people.nationality">
+    <field name="name">Polonaise</field>
+  </record>
+  <record id="nationality_portuguese" model="people.nationality">
+    <field name="name">Portugaise</field>
+  </record>
+
+  <!-- Enregistrements des nationalités commençant par la lettre "Q" -->
+  <record id="nationality_qatari" model="people.nationality">
+    <field name="name">Qatarienne</field>
+  </record>
+
+  <!-- Enregistrements des nationalités commençant par la lettre "R" -->
+  <record id="nationality_romanian" model="people.nationality">
+    <field name="name">Roumaine</field>
+  </record>
+  <record id="nationality_russian" model="people.nationality">
+    <field name="name">Russe</field>
+  </record>
+  <record id="nationality_rwandan" model="people.nationality">
+    <field name="name">Rwandaise</field>
+  </record>
+
+  <!-- Enregistrements des nationalités commençant par la lettre "S" -->
+  <record id="nationality_saint_lucian" model="people.nationality">
+    <field name="name">Saint-Lucienne</field>
+  </record>
+  <record id="nationality_samoan" model="people.nationality">
+    <field name="name">Samoane</field>
+  </record>
+  <record id="nationality_sao_tomean" model="people.nationality">
+    <field name="name">São Toméenne</field>
+  </record>
+  <record id="nationality_senegalese" model="people.nationality">
+    <field name="name">Sénégalaise</field>
+  </record>
+  <record id="nationality_serbian" model="people.nationality">
+    <field name="name">Serbe</field>
+  </record>
+  <record id="nationality_seychellois" model="people.nationality">
+    <field name="name">Seychelloise</field>
+  </record>
+  <record id="nationality_sierra_leonean" model="people.nationality">
+    <field name="name">Sierra-Léonaise</field>
+  </record>
+  <record id="nationality_singaporean" model="people.nationality">
+    <field name="name">Singapourienne</field>
+  </record>
+  <record id="nationality_slovak" model="people.nationality">
+    <field name="name">Slovaque</field>
+  </record>
+  <record id="nationality_slovenian" model="people.nationality">
+    <field name="name">Slovène</field>
+  </record>
+  <record id="nationality_somali" model="people.nationality">
+    <field name="name">Somalienne</field>
+  </record>
+  <record id="nationality_south_sudanese" model="people.nationality">
+    <field name="name">Soudanaise du Sud</field>
+  </record>
+  <record id="nationality_south_african" model="people.nationality">
+    <field name="name">Sud-Africaine</field>
+  </record>
+  <record id="nationality_korean" model="people.nationality">
+    <field name="name">Sud-Coréenne</field>
+  </record>
+  <record id="nationality_sri_lankan" model="people.nationality">
+    <field name="name">Sri-Lankaise</field>
+  </record>
+  <!-- Enregistrements des nationalités commençant par la lettre "T" -->
+  <record id="nationality_swedish" model="people.nationality">
+    <field name="name">Suédoise</field>
+  </record>
+  <record id="nationality_swiss" model="people.nationality">
+    <field name="name">Suisse</field>
+  </record>
+  <record id="nationality_syrian" model="people.nationality">
+    <field name="name">Syrienne</field>
+  </record>
+  <record id="nationality_tajik" model="people.nationality">
+    <field name="name">Tadjike</field>
+  </record>
+  <record id="nationality_tanzanian" model="people.nationality">
+    <field name="name">Tanzanienne</field>
+  </record>
+  <record id="nationality_chadian" model="people.nationality">
+    <field name="name">Tchadienne</field>
+  </record>
+  <record id="nationality_ugandan" model="people.nationality">
+    <field name="name">Ougandaise</field>
+  </record>
+  <record id="nationality_uzbek" model="people.nationality">
+    <field name="name">Ouzbéke</field>
+  </record>
+  <!-- Enregistrements des nationalités commençant par la lettre "V" -->
+  <record id="nationality_vanuatuan" model="people.nationality">
+    <field name="name">Vanuatuane</field>
+  </record>
+  <record id="nationality_vatican" model="people.nationality">
+    <field name="name">Vaticanaise</field>
+  </record>
+  <record id="nationality_venezuelan" model="people.nationality">
+    <field name="name">Vénézuélienne</field>
+  </record>
+  <record id="nationality_vietnamese" model="people.nationality">
+    <field name="name">Vietnamienne</field>
+  </record>
+  <record id="nationality_yemeni" model="people.nationality">
+    <field name="name">Yéménite</field>
+  </record>
+  <record id="nationality_zambian" model="people.nationality">
+    <field name="name">Zambienne</field>
+  </record>
+  <record id="nationality_zimbabwean" model="people.nationality">
+    <field name="name">Zimbabwéenne</field>
+  </record>
+</odoo>

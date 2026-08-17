@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+  <record id="view_employee_form_inherit_trial_period" model="ir.ui.view">
+    <field name="name">hr.employee.form.inherit.trial.period</field>
+    <field name="model">hr.employee</field>
+    <field name="inherit_id" ref="hr.view_employee_form" />
+    <field name="arch" type="xml">
+      <xpath expr="//page[@name='work_information']" position="after">
+        <page name="trial_period" string="Période d'essai" groups="hr.group_hr_user">
+          <group>
+            <group string="1ère période d'essai">
+              <field name="trial_period_1_start" />
+              <field name="trial_period_1_end" />
+            </group>
+            <group string="2ème période d'essai">
+              <field name="trial_period_2_start" />
+              <field name="trial_period_2_end" />
+            </group>
+          </group>
+        </page>
+      </xpath>
+    </field>
+  </record>
+</odoo>

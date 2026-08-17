@@ -1,0 +1,138 @@
+// ---------------------------------------------------------------------
+// Document type selection grid (new request form) — plain HTML checkbox
+// + radio inputs styled as cards/pills, no JS: selection state is driven
+// entirely by :has()/:checked, consistent with this module's "no modal,
+// no JS for simple display state" convention.
+// ---------------------------------------------------------------------
+.o_etech_doc_type_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: .85rem;
+}
+
+.o_etech_doc_type_card {
+    border-radius: 14px;
+    border: 1px solid var(--bs-border-color, rgba(0, 0, 0, .1));
+    padding: .95rem 1.05rem;
+    transition: border-color .15s ease, background .15s ease, box-shadow .15s ease;
+
+    &:has(.o_etech_doc_type_check input:checked) {
+        border-color: #6366f1;
+        background: #f5f6ff;
+        box-shadow: 0 .3rem .75rem rgba(99, 102, 241, .12);
+    }
+}
+
+.o_etech_doc_type_check {
+    display: flex;
+    align-items: center;
+    gap: .65rem;
+    cursor: pointer;
+    margin-bottom: .75rem;
+
+    input[type="checkbox"] {
+        width: 1.1rem;
+        height: 1.1rem;
+        flex: none;
+        cursor: pointer;
+    }
+}
+
+.o_etech_doc_type_icon {
+    width: 34px;
+    height: 34px;
+    border-radius: 9px;
+    background: var(--bs-tertiary-bg, #f8f9fa);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: none;
+    font-size: .85rem;
+    color: #6c757d;
+}
+
+.o_etech_doc_type_name {
+    font-weight: 600;
+    font-size: .92rem;
+}
+
+// Segmented pill toggle for the electronic/physical choice — radio inputs
+// are visually hidden (not display:none, to keep them focusable/clickable
+// via their <label for=...>) and their <label> siblings rendered as pills.
+.o_etech_delivery_toggle {
+    display: inline-flex;
+    border-radius: 999px;
+    background: var(--bs-tertiary-bg, #f1f2f4);
+    padding: .2rem;
+    gap: .2rem;
+
+    input[type="radio"] {
+        position: absolute;
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    label {
+        margin: 0;
+        padding: .3rem .75rem;
+        border-radius: 999px;
+        font-size: .78rem;
+        font-weight: 600;
+        color: #6c757d;
+        cursor: pointer;
+        transition: background .15s ease, color .15s ease;
+        user-select: none;
+    }
+
+    input[type="radio"]:checked + label {
+        background: #fff;
+        color: #344054;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, .08);
+    }
+
+    input[type="radio"]:focus-visible + label {
+        outline: 2px solid #6366f1;
+        outline-offset: 1px;
+    }
+}
+
+// ---------------------------------------------------------------------
+// Request cards (landing list + detail page)
+// ---------------------------------------------------------------------
+.o_etech_request_card {
+    transition: box-shadow .15s ease;
+
+    &:hover {
+        box-shadow: 0 .4rem 1rem rgba(0, 0, 0, .06);
+    }
+}
+
+.o_etech_request_icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: var(--bs-tertiary-bg, #f8f9fa);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: none;
+    color: #6c757d;
+}
+
+.o_etech_doc_line_icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    background: var(--bs-tertiary-bg, #f8f9fa);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: none;
+    font-size: .8rem;
+    color: #6c757d;
+}
+
+.o_etech_doc_line:last-child {
+    border-bottom: none !important;
+}

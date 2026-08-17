@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+  <record id="hr_payroll.action_report_payslip" model="ir.actions.report">
+    <field name="report_name">mg_payroll_pdf_report.mg_report_payslip_lang</field>
+    <field name="report_file">mg_payroll_pdf_report.mg_report_payslip_lang</field>
+    <field
+      name="paperformat_id"
+      ref="mg_payroll_pdf_report.paperformat_payroll_report"
+    />
+  </record>
+</odoo>

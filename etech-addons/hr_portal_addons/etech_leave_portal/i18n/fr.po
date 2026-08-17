@@ -1,0 +1,658 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* etech_leave_portal
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-07-29 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.portal_leave_details
+msgid "Actions"
+msgstr "Actions"
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.create_leave_form
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.edit_leave_form
+msgid "Afternoon (PM)"
+msgstr "Après-midi (PM)"
+
+#. module: etech_leave_portal
+#. odoo-python
+#: code:addons/etech_leave_portal/controllers/portal_leave_controllers.py:0
+msgid "All"
+msgstr "Toutes"
+
+#. module: etech_leave_portal
+#. odoo-python
+#: code:addons/etech_leave_portal/controllers/create_leave_controller.py:0
+msgid "An error occurred while creating the leave request: %s"
+msgstr "Une erreur s'est produite lors de la création de la demande de congé : %s"
+
+#. module: etech_leave_portal
+#. odoo-python
+#: code:addons/etech_leave_portal/controllers/create_leave_controller.py:0
+msgid "An error occurred while updating the leave request: %s"
+msgstr "Une erreur s'est produite lors de la mise à jour de la demande de congé : %s"
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.leave_cards_view
+msgid "Approve"
+msgstr "Approuver"
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.portal_leave_details
+msgid "Approve Leave"
+msgstr "Approuver le congé"
+
+#. module: etech_leave_portal
+#. odoo-python
+#: code:addons/etech_leave_portal/controllers/portal_leave_controllers.py:0
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.edit_leave_form
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.leave_cards_view
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.portal_leave_details
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.portal_unified_leaves
+msgid "Approved"
+msgstr "Approuvé"
+
+#. module: etech_leave_portal
+#: model:ir.model,name:etech_leave_portal.model_ir_attachment
+msgid "Attachment"
+msgstr "Pièce jointe"
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.portal_leave_details
+msgid "Back to List"
+msgstr "Retour à la liste"
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.portal_unified_leaves
+msgid "Balance"
+msgstr "Solde"
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.create_leave_balance_card
+msgid "Balance updates automatically based on the selected employee."
+msgstr "Le solde se met à jour automatiquement selon l'employé sélectionné."
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.portal_unified_leaves
+msgid "Calendar"
+msgstr "Calendrier"
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.create_leave_form
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.edit_leave_form
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.leave_cards_view
+msgid "Cancel"
+msgstr "Annuler"
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.portal_leave_details
+msgid "Cancel Leave"
+msgstr "Annuler le congé"
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.edit_leave_form
+msgid "Cannot Update (Read-only)"
+msgstr "Impossible de modifier (Lecture seule)"
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.portal_unified_leaves
+msgid "Cards"
+msgstr "Cartes"
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.create_leave_form
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.edit_leave_form
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.leave_balance_modal
+msgid "Close"
+msgstr "Fermer"
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.portal_create_leave
+msgid "Create Leave Request"
+msgstr "Créer une demande de congé"
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.leave_cards_view
+msgid "Create Your First Leave"
+msgstr "Créer votre premier congé"
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.leave_cards_view
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.edit_leave_form
+msgid "Current Attachments:"
+msgstr "Pièces jointes actuelles :"
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.edit_leave_form
+msgid "Current Status:"
+msgstr "Statut actuel :"
+
+#. module: etech_leave_portal
+#. odoo-python
+#: code:addons/etech_leave_portal/controllers/create_leave_controller.py:0
+msgid "Date is required"
+msgstr "La date est requise"
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.create_leave_balance_card
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.leave_balance_card
+msgid "Days Available"
+msgstr "Jours disponibles"
+
+#. module: etech_leave_portal
+#. odoo-python
+#: code:addons/etech_leave_portal/controllers/portal_leave_controllers.py:0
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.portal_leave_details
+msgid "Department"
+msgstr "Département"
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.portal_leave_details
+msgid "Description"
+msgstr "Description"
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.leave_cards_view
+msgid "Description:"
+msgstr "Description :"
+
+#. module: etech_leave_portal
+#. odoo-python
+#: code:addons/etech_leave_portal/controllers/portal_leave_controllers.py:0
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.edit_leave_form
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.leave_cards_view
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.portal_unified_leaves
+msgid "Draft"
+msgstr "Brouillon"
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.portal_leave_details
+msgid "Duration"
+msgstr "Durée"
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.leave_cards_view
+msgid "Edit"
+msgstr "Modifier"
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.portal_leave_details
+msgid "Edit Leave"
+msgstr "Modifier le congé"
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.edit_leave_form
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.portal_edit_leave
+msgid "Edit Leave Request"
+msgstr "Modifier la demande de congé"
+
+#. module: etech_leave_portal
+#. odoo-python
+#: code:addons/etech_leave_portal/controllers/portal_leave_controllers.py:0
+#: model:ir.model,name:etech_leave_portal.model_hr_employee
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.leave_cards_view
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.portal_leave_details
+msgid "Employee"
+msgstr "Employé"
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.create_leave_form
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.edit_leave_form
+msgid "Employee *"
+msgstr "Employé *"
+
+#. module: etech_leave_portal
+#. odoo-python
+#: code:addons/etech_leave_portal/controllers/portal_leave_controllers.py:0
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.portal_leave_details
+msgid "End Date"
+msgstr "Date de fin"
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.create_leave_form
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.edit_leave_form
+msgid "End Date *"
+msgstr "Date de fin *"
+
+#. module: etech_leave_portal
+#. odoo-python
+#: code:addons/etech_leave_portal/controllers/create_leave_controller.py:0
+msgid "End date is required"
+msgstr "La date de fin est requise"
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.create_leave_form
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.edit_leave_form
+msgid "Error"
+msgstr "Erreur"
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.create_leave_form
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.edit_leave_form
+msgid "Half Day Leave"
+msgstr "Demi-journée de congé"
+
+#. module: etech_leave_portal
+#. odoo-python
+#: code:addons/etech_leave_portal/controllers/create_leave_controller.py:0
+msgid "Invalid date format: %s. Please use YYYY-MM-DD format."
+msgstr "Format de date invalide : %s. Veuillez utiliser le format AAAA-MM-JJ."
+
+#. module: etech_leave_portal
+#. odoo-python
+#: code:addons/etech_leave_portal/controllers/create_leave_controller.py:0
+msgid "Invalid employee selected."
+msgstr "Employé sélectionné invalide."
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.leave_balance_card
+msgid "Last Update:"
+msgstr "Dernière mise à jour :"
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.create_leave_balance_card
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.leave_balance_modal
+msgid "Leave Balance"
+msgstr "Solde de congés"
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.leave_calendar_view
+msgid "Leave Calendar"
+msgstr "Calendrier des congés"
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.portal_leave_details
+msgid "Leave Details"
+msgstr "Détails du congé"
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.portal_unified_leaves
+msgid "Leave Management"
+msgstr "Gestion des congés"
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.portal_leave_details
+msgid "Leave Request Details"
+msgstr "Détails de la demande de congé"
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.leave_balance_card
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.create_leave_balance_card
+msgid "Leave Taken:"
+msgstr "Congés pris :"
+
+#. module: etech_leave_portal
+#. odoo-python
+#: code:addons/etech_leave_portal/controllers/portal_leave_controllers.py:0
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.portal_leave_details
+msgid "Leave Type"
+msgstr "Type de congé"
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.create_leave_form
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.edit_leave_form
+msgid "Leave Type *"
+msgstr "Type de congé *"
+
+#. module: etech_leave_portal
+#. odoo-python
+#: code:addons/etech_leave_portal/controllers/create_leave_controller.py:0
+msgid "Leave request not found."
+msgstr "Demande de congé non trouvée."
+
+#. module: etech_leave_portal
+#. odoo-python
+#: code:addons/etech_leave_portal/controllers/create_leave_controller.py:0
+msgid "Leave request updated successfully."
+msgstr "Demande de congé mise à jour avec succès."
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.leave_cards_view
+msgid "leave(s)"
+msgstr "congé(s)"
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.leave_cards_view
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.portal_leave_details
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.portal_my_home_leave
+msgid "Leaves"
+msgstr "Congés"
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.leave_calendar_view
+msgid "Loading calendar view..."
+msgstr "Chargement de la vue calendrier..."
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.leave_calendar_view
+msgid "Loading calendar..."
+msgstr "Chargement du calendrier..."
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.portal_create_leave
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.portal_edit_leave
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.portal_unified_leaves
+msgid "My Leaves"
+msgstr "Mes congés"
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.portal_unified_leaves
+msgid "New Leave"
+msgstr "Nouveau congé"
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.create_leave_form
+msgid "New Leave Request"
+msgstr "Nouvelle demande de congé"
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.leave_cards_view
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.portal_leave_details
+msgid "No Department"
+msgstr "Aucun département"
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.leave_cards_view
+msgid "No leaves found"
+msgstr "Aucun congé trouvé"
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.leave_cards_view
+msgid "No team leave requests found."
+msgstr "Aucune demande de congé d'équipe trouvée."
+
+#. module: etech_leave_portal
+#. odoo-python
+#: code:addons/etech_leave_portal/controllers/portal_leave_controllers.py:0
+msgid "None"
+msgstr "Aucun"
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.create_leave_form
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.edit_leave_form
+msgid "Morning (AM)"
+msgstr "Matin (AM)"
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.edit_leave_form
+msgid ""
+"Only leave requests in \"Draft\" or \"To Approve\" state can be modified."
+msgstr ""
+"Seules les demandes de congé au statut \"Brouillon\" ou \"À approuver\" "
+"peuvent être modifiées."
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.create_leave_form
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.edit_leave_form
+msgid "Period"
+msgstr "Période"
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.create_leave_form
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.edit_leave_form
+msgid ""
+"Please attach any supporting documents if required for this leave type."
+msgstr "Veuillez joindre tout document justificatif si requis pour ce type de congé."
+
+#. module: etech_leave_portal
+#. odoo-python
+#: code:addons/etech_leave_portal/controllers/create_leave_controller.py:0
+msgid "Please fill all required fields."
+msgstr "Veuillez remplir tous les champs obligatoires."
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.create_leave_form
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.edit_leave_form
+msgid "Please provide a reason for your leave request..."
+msgstr "Veuillez indiquer une raison pour votre demande de congé..."
+
+#. module: etech_leave_portal
+#: model:ir.model.fields,field_description:etech_leave_portal.field_hr_leave__reason
+msgid "Reason"
+msgstr "Raison"
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.create_leave_form
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.edit_leave_form
+msgid "Reason *"
+msgstr "Raison *"
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.leave_cards_view
+msgid "Refuse"
+msgstr "Refuser"
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.portal_leave_details
+msgid "Refuse Leave"
+msgstr "Refuser le congé"
+
+#. module: etech_leave_portal
+#. odoo-python
+#: code:addons/etech_leave_portal/controllers/portal_leave_controllers.py:0
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.edit_leave_form
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.leave_cards_view
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.portal_unified_leaves
+msgid "Refused"
+msgstr "Refusé"
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.leave_balance_card
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.create_leave_balance_card
+msgid "Remaining Balance:"
+msgstr "Solde restant :"
+
+#. module: etech_leave_portal
+#. odoo-python
+#: code:addons/etech_leave_portal/controllers/portal_leave_controllers.py:0
+msgid "Search in All"
+msgstr "Rechercher dans tout"
+
+#. module: etech_leave_portal
+#. odoo-python
+#: code:addons/etech_leave_portal/controllers/portal_leave_controllers.py:0
+msgid "Search in Employee"
+msgstr "Rechercher dans les employés"
+
+#. module: etech_leave_portal
+#. odoo-python
+#: code:addons/etech_leave_portal/controllers/portal_leave_controllers.py:0
+msgid "Search in Leave Type"
+msgstr "Rechercher dans le type de congé"
+
+#. module: etech_leave_portal
+#. odoo-python
+#: code:addons/etech_leave_portal/controllers/portal_leave_controllers.py:0
+msgid "Search in Reason"
+msgstr "Rechercher dans la raison"
+
+#. module: etech_leave_portal
+#. odoo-python
+#: code:addons/etech_leave_portal/controllers/portal_leave_controllers.py:0
+msgid "Search in Registration Number"
+msgstr "Rechercher dans le matricule"
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.create_leave_form
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.edit_leave_form
+msgid "Select an employee..."
+msgstr "Sélectionner un employé..."
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.create_leave_form
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.edit_leave_form
+msgid "Select end date"
+msgstr "Sélectionner la date de fin"
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.create_leave_form
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.edit_leave_form
+msgid "Select leave type..."
+msgstr "Sélectionner un type de congé..."
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.create_leave_form
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.edit_leave_form
+msgid "Select start date"
+msgstr "Sélectionner la date de début"
+
+#. module: etech_leave_portal
+#. odoo-python
+#: code:addons/etech_leave_portal/controllers/portal_leave_controllers.py:0
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.portal_leave_details
+msgid "Start Date"
+msgstr "Date de début"
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.create_leave_form
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.edit_leave_form
+msgid "Start Date *"
+msgstr "Date de début *"
+
+#. module: etech_leave_portal
+#. odoo-python
+#: code:addons/etech_leave_portal/controllers/create_leave_controller.py:0
+msgid "Start date is required"
+msgstr "La date de début est requise"
+
+#. module: etech_leave_portal
+#. odoo-python
+#: code:addons/etech_leave_portal/controllers/portal_leave_controllers.py:0
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.portal_leave_details
+msgid "Status"
+msgstr "Statut"
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.create_leave_form
+msgid "Submit Request"
+msgstr "Soumettre la demande"
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.edit_leave_form
+msgid "Supporting Document"
+msgstr "Document justificatif"
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.create_leave_form
+msgid "Supporting Document *"
+msgstr "Document justificatif *"
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.portal_unified_leaves
+msgid "Team Leaves"
+msgstr "Congés de l'équipe"
+
+#. module: etech_leave_portal
+#. odoo-python
+#: code:addons/etech_leave_portal/controllers/create_leave_controller.py:0
+msgid "The start date must be before the end date."
+msgstr "La date de début doit être antérieure à la date de fin."
+
+#. module: etech_leave_portal
+#: model:ir.model,name:etech_leave_portal.model_hr_leave
+msgid "Time Off"
+msgstr "Congés"
+
+#. module: etech_leave_portal
+#. odoo-python
+#: code:addons/etech_leave_portal/controllers/portal_leave_controllers.py:0
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.edit_leave_form
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.leave_cards_view
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.portal_unified_leaves
+msgid "To Approve"
+msgstr "À approuver"
+
+#. module: etech_leave_portal
+#. odoo-python
+#: code:addons/etech_leave_portal/controllers/portal_leave_controllers.py:0
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.edit_leave_form
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.leave_cards_view
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.portal_unified_leaves
+msgid "To Validate"
+msgstr "À valider"
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.leave_balance_card
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.create_leave_balance_card
+msgid "Total Allocated:"
+msgstr "Total alloué :"
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.portal_unified_leaves
+msgid "Total Leaves"
+msgstr "Total des congés"
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.edit_leave_form
+msgid "Update Request"
+msgstr "Mettre à jour la demande"
+
+#. module: etech_leave_portal
+#: model:ir.model,name:etech_leave_portal.model_res_users
+msgid "User"
+msgstr "Utilisateur"
+
+#. module: etech_leave_portal
+#. odoo-python
+#: code:addons/etech_leave_portal/controllers/create_leave_controller.py:0
+msgid "You are not allowed to edit this leave request."
+msgstr "Vous n'êtes pas autorisé à modifier cette demande de congé."
+
+#. module: etech_leave_portal
+#. odoo-python
+#: code:addons/etech_leave_portal/controllers/create_leave_controller.py:0
+msgid ""
+"You can only edit leave requests that are in draft or to approve state."
+msgstr "Vous ne pouvez modifier que les demandes de congé au statut brouillon ou à approuver."
+
+#. module: etech_leave_portal
+#. odoo-python
+#: code:addons/etech_leave_portal/models/hr_leave.py:0
+msgid ""
+"You cannot first approve a time off for %s, because you are not his time off"
+" manager"
+msgstr ""
+"Vous ne pouvez pas d'abord approuver un congé pour %s, car vous n'êtes pas "
+"son responsable congés"
+
+#. module: etech_leave_portal
+#. odoo-python
+#: code:addons/etech_leave_portal/controllers/create_leave_controller.py:0
+msgid ""
+"You cannot set two leaves that overlap on the same day for the same "
+"employee."
+msgstr "Vous ne pouvez pas définir deux congés qui se chevauchent le même jour pour le même employé."
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.leave_cards_view
+msgid "You don't have any leave requests yet."
+msgstr "Vous n'avez encore aucune demande de congé."
+
+#. module: etech_leave_portal
+#. odoo-python
+#: code:addons/etech_leave_portal/models/hr_leave.py:0
+msgid ""
+"You don't have the rights to apply second approval on a time off request"
+msgstr ""
+"Vous n'avez pas le droit d'appliquer une deuxième approbation à une demande "
+"de congé"
+
+#. module: etech_leave_portal
+#: model_terms:ir.ui.view,arch_db:etech_leave_portal.portal_my_home_leave
+msgid "Your leaves history"
+msgstr "Historique de vos congés"

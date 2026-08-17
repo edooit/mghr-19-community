@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+    <record id="view_employee_filter_inherit" model="ir.ui.view">
+      <field name="name">view.employee.filter.inherit</field>
+      <field name="model">hr.employee</field>
+      <field name="inherit_id" ref="hr.view_employee_filter"/>
+      <field name="arch" type="xml">
+        <field name="job_id" position="after">
+          <field name="registration_number"/>
+        </field>
+        <xpath expr="//group/filter[@name='group_job']" position="after">
+          <filter string="Registration number" name="registration_number"
+                  context="{'group_by': 'registration_number'}"/>
+        </xpath>
+      </field>
+    </record>
+  </data>
+</odoo>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+  <record model="report.paperformat" id="paperformat_payroll_report">
+    <field name="name">Payrol Pdf</field>
+    <field name="format">A3</field>
+    <field name="orientation">Landscape</field>
+    <field name="margin_top">40</field>
+    <field name="margin_bottom">32</field>
+    <field name="margin_left">4</field>
+    <field name="margin_right">4</field>
+    <field name="header_spacing">35</field>
+    <field name="header_line">False</field>
+    <field name="dpi">90</field>
+  </record>
+</odoo>

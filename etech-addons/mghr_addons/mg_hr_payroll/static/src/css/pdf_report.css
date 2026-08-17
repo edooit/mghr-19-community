@@ -1,0 +1,39 @@
+@font-face {
+  font-weight: normal;
+  font-size: 20px;
+}
+@font-face {
+  font-weight: bold;
+  font-size: 20px;
+}
+.page {
+  font-weight: normal;
+  font-size: 18px;
+}
+@font-face {
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.contenue {
+  padding: 1px;
+}
+.ref {
+  font-style: italic;
+  text-decoration: underline;
+}
+.title,
+.title h1 {
+  font-weight: bold;
+  font-size: 30px;
+}
+.job {
+  margin-left: 10px;
+}
+.sexe {
+  margin-left: 30px;
+}
+.employee_name {
+  font-weight: bold;
+  font-size: 20px;
+}

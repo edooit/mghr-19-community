@@ -1,0 +1,390 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* mg_generate_pay_state
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0+e-20241114\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-20 14:27+0000\n"
+"PO-Revision-Date: 2025-01-20 14:27+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: mg_generate_pay_state
+#: model_terms:ir.ui.view,arch_db:mg_generate_pay_state.hr_payslip_config_view_form
+msgid "<span class=\"o_stat_text\">Pay state</span>"
+msgstr ""
+
+#. module: mg_generate_pay_state
+#: model:ir.model.fields,field_description:mg_generate_pay_state.field_payslip_resume__account_number
+msgid "Account Number"
+msgstr "Numéro de compte"
+
+#. module: mg_generate_pay_state
+#: model:ir.model.fields,field_description:mg_generate_pay_state.field_payslip_resume_column__appears_in_payslip_resume
+msgid "Appears In Payslip Resume"
+msgstr "Apparaît dans l'état de paie"
+
+#. module: mg_generate_pay_state
+#: model_terms:ir.ui.view,arch_db:mg_generate_pay_state.payslip_resume_column_view_form
+#: model_terms:ir.ui.view,arch_db:mg_generate_pay_state.payslip_resume_column_view_list
+msgid "Appears in the summary of the salary sheet"
+msgstr "Apparaît dans l'état de paie"
+
+#. module: mg_generate_pay_state
+#: model:ir.model.fields,field_description:mg_generate_pay_state.field_payslip_resume__bank_code
+msgid "Bank Code"
+msgstr "Code banque"
+
+#. module: mg_generate_pay_state
+#: model:ir.model.fields,field_description:mg_generate_pay_state.field_payslip_resume__bank_name
+#: model_terms:ir.ui.view,arch_db:mg_generate_pay_state.payslip_resume_view_search2
+msgid "Bank Name"
+msgstr "Nom de la banque"
+
+#. module: mg_generate_pay_state
+#: model:ir.model.fields,field_description:mg_generate_pay_state.field_payslip_resume__branch_code
+msgid "Branch Code"
+msgstr "Code agence"
+
+#. module: mg_generate_pay_state
+#: model:ir.model.fields.selection,name:mg_generate_pay_state.selection__payslip_resume__payslip_state__cancel
+msgid "Cancel"
+msgstr "Annulé"
+
+#. module: mg_generate_pay_state
+#: model:ir.model.fields,field_description:mg_generate_pay_state.field_payslip_resume__category
+msgid "Category"
+msgstr "Catégorie"
+
+#. module: mg_generate_pay_state
+#: model:ir.model.fields,field_description:mg_generate_pay_state.field_payslip_resume__cnaps_number
+msgid "Cnaps Number"
+msgstr "N° CNaPS"
+
+#. module: mg_generate_pay_state
+#: model:ir.model.fields,field_description:mg_generate_pay_state.field_payslip_resume_column__code
+msgid "Code"
+msgstr ""
+
+#. module: mg_generate_pay_state
+#: model:ir.model.fields,field_description:mg_generate_pay_state.field_hr_payslip_config__company_id
+#: model:ir.model.fields,field_description:mg_generate_pay_state.field_payslip_resume__company_id
+#: model_terms:ir.ui.view,arch_db:mg_generate_pay_state.payslip_resume_view_search2
+msgid "Company"
+msgstr "Société"
+
+#. module: mg_generate_pay_state
+#: model:ir.model.fields,field_description:mg_generate_pay_state.field_hr_payslip_config__create_uid
+#: model:ir.model.fields,field_description:mg_generate_pay_state.field_payslip_resume__create_uid
+#: model:ir.model.fields,field_description:mg_generate_pay_state.field_payslip_resume_column__create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: mg_generate_pay_state
+#: model:ir.model.fields,field_description:mg_generate_pay_state.field_hr_payslip_config__create_date
+#: model:ir.model.fields,field_description:mg_generate_pay_state.field_payslip_resume__create_date
+#: model:ir.model.fields,field_description:mg_generate_pay_state.field_payslip_resume_column__create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: mg_generate_pay_state
+#: model:ir.model.fields,field_description:mg_generate_pay_state.field_hr_payslip_config__department_id
+#: model:ir.model.fields,field_description:mg_generate_pay_state.field_payslip_resume__department_id
+#: model_terms:ir.ui.view,arch_db:mg_generate_pay_state.payslip_resume_view_search2
+msgid "Department"
+msgstr "Département"
+
+#. module: mg_generate_pay_state
+#. odoo-python
+#: code:addons/mg_generate_pay_state/models/hr_payslip_config.py:0
+#: model:ir.model.fields.selection,name:mg_generate_pay_state.selection__hr_payslip_config__view_mode__detailed
+msgid "Detailed"
+msgstr "Etat de paie"
+
+#. module: mg_generate_pay_state
+#: model:ir.model.fields,field_description:mg_generate_pay_state.field_hr_payslip_config__display_name
+#: model:ir.model.fields,field_description:mg_generate_pay_state.field_payslip_resume__display_name
+#: model:ir.model.fields,field_description:mg_generate_pay_state.field_payslip_resume_column__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: mg_generate_pay_state
+#: model:ir.model.fields.selection,name:mg_generate_pay_state.selection__payslip_resume__payslip_state__done
+msgid "Done"
+msgstr "Fait"
+
+#. module: mg_generate_pay_state
+#: model:ir.model.fields.selection,name:mg_generate_pay_state.selection__payslip_resume__payslip_state__draft
+msgid "Draft"
+msgstr "Brouillon"
+
+#. module: mg_generate_pay_state
+#: model:ir.model.fields,field_description:mg_generate_pay_state.field_payslip_resume__employee_id
+#: model_terms:ir.ui.view,arch_db:mg_generate_pay_state.payslip_resume_view_search2
+msgid "Employee"
+msgstr "Employé(e)"
+
+#. module: mg_generate_pay_state
+#: model:ir.model.fields,field_description:mg_generate_pay_state.field_payslip_resume__employee_name
+msgid "Employee Name"
+msgstr "Nom de l'employé(e)"
+
+#. module: mg_generate_pay_state
+#: model:ir.model.fields,field_description:mg_generate_pay_state.field_hr_payslip_config__date_to
+#: model:ir.model.fields,field_description:mg_generate_pay_state.field_payslip_resume__end_date
+#: model_terms:ir.ui.view,arch_db:mg_generate_pay_state.payslip_resume_view_search2
+msgid "End Date"
+msgstr "Date de fin"
+
+#. module: mg_generate_pay_state
+#: model:ir.model.fields.selection,name:mg_generate_pay_state.selection__payslip_resume__gender__female
+msgid "Female"
+msgstr "Féminin"
+
+#. module: mg_generate_pay_state
+#: model:ir.model.fields,field_description:mg_generate_pay_state.field_payslip_resume__gender
+msgid "Gender"
+msgstr "Genre"
+
+#. module: mg_generate_pay_state
+#: model:ir.ui.menu,name:mg_generate_pay_state.menu_hr_payslip_resume_report_parent
+msgid "Generate Pay state"
+msgstr "Gestion des états de paie"
+
+#. module: mg_generate_pay_state
+#: model_terms:ir.ui.view,arch_db:mg_generate_pay_state.hr_payslip_config_view_form
+msgid "Generate pay state"
+msgstr "Générer l'état de paie"
+
+#. module: mg_generate_pay_state
+#: model:ir.model.fields,field_description:mg_generate_pay_state.field_payslip_resume__group
+#: model_terms:ir.ui.view,arch_db:mg_generate_pay_state.payslip_resume_view_search2
+msgid "Group"
+msgstr "Groupe"
+
+#. module: mg_generate_pay_state
+#: model_terms:ir.ui.view,arch_db:mg_generate_pay_state.payslip_resume_view_search2
+msgid "Group By..."
+msgstr "Grouper par..."
+
+#. module: mg_generate_pay_state
+#: model:ir.model,name:mg_generate_pay_state.model_hr_payslip_config
+msgid "HR Payslip Configuration"
+msgstr ""
+
+#. module: mg_generate_pay_state
+#: model:ir.model,name:mg_generate_pay_state.model_payslip_resume
+msgid "HR Payslip Report"
+msgstr ""
+
+#. module: mg_generate_pay_state
+#: model:ir.model,name:mg_generate_pay_state.model_payslip_resume_column
+msgid "Hr Payslip Report dynamic column"
+msgstr ""
+
+#. module: mg_generate_pay_state
+#: model:ir.model.fields,field_description:mg_generate_pay_state.field_payslip_resume_column__hr_salary_rule_ids
+msgid "Hr Salary Rule"
+msgstr ""
+
+#. module: mg_generate_pay_state
+#: model:ir.model.fields,field_description:mg_generate_pay_state.field_hr_payslip_config__id
+#: model:ir.model.fields,field_description:mg_generate_pay_state.field_payslip_resume__id
+#: model:ir.model.fields,field_description:mg_generate_pay_state.field_payslip_resume_column__id
+msgid "ID"
+msgstr ""
+
+#. module: mg_generate_pay_state
+#: model:ir.model.fields,field_description:mg_generate_pay_state.field_payslip_resume__id_card_number
+msgid "Id Card Number"
+msgstr "CIN"
+
+#. module: mg_generate_pay_state
+#: model:ir.model.fields,field_description:mg_generate_pay_state.field_payslip_resume__job_position
+msgid "Job Position"
+msgstr "Poste"
+
+#. module: mg_generate_pay_state
+#: model:ir.model.fields,field_description:mg_generate_pay_state.field_payslip_resume__label
+msgid "Label"
+msgstr ""
+
+#. module: mg_generate_pay_state
+#: model:ir.model.fields,field_description:mg_generate_pay_state.field_hr_payslip_config__write_uid
+#: model:ir.model.fields,field_description:mg_generate_pay_state.field_payslip_resume__write_uid
+#: model:ir.model.fields,field_description:mg_generate_pay_state.field_payslip_resume_column__write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: mg_generate_pay_state
+#: model:ir.model.fields,field_description:mg_generate_pay_state.field_hr_payslip_config__write_date
+#: model:ir.model.fields,field_description:mg_generate_pay_state.field_payslip_resume__write_date
+#: model:ir.model.fields,field_description:mg_generate_pay_state.field_payslip_resume_column__write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour le"
+
+#. module: mg_generate_pay_state
+#: model:ir.model.fields.selection,name:mg_generate_pay_state.selection__payslip_resume__gender__male
+msgid "Male"
+msgstr "Mâle"
+
+#. module: mg_generate_pay_state
+#: model:ir.model.fields,field_description:mg_generate_pay_state.field_hr_payslip_config__name
+#: model:ir.model.fields,field_description:mg_generate_pay_state.field_payslip_resume_column__name
+msgid "Name"
+msgstr ""
+
+#. module: mg_generate_pay_state
+#: model:ir.model.fields,field_description:mg_generate_pay_state.field_payslip_resume__net_salary
+msgid "Net Salary"
+msgstr "Salaire net "
+
+#. module: mg_generate_pay_state
+#: model:ir.model.fields.selection,name:mg_generate_pay_state.selection__payslip_resume__payslip_state__paid
+msgid "Paid"
+msgstr "Payé"
+
+#. module: mg_generate_pay_state
+#: model:ir.model.fields,field_description:mg_generate_pay_state.field_payslip_resume__parent_department_id
+#: model_terms:ir.ui.view,arch_db:mg_generate_pay_state.payslip_resume_view_search2
+msgid "Parent Department"
+msgstr "Département parent"
+
+#. module: mg_generate_pay_state
+#: model:ir.actions.act_window,name:mg_generate_pay_state.action_hr_payslip_config
+#: model:ir.actions.act_window,name:mg_generate_pay_state.action_payslip_resume_view_detailed2
+#: model:ir.ui.menu,name:mg_generate_pay_state.menu_hr_payslip_resume_report
+msgid "Pay state"
+msgstr "Etat de paie"
+
+#. module: mg_generate_pay_state
+#: model:ir.actions.act_window,name:mg_generate_pay_state.payslip_resume_column_action
+#: model:ir.ui.menu,name:mg_generate_pay_state.payslip_resume_column_menu
+msgid "Pay state column"
+msgstr "Creation colonne état de paie"
+
+#. module: mg_generate_pay_state
+#: model:ir.model.fields,field_description:mg_generate_pay_state.field_payslip_resume__payment_mode
+#: model_terms:ir.ui.view,arch_db:mg_generate_pay_state.payslip_resume_view_search2
+msgid "Payment Mode"
+msgstr "Mode de paiement"
+
+#. module: mg_generate_pay_state
+#: model:ir.actions.act_window,name:mg_generate_pay_state.action_payslip_resume_view_simple2
+msgid "Payroll statement (simplified view)"
+msgstr ""
+
+#. module: mg_generate_pay_state
+#: model:ir.model.fields,field_description:mg_generate_pay_state.field_payslip_resume__payslip_batch_id
+#: model:ir.model.fields,field_description:mg_generate_pay_state.field_payslip_resume__payslip_run_id
+#: model_terms:ir.ui.view,arch_db:mg_generate_pay_state.payslip_resume_view_search2
+msgid "Payslip Batch"
+msgstr ""
+
+#. module: mg_generate_pay_state
+#: model:ir.model.fields,field_description:mg_generate_pay_state.field_payslip_resume__payslip_batch_name
+msgid "Payslip Batch Name"
+msgstr ""
+
+#. module: mg_generate_pay_state
+#: model:ir.model.fields,field_description:mg_generate_pay_state.field_payslip_resume__payslip_config_id
+msgid "Payslip Configuration"
+msgstr ""
+
+#. module: mg_generate_pay_state
+#: model:ir.model.fields,field_description:mg_generate_pay_state.field_payslip_resume__payslip_reference
+msgid "Payslip Reference"
+msgstr "Fiche de paie"
+
+#. module: mg_generate_pay_state
+#: model:ir.model.fields,field_description:mg_generate_pay_state.field_hr_payslip_config__payslip_resume_count
+msgid "Payslip Resume Count"
+msgstr ""
+
+#. module: mg_generate_pay_state
+#: model:ir.model.fields,field_description:mg_generate_pay_state.field_hr_payslip_config__payslip_resume_ids
+msgid "Payslip Resumes"
+msgstr "Etat de paie"
+
+#. module: mg_generate_pay_state
+#: model_terms:ir.ui.view,arch_db:mg_generate_pay_state.payslip_resume_view_search2
+#: model_terms:ir.ui.view,arch_db:mg_generate_pay_state.simple_payslip_resume_view_list2
+msgid "Payslip State"
+msgstr "Etat de paie"
+
+#. module: mg_generate_pay_state
+#. odoo-python
+#: code:addons/mg_generate_pay_state/models/hr_payslip_config.py:0
+msgid "Payslip State from %(start)s to %(end)s"
+msgstr ""
+
+#. module: mg_generate_pay_state
+#: model_terms:ir.ui.view,arch_db:mg_generate_pay_state.payslip_resume_view_search2
+msgid "Recherche Etat de Paie"
+msgstr ""
+
+#. module: mg_generate_pay_state
+#: model:ir.model.fields,field_description:mg_generate_pay_state.field_payslip_resume__registration_number
+msgid "Registration Number"
+msgstr "Matricule"
+
+#. module: mg_generate_pay_state
+#: model_terms:ir.ui.view,arch_db:mg_generate_pay_state.payslip_resume_column_view_form
+#: model_terms:ir.ui.view,arch_db:mg_generate_pay_state.payslip_resume_column_view_list
+msgid "Salary rule"
+msgstr "Règle de salaire"
+
+#. module: mg_generate_pay_state
+#: model:ir.model.fields.selection,name:mg_generate_pay_state.selection__hr_payslip_config__view_mode__simple
+msgid "Simple"
+msgstr ""
+
+#. module: mg_generate_pay_state
+#: model:ir.model.fields,field_description:mg_generate_pay_state.field_hr_payslip_config__date_from
+#: model:ir.model.fields,field_description:mg_generate_pay_state.field_payslip_resume__start_date
+#: model_terms:ir.ui.view,arch_db:mg_generate_pay_state.payslip_resume_view_search2
+msgid "Start Date"
+msgstr "Date de début"
+
+#. module: mg_generate_pay_state
+#: model:ir.model.fields,field_description:mg_generate_pay_state.field_payslip_resume__payslip_state
+msgid "State"
+msgstr "Etat"
+
+#. module: mg_generate_pay_state
+#: model:ir.model.fields.selection,name:mg_generate_pay_state.selection__payslip_resume__payslip_state__verify
+msgid "Verify"
+msgstr "En attente"
+
+#. module: mg_generate_pay_state
+#: model:ir.model.fields,field_description:mg_generate_pay_state.field_hr_payslip_config__view_mode
+msgid "View Mode"
+msgstr ""
+
+#. module: mg_generate_pay_state
+#: model:ir.model.fields,field_description:mg_generate_pay_state.field_payslip_resume__work_days
+msgid "Work Days"
+msgstr "Nbrs de jours"
+
+#. module: mg_generate_pay_state
+#: model:ir.model.fields,field_description:mg_generate_pay_state.field_payslip_resume__work_hours
+msgid "Work Hours"
+msgstr "Nbrs d'heures"
+
+#. module: mg_generate_pay_state
+#: model:ir.model.fields,field_description:mg_generate_pay_state.field_hr_payslip_config__work_location_id
+#: model:ir.model.fields,field_description:mg_generate_pay_state.field_payslip_resume__work_location_id
+msgid "Work Location"
+msgstr "Lieu de travail"
+
+#. module: mg_generate_pay_state
+#: model:ir.model.fields,field_description:mg_generate_pay_state.field_hr_payslip_config__work_zone_id
+#: model:ir.model.fields,field_description:mg_generate_pay_state.field_payslip_resume__work_zone_id
+msgid "Work Zone"
+msgstr "Zone"

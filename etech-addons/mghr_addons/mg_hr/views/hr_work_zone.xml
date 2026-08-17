@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id="hr_work_zone_form" model="ir.ui.view">
+    <field name="name">hr.work.zone.view.form</field>
+    <field name="model">hr.work.zone</field>
+    <field name="arch" type="xml">
+      <form>
+        <field name="name"/>
+      </form>
+    </field>
+  </record>
+  <record id="hr_work_zone_view_list" model="ir.ui.view">
+    <field name="name">hr.work.zone.view.list</field>
+    <field name="model">hr.work.zone</field>
+    <field name="arch" type="xml">
+      <list editable="bottom">
+        <field name="name"/>
+      </list>
+    </field>
+  </record>
+</odoo>

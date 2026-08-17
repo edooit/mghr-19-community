@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+  <record id="view_mg_payslip_input_list" model="ir.ui.view">
+    <field name="name">hr.payslip.input.list</field>
+    <field name="model">hr.payslip.input</field>
+    <field name="arch" type="xml">
+      <list editable="bottom" delete="1">
+        <field name="is_imported" column_invisible="1"/>
+        <field
+            name="date"
+            optional="show"
+            required="1"
+            readonly="is_imported"
+        />
+        <field
+            name="date_to"
+            optional="show"
+            required="1"
+            readonly="is_imported"
+        />
+        <field
+            name="employee_id"
+            optional="show"
+            readonly="is_imported"
+        />
+        <field
+            name="number"
+            readonly="is_imported"
+        />
+        
+        <field
+            name="input_type_id"
+            readonly="is_imported"
+        />
+        <field
+            name="code"
+            optional="hide"
+            readonly="is_imported"
+        />
+        <field
+            name="name"
+            readonly="is_imported"
+        />
+        <field
+            name="_allowed_input_type_ids"
+            column_invisible="1"
+        />
+        <field
+            name="amount"
+            readonly="is_imported"
+        />
+        <field
+            name="payslip_id"
+            optional="hide"
+            readonly="is_imported"
+        />
+        <field
+            name="sequence"
+            column_invisible="1"
+        />
+        <field
+            name="company_id"
+            column_invisible="0"
+        />
+      </list>
+    </field>
+  </record>
+</odoo>

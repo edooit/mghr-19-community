@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_hr_internal_classification_user,hr.internal.classification.user,model_hr_internal_classification,hr.group_hr_user,1,0,0,0
+access_hr_internal_classification_manager,hr.internal.classification.manager,model_hr_internal_classification,hr.group_hr_manager,1,1,1,1
+access_hr_dependent_user,hr.dependent.user,model_hr_dependent,hr.group_hr_user,1,0,0,0
+access_hr_dependent_manager,hr.dependent.manager,model_hr_dependent,hr.group_hr_manager,1,1,1,1
+mg_hr.access_hr_work_zone,access_hr_work_zone,mg_hr.model_hr_work_zone,base.group_user,1,1,1,1

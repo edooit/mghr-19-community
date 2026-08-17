@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+  <record model="hr.work.zone" id="zone_north">
+    <field name="name">Nord</field>
+  </record>
+    <record model="hr.work.zone" id="zone_south">
+    <field name="name">Sud</field>
+  </record>
+    <record model="hr.work.zone" id="zone_east">
+    <field name="name">Est</field>
+  </record>
+    <record model="hr.work.zone" id="zone_west">
+    <field name="name">Ouest</field>
+  </record>
+    <record model="hr.work.zone" id="zone_north_west">
+    <field name="name">Nord-Ouest</field>
+  </record>
+    <record model="hr.work.zone" id="zone_north_east">
+    <field name="name">Nord-Est</field>
+  </record>
+    <record model="hr.work.zone" id="zone_south_east">
+    <field name="name">Sud-Est</field>
+  </record>
+    <record model="hr.work.zone" id="zone_south_west">
+    <field name="name">Sud-Ouest</field>
+  </record>
+</odoo>

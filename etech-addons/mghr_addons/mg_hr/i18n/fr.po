@@ -1,0 +1,403 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* mg_hr
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0+e-20241114\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-03 07:38+0000\n"
+"PO-Revision-Date: 2024-12-03 07:38+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: mg_hr
+#. odoo-python
+#: code:addons/mg_hr/models/hr_dependent.py:0
+msgid "%(days)d day(s)"
+msgstr "%(days)d jour(s)"
+
+#. module: mg_hr
+#. odoo-python
+#: code:addons/mg_hr/models/hr_dependent.py:0
+msgid "%(months)d month(s)"
+msgstr "%(months)d mois"
+
+#. module: mg_hr
+#. odoo-python
+#: code:addons/mg_hr/models/hr_dependent.py:0
+msgid "%(years)d year(s)"
+msgstr "%(years)d an(s)"
+
+#. module: mg_hr
+#: model_terms:ir.ui.view,arch_db:mg_hr.view_employee_form_inherit
+msgid "<span invisible=\"not job_code\">(</span>"
+msgstr ""
+
+#. module: mg_hr
+#: model_terms:ir.ui.view,arch_db:mg_hr.view_employee_form_inherit
+msgid "<span invisible=\"not job_code\">)</span>"
+msgstr ""
+
+#. module: mg_hr
+#: model_terms:ir.ui.view,arch_db:mg_hr.view_employee_form_inherit
+msgid "<span>at</span>"
+msgstr "<span>à </span>"
+
+#. module: mg_hr
+#: model:ir.model.fields,field_description:mg_hr.field_hr_dependent__age_txt
+msgid "Age"
+msgstr ""
+
+#. module: mg_hr
+#: model:ir.model.fields,field_description:mg_hr.field_hr_dependent__age
+msgid "Age num"
+msgstr ""
+
+#. module: mg_hr
+#: model:ir.model.fields,field_description:mg_hr.field_hr_dependent__birthdate
+msgid "Birthdate"
+msgstr "Date de naissance"
+
+#. module: mg_hr
+#: model:ir.model.fields,field_description:mg_hr.field_hr_employee__cin_date_of_issue
+msgid "Cin Date Of Issue"
+msgstr "Délivré le"
+
+#. module: mg_hr
+#: model:ir.model.fields,field_description:mg_hr.field_hr_employee__cin_duplicate_date
+msgid "Cin Duplicate Date"
+msgstr "Dupliqué le"
+
+#. module: mg_hr
+#: model:ir.model.fields,field_description:mg_hr.field_hr_employee__cin_duplicate_place
+msgid "Cin Duplicate Place"
+msgstr "À ..."
+
+#. module: mg_hr
+#: model:ir.model.fields,field_description:mg_hr.field_hr_employee__cin_place_of_issue
+msgid "Cin Place Of Issue"
+msgstr "À ..."
+
+#. module: mg_hr
+#: model:ir.model.fields,field_description:mg_hr.field_hr_employee__cin_validity_date
+msgid "Cin Validity Date"
+msgstr "Date de validité du CIN"
+
+#. module: mg_hr
+#: model:ir.model.fields,field_description:mg_hr.field_hr_dependent__cnaps
+msgid "Cnaps"
+msgstr "CNaPs"
+
+#. module: mg_hr
+#: model:ir.model.fields,field_description:mg_hr.field_hr_employee__cnaps_number
+msgid "Cnaps Number"
+msgstr "Numéro CNAPS"
+
+#. module: mg_hr
+#: model:ir.model.fields,field_description:mg_hr.field_hr_dependent__create_uid
+#: model:ir.model.fields,field_description:mg_hr.field_hr_internal_classification__create_uid
+#: model:ir.model.fields,field_description:mg_hr.field_hr_work_zone__create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: mg_hr
+#: model:ir.model.fields,field_description:mg_hr.field_hr_dependent__create_date
+#: model:ir.model.fields,field_description:mg_hr.field_hr_internal_classification__create_date
+#: model:ir.model.fields,field_description:mg_hr.field_hr_work_zone__create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: mg_hr
+#: model:ir.model.fields,field_description:mg_hr.field_hr_employee__days
+msgid "Days"
+msgstr "Jours"
+
+#. module: mg_hr
+#: model:ir.model.fields,field_description:mg_hr.field_hr_employee__dependent_ids
+msgid "Dependent lines"
+msgstr "Lignes dépendantes"
+
+#. module: mg_hr
+#: model_terms:ir.ui.view,arch_db:mg_hr.dependent_hr_employee_view_form_inherit
+msgid "Dependents"
+msgstr "Enfants à charge"
+
+#. module: mg_hr
+#: model:ir.model.fields,field_description:mg_hr.field_hr_dependent__display_name
+#: model:ir.model.fields,field_description:mg_hr.field_hr_internal_classification__display_name
+#: model:ir.model.fields,field_description:mg_hr.field_hr_work_zone__display_name
+msgid "Display Name"
+msgstr "Nom affiché"
+
+#. module: mg_hr
+#: model:ir.model,name:mg_hr.model_hr_employee
+#: model:ir.model.fields,field_description:mg_hr.field_hr_dependent__employee_id
+msgid "Employee"
+msgstr "Employé"
+
+#. module: mg_hr
+#: model:ir.model,name:mg_hr.model_hr_contract
+msgid "Employee Contract"
+msgstr "Contrat de l'employé"
+
+#. module: mg_hr
+#: model:ir.model,name:mg_hr.model_hr_dependent
+msgid "Employee dependent"
+msgstr "Employé à charge"
+
+#. module: mg_hr
+#: model:ir.model.fields.selection,name:mg_hr.selection__hr_employee__spouse_gender__female
+msgid "Female"
+msgstr "Féminin"
+
+#. module: mg_hr
+#: model:ir.model.fields,field_description:mg_hr.field_hr_dependent__firstname
+msgid "Firstname"
+msgstr "Prénom"
+
+#. module: mg_hr
+#: model:ir.model.fields,field_description:mg_hr.field_hr_dependent__gender
+msgid "Gender"
+msgstr "Genre"
+
+#. module: mg_hr
+#: model:ir.model.fields,field_description:mg_hr.field_hr_employee__hiring_date
+msgid "Hiring date"
+msgstr "Date d'embauche"
+
+#. module: mg_hr
+#: model:ir.actions.act_window,name:mg_hr.hr_work_zone_action
+#: model:ir.ui.menu,name:mg_hr.hr_work_zone_menu
+msgid "Hr Work Zone"
+msgstr "Zone de travail"
+
+#. module: mg_hr
+#: model:ir.actions.act_window,name:mg_hr.action_hr_dependent
+#: model:ir.ui.menu,name:mg_hr.hr_dependent_menu
+msgid "Hr dependent"
+msgstr "Enfant à charge"
+
+#. module: mg_hr
+#: model:ir.model,name:mg_hr.model_hr_work_zone
+msgid "Hr work location zone"
+msgstr "Zone de travail"
+
+#. module: mg_hr
+#: model:ir.model.fields,field_description:mg_hr.field_hr_dependent__id
+#: model:ir.model.fields,field_description:mg_hr.field_hr_internal_classification__id
+#: model:ir.model.fields,field_description:mg_hr.field_hr_work_zone__id
+msgid "ID"
+msgstr ""
+
+#. module: mg_hr
+#: model:ir.model.fields,field_description:mg_hr.field_hr_contract__internal_classification
+#: model:ir.model.fields,field_description:mg_hr.field_hr_employee__internal_classification
+msgid "Internal Classification"
+msgstr "Classification interne"
+
+#. module: mg_hr
+#: model:ir.model,name:mg_hr.model_hr_internal_classification
+#: model_terms:ir.ui.view,arch_db:mg_hr.hr_contract_view_search_inherit
+msgid "Internal classification"
+msgstr "Classification interne"
+
+#. module: mg_hr
+#: model:ir.model.fields,field_description:mg_hr.field_hr_dependent__is_handicap
+msgid "Is Handicap"
+msgstr "Handicapé"
+
+#. module: mg_hr
+#: model:ir.model.fields,field_description:mg_hr.field_hr_employee__job_code
+#: model:ir.model.fields,field_description:mg_hr.field_hr_job__job_code
+msgid "Job Code"
+msgstr "Code poste"
+
+#. module: mg_hr
+#: model:ir.model,name:mg_hr.model_hr_job
+#: model_terms:ir.ui.view,arch_db:mg_hr.view_employee_form_inherit
+msgid "Job Position"
+msgstr "Poste"
+
+#. module: mg_hr
+#: model:ir.model.fields,field_description:mg_hr.field_hr_dependent__write_uid
+#: model:ir.model.fields,field_description:mg_hr.field_hr_internal_classification__write_uid
+#: model:ir.model.fields,field_description:mg_hr.field_hr_work_zone__write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: mg_hr
+#: model:ir.model.fields,field_description:mg_hr.field_hr_dependent__write_date
+#: model:ir.model.fields,field_description:mg_hr.field_hr_internal_classification__write_date
+#: model:ir.model.fields,field_description:mg_hr.field_hr_work_zone__write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour le"
+
+#. module: mg_hr
+#: model:ir.model.fields,field_description:mg_hr.field_hr_dependent__lastname
+msgid "Lastname"
+msgstr "Nom"
+
+#. module: mg_hr
+#: model:ir.model.fields.selection,name:mg_hr.selection__hr_employee__spouse_gender__male
+msgid "Male"
+msgstr "Masculin"
+
+#. module: mg_hr
+#: model:ir.model.fields,field_description:mg_hr.field_hr_employee__months
+msgid "Months"
+msgstr "Mois"
+
+#. module: mg_hr
+#: model:ir.model.fields,field_description:mg_hr.field_hr_internal_classification__name
+msgid "Name"
+msgstr "Nom"
+
+#. module: mg_hr
+#: model_terms:ir.ui.view,arch_db:mg_hr.hr_internal_classification_view_form
+msgid "Name of internal classification"
+msgstr "Nom de la classification interne"
+
+#. module: mg_hr
+#: model_terms:ir.ui.view,arch_db:mg_hr.view_employee_kanban_inherit
+msgid "Number :"
+msgstr "Matricule:"
+
+#. module: mg_hr
+#: model:ir.model.fields,field_description:mg_hr.field_hr_employee__children
+msgid "Number of Dependent Children"
+msgstr "Nombre d'enfants à charge"
+
+#. module: mg_hr
+#: model_terms:ir.ui.view,arch_db:mg_hr.view_employee_form_inherit
+msgid "N° CIN"
+msgstr ""
+
+#. module: mg_hr
+#. odoo-python
+#: code:addons/mg_hr/models/hr_dependent.py:0
+#: model:ir.model.fields.selection,name:mg_hr.selection__hr_dependent__gender__other
+#: model:ir.model.fields.selection,name:mg_hr.selection__hr_employee__spouse_gender__other
+msgid "Other"
+msgstr "Autre"
+
+#. module: mg_hr
+#: model:ir.model.fields,field_description:mg_hr.field_hr_employee__passport_validity_date
+msgid "Passport Validity Date"
+msgstr "Date de validité du passeport"
+
+#. module: mg_hr
+#: model:ir.model.fields,field_description:mg_hr.field_hr_dependent__registration_number
+msgid "Registration Number of the Employee"
+msgstr "Matricule de l'employé"
+
+#. module: mg_hr
+#: model_terms:ir.ui.view,arch_db:mg_hr.hr_dependent_view_list_filter
+msgid "Registration number"
+msgstr "Matricule"
+
+#. module: mg_hr
+#: model_terms:ir.ui.view,arch_db:mg_hr.hr_job_view_form_inherit
+msgid "SM"
+msgstr "SG"
+
+#. module: mg_hr
+#: model_terms:ir.ui.view,arch_db:mg_hr.hr_job_view_form_inherit
+msgid "Sales Manager"
+msgstr "Sécretaire Général"
+
+#. module: mg_hr
+#: model:ir.model.fields,field_description:mg_hr.field_hr_employee__seniority
+msgid "Seniority"
+msgstr "Ancienneté"
+
+#. module: mg_hr
+#: model:ir.model.fields,field_description:mg_hr.field_hr_employee__spouse_gender
+msgid "Spouse Gender"
+msgstr "Genre du conjoint"
+
+#. module: mg_hr
+#: model:ir.model,name:mg_hr.model_hr_work_location
+msgid "Work Location"
+msgstr "Lieu de travail"
+
+#. module: mg_hr
+#: model:ir.model.fields,field_description:mg_hr.field_hr_employee__work_zone_id
+#: model:ir.model.fields,field_description:mg_hr.field_hr_work_location__zone_id
+msgid "Work location zone"
+msgstr "Zone de travail"
+
+#. module: mg_hr
+#: model:ir.model.fields,field_description:mg_hr.field_hr_work_zone__name
+msgid "Work zone"
+msgstr "Zone de travail"
+
+#. module: mg_hr
+#: model:ir.model.fields,field_description:mg_hr.field_hr_employee__years
+msgid "Years"
+msgstr "ans"
+
+#. module: mg_hr
+#. odoo-python
+#: code:addons/mg_hr/models/hr_employee.py:0
+msgid "and"
+msgstr "et"
+
+#. module: mg_hr
+#. odoo-python
+#: code:addons/mg_hr/models/hr_employee.py:0
+msgid "day"
+msgstr "jour"
+
+#. module: mg_hr
+#. odoo-python
+#: code:addons/mg_hr/models/hr_employee.py:0
+msgid "days"
+msgstr "jours"
+
+#. module: mg_hr
+#: model_terms:ir.ui.view,arch_db:mg_hr.view_employee_form_inherit
+msgid "e.g. SG"
+msgstr "SG"
+
+#. module: mg_hr
+#. odoo-python
+#: code:addons/mg_hr/models/hr_dependent.py:0
+#: model:ir.model.fields.selection,name:mg_hr.selection__hr_dependent__gender__female
+msgid "female"
+msgstr "Féminin"
+
+#. module: mg_hr
+#. odoo-python
+#: code:addons/mg_hr/models/hr_dependent.py:0
+#: model:ir.model.fields.selection,name:mg_hr.selection__hr_dependent__gender__male
+msgid "male"
+msgstr "Masculin"
+
+#. module: mg_hr
+#. odoo-python
+#: code:addons/mg_hr/models/hr_employee.py:0
+msgid "month"
+msgstr "mois"
+
+#. module: mg_hr
+#. odoo-python
+#: code:addons/mg_hr/models/hr_employee.py:0
+msgid "months"
+msgstr "mois"
+
+#. module: mg_hr
+#. odoo-python
+#: code:addons/mg_hr/models/hr_employee.py:0
+msgid "year"
+msgstr "an"
+
+#. module: mg_hr
+#. odoo-python
+#: code:addons/mg_hr/models/hr_employee.py:0
+msgid "years"
+msgstr "ans"

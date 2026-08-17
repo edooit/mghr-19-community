@@ -1,0 +1,161 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* mg_payroll_pdf_report
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0+e-20251015\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-21 14:51+0000\n"
+"PO-Revision-Date: 2025-10-21 14:51+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: mg_payroll_pdf_report
+#: model_terms:ir.ui.view,arch_db:mg_payroll_pdf_report.mg_report_payslip_page
+msgid "<b>CIN:</b>"
+msgstr ""
+
+#. module: mg_payroll_pdf_report
+#: model_terms:ir.ui.view,arch_db:mg_payroll_pdf_report.mg_report_payslip_page
+msgid "<b>CNaPs:</b>"
+msgstr ""
+
+#. module: mg_payroll_pdf_report
+#: model_terms:ir.ui.view,arch_db:mg_payroll_pdf_report.mg_report_payslip_page
+msgid "<b>Cat.Prof:</b>"
+msgstr ""
+
+#. module: mg_payroll_pdf_report
+#: model_terms:ir.ui.view,arch_db:mg_payroll_pdf_report.mg_report_payslip_page
+msgid "<b>Contract type:</b>"
+msgstr "<b>Type de contrat:</b>"
+
+#. module: mg_payroll_pdf_report
+#: model_terms:ir.ui.view,arch_db:mg_payroll_pdf_report.mg_report_payslip_page
+msgid "<b>Current leave balance:</b>"
+msgstr "<b>Solde congé actuel:</b>"
+
+#. module: mg_payroll_pdf_report
+#: model_terms:ir.ui.view,arch_db:mg_payroll_pdf_report.mg_report_payslip_page
+msgid "<b>Department:</b>"
+msgstr "<b>Département:</b>"
+
+#. module: mg_payroll_pdf_report
+#: model_terms:ir.ui.view,arch_db:mg_payroll_pdf_report.mg_report_payslip_page
+msgid "<b>Dependent children:</b>"
+msgstr "<b>Enfants à charge:</b>"
+
+#. module: mg_payroll_pdf_report
+#: model_terms:ir.ui.view,arch_db:mg_payroll_pdf_report.mg_report_payslip_page
+msgid "<b>Firstname:</b>"
+msgstr "<b>Prénom(s):</b>"
+
+#. module: mg_payroll_pdf_report
+#: model_terms:ir.ui.view,arch_db:mg_payroll_pdf_report.mg_report_payslip_page
+msgid "<b>Hiring date:</b>"
+msgstr "<b>Date d'embauche:</b>"
+
+#. module: mg_payroll_pdf_report
+#: model_terms:ir.ui.view,arch_db:mg_payroll_pdf_report.mg_report_payslip_page
+msgid "<b>Index:</b>"
+msgstr "<b>Indice:</b>"
+
+#. module: mg_payroll_pdf_report
+#: model_terms:ir.ui.view,arch_db:mg_payroll_pdf_report.mg_report_payslip_page
+msgid "<b>Job:</b>"
+msgstr "<b>Poste:</b>"
+
+#. module: mg_payroll_pdf_report
+#: model_terms:ir.ui.view,arch_db:mg_payroll_pdf_report.mg_report_payslip_page
+msgid "<b>Monthly schedule :</b>"
+msgstr ""
+"<b>Horaire de base mensuel&gt;\n"
+"            </b>"
+
+#. module: mg_payroll_pdf_report
+#: model_terms:ir.ui.view,arch_db:mg_payroll_pdf_report.mg_report_payslip_page
+msgid "<b>Name:</b>"
+msgstr "<b>Nom:</b>"
+
+#. module: mg_payroll_pdf_report
+#: model_terms:ir.ui.view,arch_db:mg_payroll_pdf_report.mg_report_payslip_page
+msgid "<b>Number:</b>"
+msgstr "<b>Matricule:</b>"
+
+#. module: mg_payroll_pdf_report
+#: model_terms:ir.ui.view,arch_db:mg_payroll_pdf_report.mg_report_payslip_page
+msgid "<b>Passport:</b>"
+msgstr "<b>N° passeport:</b>"
+
+#. module: mg_payroll_pdf_report
+#: model_terms:ir.ui.view,arch_db:mg_payroll_pdf_report.mg_report_payslip_page
+msgid "<b>Payment method:</b>"
+msgstr "<b>Mode de paiement:</b>"
+
+#. module: mg_payroll_pdf_report
+#: model_terms:ir.ui.view,arch_db:mg_payroll_pdf_report.mg_report_payslip_page
+msgid "<b>Seniority:</b>"
+msgstr "<b>Ancienneté:</b>"
+
+#. module: mg_payroll_pdf_report
+#: model_terms:ir.ui.view,arch_db:mg_payroll_pdf_report.mg_report_payslip_page
+msgid "<b>Work location:</b>"
+msgstr "<b>Lieu de travail:</b>"
+
+#. module: mg_payroll_pdf_report
+#: model_terms:ir.ui.view,arch_db:mg_payroll_pdf_report.mg_report_payslip_page
+msgid "<b>Zone:</b>"
+msgstr ""
+
+#. module: mg_payroll_pdf_report
+#: model_terms:ir.ui.view,arch_db:mg_payroll_pdf_report.mg_report_payslip_page
+msgid "Base"
+msgstr ""
+
+#. module: mg_payroll_pdf_report
+#: model_terms:ir.ui.view,arch_db:mg_payroll_pdf_report.mg_report_payslip_page
+msgid "Deductions"
+msgstr ""
+
+#. module: mg_payroll_pdf_report
+#: model_terms:ir.ui.view,arch_db:mg_payroll_pdf_report.mg_report_payslip_page
+msgid "Description"
+msgstr ""
+
+#. module: mg_payroll_pdf_report
+#: model_terms:ir.ui.view,arch_db:mg_payroll_pdf_report.mg_report_payslip_page
+msgid "Gains"
+msgstr ""
+
+#. module: mg_payroll_pdf_report
+#: model_terms:ir.ui.view,arch_db:mg_payroll_pdf_report.custom_layout_standard
+msgid "Logo"
+msgstr ""
+
+#. module: mg_payroll_pdf_report
+#: model_terms:ir.ui.view,arch_db:mg_payroll_pdf_report.custom_layout_standard
+msgid ""
+"Page:\n"
+"              <span class=\"page\"/>\n"
+"              /\n"
+"              <span class=\"topage\"/>"
+msgstr ""
+
+#. module: mg_payroll_pdf_report
+#: model_terms:ir.ui.view,arch_db:mg_payroll_pdf_report.mg_report_payslip_page
+msgid ""
+"Payslip\n"
+"        -"
+msgstr ""
+"Bulletin de paie\n"
+"        -"
+
+#. module: mg_payroll_pdf_report
+#: model_terms:ir.ui.view,arch_db:mg_payroll_pdf_report.mg_report_payslip_page
+msgid "Rate"
+msgstr "Taux"

@@ -1,0 +1,9 @@
+<odoo>
+  <menuitem
+      id="menu_hr_payslip_payment_mode"
+      action="open_payslip_payment_mode_action"
+      parent="hr.menu_human_resources_configuration"
+      sequence="110"
+      groups="hr.group_hr_manager"
+  />
+</odoo>

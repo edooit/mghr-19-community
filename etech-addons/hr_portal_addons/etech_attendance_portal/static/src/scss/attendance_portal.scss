@@ -1,0 +1,16 @@
+.o_etech_attendance_accordion {
+    .accordion-button {
+        font-size: .9rem;
+
+        &::after {
+            flex: none;
+        }
+    }
+
+    .accordion-body {
+        background: var(--bs-body-bg, #fff);
+        border: 1px solid var(--bs-border-color, rgba(0, 0, 0, .08));
+        border-top: none;
+        border-radius: 0 0 10px 10px;
+    }
+}

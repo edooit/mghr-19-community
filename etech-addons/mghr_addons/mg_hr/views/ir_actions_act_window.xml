@@ -1,0 +1,13 @@
+<odoo>
+  <record id="action_hr_dependent" model="ir.actions.act_window">
+    <field name="name">Hr dependent</field>
+    <field name="res_model">hr.dependent</field>
+    <field name="view_mode">list,form</field>
+  </record>
+
+  <record id="hr_work_zone_action" model="ir.actions.act_window">
+    <field name="name">Hr Work Zone</field>
+    <field name="res_model">hr.work.zone</field>
+    <field name="view_mode">list,form</field>
+  </record>
+</odoo>

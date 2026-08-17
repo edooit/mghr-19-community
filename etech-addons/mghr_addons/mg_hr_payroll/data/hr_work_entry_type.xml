@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+  <record id="hr_work_entry.work_entry_type_attendance" model="hr.work.entry.type">
+    <field name="name">Nombre de jours travaillés</field>
+  </record>
+  <record id="hr_work_entry_type_maternity" model="hr.work.entry.type">
+    <field name="name">Congés de maternité</field>
+    <field name="code">MATERNITY_LEAVE</field>
+    <field name="is_unforeseen" eval="False" />
+  </record>
+  <record id="hr_work_entry_type_m_a_p" model="hr.work.entry.type">
+    <field name="name">Mise à pied</field>
+    <field name="code">LEAVE501</field>
+    <field name="is_unforeseen" eval="False" />
+  </record>
+</odoo>

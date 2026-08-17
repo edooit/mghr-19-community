@@ -1,0 +1,167 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* mg_hr_holidays
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-08 07:21+0000\n"
+"PO-Revision-Date: 2024-05-08 07:21+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: mg_hr_holidays
+#: model:ir.actions.report,print_report_name:mg_hr_holidays.action_report_hr_leave
+msgid "'Hr Leave'"
+msgstr "'Demande de conge'"
+
+#. module: mg_hr_holidays
+#: model_terms:ir.ui.view,arch_db:mg_hr_holidays.mg_hr_leave_template
+msgid "<span style=\"color: #464646;\">days</span>"
+msgstr "<span style=\"color: #464646;\">jours</span>"
+
+#. module: mg_hr_holidays
+#: model_terms:ir.ui.view,arch_db:mg_hr_holidays.mg_hr_leave_template
+msgid "<strong>REQUEST TIME OFF</strong>"
+msgstr "<strong>DEMANDE DE CONGE</strong>"
+
+#. module: mg_hr_holidays
+#: model:ir.model.fields,help:mg_hr_holidays.field_hr_leave_type__weekend_consideration
+msgid "Check this field to consider weekends when calculating leave duration."
+msgstr ""
+"Cochez ce champ pour prendre en compte les week-ends lors du calcul de la "
+"durée des congés."
+
+#. module: mg_hr_holidays
+#: model:ir.model.fields,help:mg_hr_holidays.field_hr_leave_type__days_30
+msgid ""
+"Check this field to define the duration of the type of leave to 30 days per "
+"month, it depends on the weekend functionality taken into account"
+msgstr ""
+"Cochez ce champ pour définir la durée du type de congé à 30 jours par "
+"mois,elle est dépendant de la fonctionnalité weekend prise en compte."
+
+#. module: mg_hr_holidays
+#: model_terms:ir.ui.view,arch_db:mg_hr_holidays.mg_hr_leave_template
+msgid "Coming back date:"
+msgstr "Date de reprise:"
+
+#. module: mg_hr_holidays
+#: model_terms:ir.ui.view,arch_db:mg_hr_holidays.mg_hr_leave_template
+msgid "Company signature"
+msgstr "Signature société"
+
+#. module: mg_hr_holidays
+#: model_terms:ir.ui.view,arch_db:mg_hr_holidays.mg_hr_leave_template
+msgid "Date leave request:"
+msgstr "Date de demande:"
+
+#. module: mg_hr_holidays
+#: model:ir.model.fields,field_description:mg_hr_holidays.field_hr_leave_type__days_30
+msgid "Days 30"
+msgstr "Est 30 jours"
+
+#. module: mg_hr_holidays
+#: model_terms:ir.ui.view,arch_db:mg_hr_holidays.mg_hr_leave_template
+msgid "Email"
+msgstr ""
+
+#. module: mg_hr_holidays
+#: model_terms:ir.ui.view,arch_db:mg_hr_holidays.mg_hr_leave_template
+msgid "Employee Name:"
+msgstr "Nom de l'employé:"
+
+#. module: mg_hr_holidays
+#: model_terms:ir.ui.view,arch_db:mg_hr_holidays.mg_hr_leave_template
+msgid "Employee Registrement Number:"
+msgstr "Matricule:"
+
+#. module: mg_hr_holidays
+#: model_terms:ir.ui.view,arch_db:mg_hr_holidays.mg_hr_leave_template
+msgid "Employee Signature"
+msgstr "Signature salarié"
+
+#. module: mg_hr_holidays
+#: model:ir.actions.report,name:mg_hr_holidays.action_report_hr_leave
+msgid "HR Leave Report"
+msgstr "Demande de congé"
+
+#. module: mg_hr_holidays
+#: model_terms:ir.ui.view,arch_db:mg_hr_holidays.mg_hr_leave_template
+msgid "Logo"
+msgstr ""
+
+#. module: mg_hr_holidays
+#: model_terms:ir.ui.view,arch_db:mg_hr_holidays.mg_hr_leave_template
+msgid "NIF"
+msgstr ""
+
+#. module: mg_hr_holidays
+#: model_terms:ir.ui.view,arch_db:mg_hr_holidays.mg_hr_leave_template
+msgid "Number of leave before request:"
+msgstr "Solde congé avant demande:"
+
+#. module: mg_hr_holidays
+#: model_terms:ir.ui.view,arch_db:mg_hr_holidays.mg_hr_leave_template
+msgid "Number of leave days:"
+msgstr "Nombre de congé pris:"
+
+#. module: mg_hr_holidays
+#: model_terms:ir.ui.view,arch_db:mg_hr_holidays.mg_hr_leave_template
+msgid "Number of leave left:"
+msgstr "Solde congé restant:"
+
+#. module: mg_hr_holidays
+#: model_terms:ir.ui.view,arch_db:mg_hr_holidays.mg_hr_leave_template
+msgid "RCS"
+msgstr ""
+
+#. module: mg_hr_holidays
+#: model_terms:ir.ui.view,arch_db:mg_hr_holidays.mg_hr_leave_template
+msgid "Role:"
+msgstr "Fonction:"
+
+#. module: mg_hr_holidays
+#: model_terms:ir.ui.view,arch_db:mg_hr_holidays.mg_hr_leave_template
+msgid "STAT"
+msgstr ""
+
+#. module: mg_hr_holidays
+#: model_terms:ir.ui.view,arch_db:mg_hr_holidays.mg_hr_leave_template
+msgid "Tel"
+msgstr "Téléphone"
+
+#. module: mg_hr_holidays
+#: model:ir.model,name:mg_hr_holidays.model_hr_leave
+msgid "Time Off"
+msgstr "Congés"
+
+#. module: mg_hr_holidays
+#: model:ir.model,name:mg_hr_holidays.model_hr_leave_type
+msgid "Time Off Type"
+msgstr "Type de congés"
+
+#. module: mg_hr_holidays
+#: model_terms:ir.ui.view,arch_db:mg_hr_holidays.mg_hr_leave_template
+msgid "Time off from:"
+msgstr "Congé à partir du:"
+
+#. module: mg_hr_holidays
+#: model_terms:ir.ui.view,arch_db:mg_hr_holidays.mg_hr_leave_template
+msgid "Time off type:"
+msgstr "Type de congé:"
+
+#. module: mg_hr_holidays
+#: model:ir.model.fields,field_description:mg_hr_holidays.field_hr_leave_type__weekend_consideration
+msgid "Weekend Consideration"
+msgstr "Week-end pris en compte"
+
+#. module: mg_hr_holidays
+#: model_terms:ir.ui.view,arch_db:mg_hr_holidays.mg_hr_leave_template
+msgid "to"
+msgstr "au"

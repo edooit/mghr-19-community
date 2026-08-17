@@ -1,0 +1,117 @@
+<odoo>
+  <template id="portal_layout_hidden" inherit_id="portal.portal_layout">
+    <xpath expr="//div[@id='wrap']/div[1]/t[1]/div[1]" position="attributes">
+      <attribute name="t-if">not employee_id</attribute>
+    </xpath>
+     <xpath expr="//div[@id='wrap']/div[1]/t[1]/div[2]/div[1]" position="attributes">
+      <attribute name="t-attf-class">o_portal_content col-12#{'' if employee_id else ' col-lg-8'} mb-5</attribute>
+    </xpath>
+    <xpath expr="//div[@id='wrap']/div[1]/t[1]/div[2]/div[2]" position="attributes">
+      <attribute name="t-if">not employee_id</attribute>
+    </xpath>
+    <xpath expr="//div[@id='wrap']/div[1]/t[1]/div[2]/div[3]" position="attributes">
+      <attribute name="t-if">not employee_id</attribute>
+    </xpath>
+  </template>
+
+  <template id="emp_info_header">
+    <div id="empInfo" class="o_etech_emp_header">
+      <div class="o_etech_emp_top">
+        <div class="o_etech_emp_avatar flex-shrink-0">
+          <img
+            class="rounded-circle o_object_fit_cover"
+            t-att-src="image_data_uri(employee_id.avatar_128)"
+            t-att-alt="employee_id.name"
+          />
+        </div>
+        <div class="o_etech_emp_identity">
+          <h3 class="mb-2">
+            <t t-esc="employee_id.name" />
+          </h3>
+          <div class="o_etech_emp_badges d-flex flex-wrap gap-2">
+            <span
+              t-if="employee_id.job_id"
+              class="badge rounded-pill o_etech_chip-primary fw-normal px-3 py-2"
+            ><i class="fa fa-briefcase me-1" /><t t-esc="employee_id.job_id.name" /></span>
+            <span
+              t-if="employee_id.department_id"
+              class="badge rounded-pill o_etech_chip-secondary fw-normal px-3 py-2"
+            ><i class="fa fa-building me-1" /><t t-esc="employee_id.department_id.name" /></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="o_etech_emp_grid">
+        <div class="o_etech_stat" t-if="employee_id.registration_number">
+          <small>Registration number</small>
+          <span><i class="fa fa-id-badge me-1" /><t t-esc="employee_id.registration_number" /></span>
+        </div>
+        <div class="o_etech_stat" t-if="employee_id.work_email">
+          <small>Email</small>
+          <span><i class="fa fa-envelope me-1" /><t t-esc="employee_id.work_email" /></span>
+        </div>
+        <div class="o_etech_stat" t-if="employee_id.category_id">
+          <small>Professional category</small>
+          <span><i class="fa fa-tags me-1" /><t t-esc="employee_id.category_id.name" /></span>
+        </div>
+        <div class="o_etech_stat" t-if="employee_id.group_id">
+          <small>Professional group</small>
+          <span><i class="fa fa-users me-1" /><t t-esc="employee_id.group_id.name" /></span>
+        </div>
+        <div class="o_etech_stat" t-if="employee_id.hiring_date">
+          <small>Hiring date</small>
+          <span>
+            <i class="fa fa-calendar-check-o me-1" />
+            <t t-esc="employee_id.hiring_date" t-options="{'widget': 'date'}" />
+          </span>
+        </div>
+        <div class="o_etech_stat" t-if="employee_id.seniority">
+          <small>Seniority</small>
+          <span><i class="fa fa-clock-o me-1" /><t t-esc="employee_id.seniority" /></span>
+        </div>
+      </div>
+
+      <t t-set="_leave_mgr_emp" t-value="employee_id.leave_manager_id.employee_id" />
+      <div class="o_etech_emp_contacts_static row g-3 mt-1" t-if="employee_id.parent_id or _leave_mgr_emp">
+        <div class="col-md-6" t-if="employee_id.parent_id">
+          <div class="o_etech_contact_card">
+            <img
+              class="rounded-circle o_object_fit_cover"
+              t-att-src="image_data_uri(employee_id.parent_id.avatar_128)"
+              t-att-alt="employee_id.parent_id.name"
+            />
+            <div class="o_etech_contact_info">
+              <small>Manager</small>
+              <strong t-esc="employee_id.parent_id.name" />
+              <span t-if="employee_id.parent_id.work_email">
+                <i class="fa fa-envelope me-1" /><t t-esc="employee_id.parent_id.work_email" />
+              </span>
+              <span t-if="employee_id.parent_id.work_phone">
+                <i class="fa fa-phone me-1" /><t t-esc="employee_id.parent_id.work_phone" />
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6" t-if="_leave_mgr_emp">
+          <div class="o_etech_contact_card">
+            <img
+              class="rounded-circle o_object_fit_cover"
+              t-att-src="image_data_uri(_leave_mgr_emp.avatar_128)"
+              t-att-alt="_leave_mgr_emp.name"
+            />
+            <div class="o_etech_contact_info">
+              <small>Respo. leave</small>
+              <strong t-esc="_leave_mgr_emp.name" />
+              <span t-if="_leave_mgr_emp.work_email">
+                <i class="fa fa-envelope me-1" /><t t-esc="_leave_mgr_emp.work_email" />
+              </span>
+              <span t-if="_leave_mgr_emp.work_phone">
+                <i class="fa fa-phone me-1" /><t t-esc="_leave_mgr_emp.work_phone" />
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </template>
+</odoo>

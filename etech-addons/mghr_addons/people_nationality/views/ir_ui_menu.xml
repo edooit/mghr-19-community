@@ -1,0 +1,8 @@
+<odoo>
+  <menuitem
+    id="menu_nationality"
+    name="Nationality"
+    action="people_nationality.action_nationality"
+    parent="contacts.menu_localisation"
+  />
+</odoo>

@@ -1,0 +1,299 @@
+// ---------------------------------------------------------------------
+// Reliable "subtle" chip colors and a neutral pill button — hardcoded
+// instead of Bootstrap 5.3 utilities (bg-*-subtle, text-*-emphasis,
+// bg-body-*) or var(--bs-*) with no fallback: those depend on CSS custom
+// properties / utility classes that are not reliably present in this
+// theme's compiled frontend CSS, which was silently leaving badges,
+// dashboard tiles and calendar events uncolored (invisible on their
+// background). Shared here (etech_home_portal) since every etech_*_portal
+// submodule loads in the same web.assets_frontend bundle.
+// ---------------------------------------------------------------------
+.o_etech_chip-primary { background: #cfe2ff; color: #084298; }
+.o_etech_chip-secondary { background: #e2e3e5; color: #41464b; }
+.o_etech_chip-info { background: #cff4fc; color: #055160; }
+.o_etech_chip-warning { background: #fff3cd; color: #664d03; }
+.o_etech_chip-success { background: #d1e7dd; color: #0f5132; }
+.o_etech_chip-danger { background: #f8d7da; color: #842029; }
+
+.o_etech_bg_soft { background: #f8f9fa !important; }
+
+// ---------------------------------------------------------------------
+// Shared building blocks reused across every etech_*_portal submodule
+// (dashboard stat tiles, small employee avatar, empty-state placeholder).
+// Kept here rather than duplicated per module since they all already
+// depend on etech_home_portal.
+// ---------------------------------------------------------------------
+.o_etech_leave_stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: .65rem;
+}
+
+.o_etech_stat_tile {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    padding: .8rem .95rem;
+    border-radius: 14px;
+    background: var(--bs-body-bg, #fff);
+    border: 1px solid var(--bs-border-color, rgba(0, 0, 0, .08));
+    transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+
+    .stat-icon {
+        width: 38px;
+        height: 38px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: none;
+        font-size: .95rem;
+    }
+
+    .stat-number {
+        font-size: 1.35rem;
+        font-weight: 700;
+        line-height: 1.15;
+        font-variant-numeric: tabular-nums;
+    }
+
+    .stat-label {
+        font-size: .74rem;
+        color: var(--bs-secondary-color, #6c757d);
+        white-space: nowrap;
+    }
+
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 .6rem 1.1rem rgba(0, 0, 0, .08);
+        border-color: var(--bs-border-color-translucent, rgba(0, 0, 0, .14));
+    }
+}
+
+.o_etech_employee_avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex: none;
+}
+
+.o_etech_card {
+    border-radius: 14px;
+    border: 1px solid var(--bs-border-color, rgba(0, 0, 0, .08));
+    background: var(--bs-body-bg, #fff);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
+    overflow: hidden;
+}
+
+.o_etech_empty_state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 4rem 1rem;
+    text-align: center;
+    color: var(--bs-secondary-color, #6c757d);
+
+    .o_etech_empty_icon {
+        width: 72px;
+        height: 72px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--bs-tertiary-bg, #f8f9fa);
+        font-size: 1.75rem;
+    }
+}
+
+// Neutral pill button — used wherever a plain bootstrap "primary"/"secondary"
+// button would clash with the module's own accent-free, sober button style.
+.btn-etech-outline {
+    border-radius: 999px;
+    border: 1px solid #d0d5dd;
+    background: #fff;
+    color: #344054;
+    font-weight: 600;
+    transition: background .15s ease, border-color .15s ease, color .15s ease;
+
+    &:hover, &:focus {
+        background: #f2f4f7;
+        border-color: #98a2b3;
+        color: #1d2939;
+    }
+
+    &.active {
+        background: #eef2ff;
+        border-color: #6366f1;
+        color: #3730a3;
+    }
+}
+
+// Same pill shape, for destructive actions (delete/cancel-with-loss) where a
+// neutral button would under-communicate the consequence.
+.btn-etech-outline-danger {
+    border-radius: 999px;
+    border: 1px solid #f8d7da;
+    background: #fff;
+    color: #b02a37;
+    font-weight: 600;
+    transition: background .15s ease, border-color .15s ease, color .15s ease;
+
+    &:hover, &:focus {
+        background: #f8d7da;
+        border-color: #dc3545;
+        color: #842029;
+    }
+}
+
+.o_portal_my_home {
+    // ---------------------------------------------------------------
+    // Employee header (avatar + identity + manager/leave-manager
+    // contact chips + info grid), replaces the generic portal cards
+    // for portal users linked to an hr.employee.
+    // ---------------------------------------------------------------
+    .o_etech_emp_header {
+        padding-bottom: 1.75rem;
+        margin-bottom: 1.75rem;
+        border-bottom: 1px solid var(--bs-border-color, rgba(0, 0, 0, .08));
+    }
+
+    .o_etech_emp_top {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 1.35rem;
+        margin-bottom: 1.4rem;
+    }
+
+    .o_etech_emp_avatar img {
+        width: 92px;
+        height: 92px;
+        object-fit: cover;
+        box-shadow: 0 0 0 3px var(--bs-body-bg, #fff), 0 0 0 4px var(--bs-border-color, rgba(0, 0, 0, .08));
+    }
+
+    .o_etech_emp_identity {
+        flex: 1 1 220px;
+
+        h3 {
+            font-weight: 700;
+            letter-spacing: -.01em;
+        }
+    }
+
+    // Static (non-interactive) manager / leave-manager contact cards —
+    // no JS, no modal: everything is shown directly.
+    .o_etech_contact_card {
+        display: flex;
+        align-items: center;
+        gap: .85rem;
+        height: 100%;
+        padding: .85rem 1rem;
+        border-radius: 12px;
+        border: 1px solid var(--bs-border-color, rgba(0, 0, 0, .1));
+        background: #f8f9fa;
+
+        > img {
+            width: 52px;
+            height: 52px;
+            object-fit: cover;
+            flex: none;
+        }
+    }
+
+    .o_etech_contact_info {
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+
+        > small {
+            font-size: .68rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: .05em;
+            color: #6c757d;
+        }
+
+        > strong {
+            font-size: .92rem;
+            margin-bottom: .15rem;
+        }
+
+        > span {
+            font-size: .8rem;
+            color: #5b655f;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+
+    .o_etech_emp_grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+        gap: .65rem;
+    }
+
+    .o_etech_stat {
+        padding: .6rem .85rem;
+        border-radius: 10px;
+        background: var(--bs-tertiary-bg, #f8f9fa);
+        min-width: 0;
+
+        small {
+            display: block;
+            font-size: .68rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: .045em;
+            color: var(--bs-secondary-color, #6c757d);
+            margin-bottom: .2rem;
+        }
+
+        span {
+            display: flex;
+            align-items: center;
+            font-size: .86rem;
+            font-weight: 500;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+
+            .fa {
+                opacity: .6;
+            }
+        }
+    }
+
+    // ---------------------------------------------------------------
+    // Hover animation on the module menu cards (leave, payslip, ...),
+    // only on the RH home where the employee header is present.
+    // ---------------------------------------------------------------
+    &:has(.o_etech_emp_header) .o_portal_index_card {
+        transition: transform .2s ease, box-shadow .2s ease;
+
+        > a {
+            transition: inherit;
+        }
+
+        &:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 .5rem 1.25rem rgba(0, 0, 0, .1);
+        }
+    }
+
+    // Some native/third-party modules (e.g. "documents") add their card by
+    // inserting directly inside .o_portal_docs instead of going through a
+    // named category div like the ones etech_home_portal already masks
+    // (portal_common_category, portal_alert_category, ...), so they slip
+    // through that masking untouched. Every one of our own module cards is
+    // always wrapped in an .o_portal_category row — so any .o_portal_index_card
+    // that is a DIRECT child of .o_portal_docs instead is, by construction,
+    // one of these unmasked native entries and should stay hidden here too.
+    &:has(.o_etech_emp_header) .o_portal_docs > .o_portal_index_card {
+        display: none !important;
+    }
+}

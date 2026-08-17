@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+  <record id="payslip_resume_column_view_form" model="ir.ui.view">
+    <field name="name">payslip_resume_column_view_form</field>
+    <field name="model">payslip.resume.column</field>
+    <field name="arch" type="xml">
+      <form>
+        <sheet>
+          <group>
+            <group>
+              <field name="name" />
+              <field name="code" />
+            </group>
+            <group>
+              <field
+                name="hr_salary_rule_ids"
+                widget="many2many_tags"
+                string="Salary rule"
+              />
+              <field
+                name="appears_in_payslip_resume"
+                string="Appears in the summary of the salary sheet"
+              />
+            </group>
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
+  <record id="payslip_resume_column_view_list" model="ir.ui.view">
+    <field name="name">hr_payslip_resume_column_view_list</field>
+    <field name="model">payslip.resume.column</field>
+    <field name="arch" type="xml">
+      <list name="generic_hr_payslip_resume_column_list">
+        <field name="name" />
+        <field name="code" />
+        <field
+          name="hr_salary_rule_ids"
+          widget="many2many_tags"
+          string="Salary rule"
+        />
+        <field
+          name="appears_in_payslip_resume"
+          string="Appears in the summary of the salary sheet"
+        />
+      </list>
+    </field>
+  </record>
+</odoo>

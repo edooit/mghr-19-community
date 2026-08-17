@@ -1,0 +1,112 @@
+<!-- portal_leave_details.xml -->
+<odoo>
+  <template id="portal_leave_details">
+    <t t-call="portal.portal_layout">
+      <t t-set="breadcrumbs_searchbar" t-value="False" />
+      <t t-set="_state_variant" t-value="{'draft': 'secondary', 'confirm': 'info', 'validate1': 'warning', 'validate': 'success', 'refuse': 'danger'}" />
+      <t t-set="_state_label" t-value="{'draft': 'Draft', 'confirm': 'To Approve', 'validate1': 'To Validate', 'validate': 'Approved', 'refuse': 'Refused'}" />
+
+      <div class="container mt-3">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/my/leaves">Leaves</a></li>
+            <li class="breadcrumb-item active">Leave Details</li>
+          </ol>
+        </nav>
+
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="o_etech_leave_card">
+              <div t-attf-class="o_etech_leave_card_header o_etech_chip-#{_state_variant.get(leave.state, 'secondary')}">
+                <i class="fa fa-file-text-o me-2" />Leave Request Details
+              </div>
+              <div class="o_etech_leave_card_body p-4">
+                <div class="row mb-3">
+                  <div class="col-md-6">
+                    <label class="fw-bold text-muted d-block">Employee</label>
+                    <div class="d-flex align-items-center">
+                      <img t-att-src="image_data_uri(leave.employee_id.avatar_128)" class="o_etech_employee_avatar me-2" alt="Employee" />
+                      <div>
+                        <div t-esc="leave.employee_id.name" />
+                        <small class="text-muted" t-esc="leave.employee_id.job_title or 'Employee'" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="fw-bold text-muted d-block">Department</label>
+                    <div t-esc="leave.employee_id.department_id.name or 'No Department'" />
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <div class="col-md-6">
+                    <label class="fw-bold text-muted d-block">Leave Type</label>
+                    <div t-esc="leave.holiday_status_id.name" />
+                  </div>
+                  <div class="col-md-6">
+                    <label class="fw-bold text-muted d-block">Status</label>
+                    <span t-attf-class="badge rounded-pill o_etech_chip-#{_state_variant.get(leave.state, 'secondary')}"
+                          t-esc="_state_label.get(leave.state, leave.state)" />
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <div class="col-md-6">
+                    <label class="fw-bold text-muted d-block">Start Date</label>
+                    <div t-esc="leave.date_from.strftime('%d/%m/%Y %H:%M')" />
+                  </div>
+                  <div class="col-md-6">
+                    <label class="fw-bold text-muted d-block">End Date</label>
+                    <div t-esc="leave.date_to.strftime('%d/%m/%Y %H:%M')" />
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <label class="fw-bold text-muted d-block">Duration</label>
+                  <span class="badge bg-primary fs-6" t-esc="leave.duration_display" />
+                  <span t-if="leave.request_unit_half" class="badge rounded-pill o_etech_chip-secondary ms-2">
+                    <span t-field="leave.request_date_from_period" />
+                  </span>
+                </div>
+
+                <div t-if="leave.name" class="mb-0">
+                  <label class="fw-bold text-muted d-block">Description</label>
+                  <div class="o_etech_leave_meta" t-esc="leave.name" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="o_etech_leave_card">
+              <div class="o_etech_leave_card_header">Actions</div>
+              <div class="o_etech_leave_card_body p-3">
+                <div class="d-grid gap-2">
+                  <a href="/my/leaves" class="btn btn-etech-outline">
+                    <i class="fa fa-arrow-left me-1" />Back to List
+                  </a>
+                  <t t-if="can_approve and leave.state == 'confirm'">
+                    <a t-attf-href="/confirm/#{leave.id}" class="btn btn-success">
+                      <i class="fa fa-check me-1" />Approve Leave
+                    </a>
+                    <a t-attf-href="/refuse/#{leave.id}" class="btn btn-danger">
+                      <i class="fa fa-times me-1" />Refuse Leave
+                    </a>
+                  </t>
+                  <t t-if="is_own_leave and leave.state in ['draft', 'confirm']">
+                    <a t-attf-href="/my/leaves/edit/#{leave.id}" class="btn btn-info">
+                      <i class="fa fa-edit me-1" />Edit Leave
+                    </a>
+                    <a t-attf-href="/leave/cancel/#{leave.id}" class="btn btn-outline-danger">
+                      <i class="fa fa-trash me-1" />Cancel Leave
+                    </a>
+                  </t>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </t>
+  </template>
+</odoo>

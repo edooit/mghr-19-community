@@ -1,0 +1,9 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_portal_hr_leave,access.portal.hr.leave,hr_holidays.model_hr_leave,base.group_portal,1,1,1,1
+access_portal_hr_leave_allocation,access.portal.hr.leave.allocation,hr_holidays.model_hr_leave_allocation,base.group_portal,1,0,0,0
+access_portal_hr_leave_type,access.portal.hr.leave.type,hr_holidays.model_hr_leave_type,base.group_portal,1,0,0,0
+access_portal_hr_employee_public,access.portal.hr.employee.public,hr.model_hr_employee_public,base.group_portal,1,1,1,0
+access_portal_mail_activity,access.portal.mail.activity,mail.model_mail_activity,base.group_portal,1,1,1,0
+access_user_mail_activity,access.user.mail.activity,mail.model_mail_activity,base.group_user,1,1,1,0
+access_portal_hr_employee,access.portal.hr.employee,hr.model_hr_employee,base.group_portal,1,1,1,0
+access_portal_hr_department,access.portal.hr.department,hr.model_hr_department,base.group_portal,1,1,1,0

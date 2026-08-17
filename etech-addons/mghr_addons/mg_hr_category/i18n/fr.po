@@ -1,0 +1,216 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* mg_hr_category
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0+e-20260112\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-27 22:12+0000\n"
+"PO-Revision-Date: 2026-01-27 22:12+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: mg_hr_category
+#: model:hr.contract.type,name:mg_hr_category.cdd
+msgid "CDD"
+msgstr ""
+
+#. module: mg_hr_category
+#: model:hr.contract.type,name:mg_hr_category.cdi
+msgid "CDI"
+msgstr ""
+
+#. module: mg_hr_category
+#: model:ir.ui.menu,name:mg_hr_category.menu_group_view
+msgid "Category Group"
+msgstr "Groupe"
+
+#. module: mg_hr_category
+#: model_terms:ir.ui.view,arch_db:mg_hr_category.view_hr_contract_category_form
+msgid "Category name"
+msgstr "Nom"
+
+#. module: mg_hr_category
+#: model:ir.actions.act_window,name:mg_hr_category.hr_contract_group_view_action
+msgid "Contract Category Group"
+msgstr ""
+
+#. module: mg_hr_category
+#: model:ir.actions.act_window,name:mg_hr_category.hr_contract_category_view_action
+msgid "Contract category"
+msgstr "Categories"
+
+#. module: mg_hr_category
+#: model:ir.ui.menu,name:mg_hr_category.contrat_root
+msgid "Contrat"
+msgstr ""
+
+#. module: mg_hr_category
+#: model:ir.model.fields,field_description:mg_hr_category.field_hr_contract_category__create_uid
+#: model:ir.model.fields,field_description:mg_hr_category.field_hr_contract_group__create_uid
+#: model:ir.model.fields,field_description:mg_hr_category.field_hr_contract_index__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: mg_hr_category
+#: model:ir.model.fields,field_description:mg_hr_category.field_hr_contract_category__create_date
+#: model:ir.model.fields,field_description:mg_hr_category.field_hr_contract_group__create_date
+#: model:ir.model.fields,field_description:mg_hr_category.field_hr_contract_index__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: mg_hr_category
+#: model:ir.model.fields,field_description:mg_hr_category.field_hr_contract_category__description
+msgid "Description"
+msgstr ""
+
+#. module: mg_hr_category
+#: model:ir.model.fields,field_description:mg_hr_category.field_hr_contract_category__display_name
+#: model:ir.model.fields,field_description:mg_hr_category.field_hr_contract_group__display_name
+#: model:ir.model.fields,field_description:mg_hr_category.field_hr_contract_index__display_name
+#: model:ir.model.fields,field_description:mg_hr_category.field_hr_employee__display_name
+msgid "Display Name"
+msgstr "Nom d'affichage"
+
+#. module: mg_hr_category
+#: model:ir.model.fields,field_description:mg_hr_category.field_hr_contract_group__month
+msgid "Duration"
+msgstr "Durée"
+
+#. module: mg_hr_category
+#: model:ir.model,name:mg_hr_category.model_hr_employee
+msgid "Employee"
+msgstr "Employé"
+
+#. module: mg_hr_category
+#: model:ir.model.fields,field_description:mg_hr_category.field_hr_contract_category__group_id
+#: model:ir.model.fields,field_description:mg_hr_category.field_hr_contract_index__group_id
+#: model:ir.model.fields,field_description:mg_hr_category.field_hr_employee__group_id
+msgid "Group"
+msgstr ""
+
+#. module: mg_hr_category
+#: model:hr.contract.group,name:mg_hr_category.group1
+msgid "Group 1"
+msgstr ""
+
+#. module: mg_hr_category
+#: model:hr.contract.group,name:mg_hr_category.group2
+msgid "Group 2"
+msgstr ""
+
+#. module: mg_hr_category
+#: model:hr.contract.group,name:mg_hr_category.group3
+msgid "Group 3"
+msgstr ""
+
+#. module: mg_hr_category
+#: model:hr.contract.group,name:mg_hr_category.group4
+msgid "Group 4"
+msgstr ""
+
+#. module: mg_hr_category
+#: model:hr.contract.group,name:mg_hr_category.group5
+msgid "Group 5"
+msgstr ""
+
+#. module: mg_hr_category
+#: model:ir.ui.menu,name:mg_hr_category.menu_hr_contract_index_view
+msgid "Group Index"
+msgstr ""
+
+#. module: mg_hr_category
+#: model:ir.actions.act_window,name:mg_hr_category.hr_contract_index_view_action
+msgid "Group index"
+msgstr ""
+
+#. module: mg_hr_category
+#: model_terms:ir.ui.view,arch_db:mg_hr_category.view_hr_contract_group_form
+msgid "Group name"
+msgstr ""
+
+#. module: mg_hr_category
+#: model:ir.model,name:mg_hr_category.model_hr_contract_index
+msgid "HR Contract Index"
+msgstr "Index"
+
+#. module: mg_hr_category
+#: model:ir.model,name:mg_hr_category.model_hr_contract_category
+msgid "HR Contract category"
+msgstr ""
+
+#. module: mg_hr_category
+#: model:ir.model,name:mg_hr_category.model_hr_contract_group
+msgid "Hr Contract Group"
+msgstr "Groupes"
+
+#. module: mg_hr_category
+#: model:ir.model.fields,field_description:mg_hr_category.field_hr_contract_category__id
+#: model:ir.model.fields,field_description:mg_hr_category.field_hr_contract_group__id
+#: model:ir.model.fields,field_description:mg_hr_category.field_hr_contract_index__id
+#: model:ir.model.fields,field_description:mg_hr_category.field_hr_employee__id
+msgid "ID"
+msgstr ""
+
+#. module: mg_hr_category
+#: model:ir.model.fields,field_description:mg_hr_category.field_hr_contract_group__index
+#: model:ir.model.fields,field_description:mg_hr_category.field_hr_contract_index__index
+#: model:ir.model.fields,field_description:mg_hr_category.field_hr_employee__index_id
+msgid "Index"
+msgstr ""
+
+#. module: mg_hr_category
+#: model:ir.model.fields,field_description:mg_hr_category.field_hr_contract_group__index_ids
+msgid "Indexes"
+msgstr ""
+
+#. module: mg_hr_category
+#: model:ir.model.fields,field_description:mg_hr_category.field_hr_contract_category__is_manager
+msgid "Is Manager"
+msgstr "Est un manager?"
+
+#. module: mg_hr_category
+#: model:ir.model.fields,field_description:mg_hr_category.field_hr_contract_category__write_uid
+#: model:ir.model.fields,field_description:mg_hr_category.field_hr_contract_group__write_uid
+#: model:ir.model.fields,field_description:mg_hr_category.field_hr_contract_index__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: mg_hr_category
+#: model:ir.model.fields,field_description:mg_hr_category.field_hr_contract_category__write_date
+#: model:ir.model.fields,field_description:mg_hr_category.field_hr_contract_group__write_date
+#: model:ir.model.fields,field_description:mg_hr_category.field_hr_contract_index__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: mg_hr_category
+#: model:ir.model.fields,field_description:mg_hr_category.field_hr_contract_category__name
+#: model:ir.model.fields,field_description:mg_hr_category.field_hr_contract_group__name
+msgid "Name"
+msgstr "Nom"
+
+#. module: mg_hr_category
+#: model:ir.model.fields,field_description:mg_hr_category.field_hr_employee__notice
+msgid "Notice"
+msgstr "Préavis"
+
+#. module: mg_hr_category
+#: model:ir.model.fields,field_description:mg_hr_category.field_hr_employee__category_id
+#: model:ir.ui.menu,name:mg_hr_category.menu_category_view
+msgid "Professional category"
+msgstr "Categorie professionnelle"
+
+#. module: mg_hr_category
+#: model:hr.contract.type,name:mg_hr_category.provider
+msgid "Provider"
+msgstr "Prestataire"
+
+#. module: mg_hr_category
+#: model_terms:ir.ui.view,arch_db:mg_hr_category.view_hr_contract_group_form
+msgid "months"
+msgstr "mois"

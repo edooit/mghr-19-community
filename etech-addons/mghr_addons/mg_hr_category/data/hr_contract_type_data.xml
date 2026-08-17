@@ -1,0 +1,14 @@
+<odoo noupdate="1">
+  <record id="cdi" model="hr.contract.type">
+    <field name="name">CDI</field>
+    <field name="code">cdi</field>
+  </record>
+  <record id="cdd" model="hr.contract.type">
+    <field name="name">CDD</field>
+    <field name="code">cdd</field>
+  </record>
+  <record id="provider" model="hr.contract.type">
+    <field name="name">Provider</field>
+    <field name="code">provider</field>
+  </record>
+</odoo>

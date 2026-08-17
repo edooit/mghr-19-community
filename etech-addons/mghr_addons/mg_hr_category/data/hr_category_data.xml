@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+    <record model="hr.contract.group" id="group1">
+        <field name="name">Group 1</field>
+        <field name="month">3</field>
+    </record>
+    <record model="hr.contract.group" id="group2">
+        <field name="name">Group 2</field>
+        <field name="month">3</field>
+    </record>
+    <record model="hr.contract.group" id="group3">
+        <field name="name">Group 3</field>
+        <field name="month">3</field>
+    </record>
+    <record model="hr.contract.group" id="group4">
+        <field name="name">Group 4</field>
+        <field name="month">4</field>
+    </record>
+    <record model="hr.contract.group" id="group5">
+        <field name="name">Group 5</field>
+        <field name="month">6</field>
+    </record>
+    <record model="hr.contract.category" id="M1G1">
+        <field name="name">M1</field>
+        <field name="group_id" ref="group1" />
+    </record>
+    <record model="hr.contract.category" id="M2G1">
+        <field name="name">M2</field>
+        <field name="group_id" ref="group1" />
+    </record>
+    <record model="hr.contract.category" id="1AG1">
+        <field name="name">1A</field>
+        <field name="group_id" ref="group1" />
+    </record>
+    <record model="hr.contract.category" id="1BG1">
+        <field name="name">1B</field>
+        <field name="group_id" ref="group1" />
+    </record>
+    <record model="hr.contract.category" id="HC1G4">
+        <field name="name">HC (1)</field>
+        <field name="group_id" ref="group4" />
+        <field name="is_manager">True</field>
+    </record>
+    <record model="hr.contract.category" id="HC2G5">
+        <field name="name">HC (2)</field>
+        <field name="group_id" ref="group5" />
+        <field name="is_manager">True</field>
+    </record>
+    <record model="hr.contract.category" id="OS1G2">
+        <field name="name">OS1</field>
+        <field name="group_id" ref="group2" />
+    </record>
+    <record model="hr.contract.category" id="OS2G2">
+        <field name="name">OS2</field>
+        <field name="group_id" ref="group2" />
+    </record>
+    <record model="hr.contract.category" id="OS3G2">
+        <field name="name">OS3</field>
+        <field name="group_id" ref="group2" />
+    </record>
+    <record model="hr.contract.category" id="OP1G2">
+        <field name="name">OP1</field>
+        <field name="group_id" ref="group2" />
+    </record>
+    <record model="hr.contract.category" id="2AG2">
+        <field name="name">2A</field>
+        <field name="group_id" ref="group2" />
+    </record>
+    <record model="hr.contract.category" id="2BG2">
+        <field name="name">2B</field>
+        <field name="group_id" ref="group2" />
+    </record>
+    <record model="hr.contract.category" id="3AG2">
+        <field name="name">3A</field>
+        <field name="group_id" ref="group2" />
+    </record>
+    <record model="hr.contract.category" id="3BG2">
+        <field name="name">3B</field>
+        <field name="group_id" ref="group2" />
+    </record>
+    <record model="hr.contract.category" id="A1G2">
+        <field name="name">A1</field>
+        <field name="group_id" ref="group2" />
+    </record>
+    <record model="hr.contract.category" id="A2G2">
+        <field name="name">A2</field>
+        <field name="group_id" ref="group2" />
+    </record>
+    <record model="hr.contract.category" id="A3G2">
+        <field name="name">A3</field>
+        <field name="group_id" ref="group2" />
+    </record>
+    <record model="hr.contract.category" id="B1G2">
+        <field name="name">B1</field>
+        <field name="group_id" ref="group2" />
+    </record>
+    <record model="hr.contract.category" id="B2G2">
+        <field name="name">B2</field>
+        <field name="group_id" ref="group2" />
+    </record>
+    <record model="hr.contract.category" id="B3G2">
+        <field name="name">B3</field>
+        <field name="group_id" ref="group2" />
+    </record>
+    <record model="hr.contract.category" id="B4G2">
+        <field name="name">B4</field>
+        <field name="group_id" ref="group2" />
+    </record>
+    <record model="hr.contract.category" id="C1G2">
+        <field name="name">C1</field>
+        <field name="group_id" ref="group2" />
+    </record>
+    <record model="hr.contract.category" id="C2G2">
+        <field name="name">C2</field>
+        <field name="group_id" ref="group2" />
+    </record>
+    <record model="hr.contract.category" id="C3G2">
+        <field name="name">C3</field>
+        <field name="group_id" ref="group2" />
+    </record>
+    <record model="hr.contract.category" id="D1G2">
+        <field name="name">D1</field>
+        <field name="group_id" ref="group2" />
+    </record>
+    <record model="hr.contract.category" id="D2G2">
+        <field name="name">D2</field>
+        <field name="group_id" ref="group2" />
+    </record>
+    <record model="hr.contract.category" id="D3G2">
+        <field name="name">D3</field>
+        <field name="group_id" ref="group2" />
+    </record>
+    <record model="hr.contract.category" id="OP2G3">
+        <field name="name">OP2</field>
+        <field name="group_id" ref="group3" />
+    </record>
+    <record model="hr.contract.category" id="OP3G3">
+        <field name="name">OP3</field>
+        <field name="group_id" ref="group3" />
+    </record>
+    <record model="hr.contract.category" id="4AG3">
+        <field name="name">4A</field>
+        <field name="group_id" ref="group3" />
+    </record>
+    <record model="hr.contract.category" id="4BG3">
+        <field name="name">4B</field>
+        <field name="group_id" ref="group3" />
+    </record>
+    <record model="hr.contract.category" id="5AG3">
+        <field name="name">5A</field>
+        <field name="group_id" ref="group3" />
+    </record>
+    <record model="hr.contract.category" id="5BG3">
+        <field name="name">5B</field>
+        <field name="group_id" ref="group3" />
+    </record>
+    <record model="hr.contract.category" id="A4G3">
+        <field name="name">A4</field>
+        <field name="group_id" ref="group3" />
+    </record>
+    <record model="hr.contract.category" id="B5G3">
+        <field name="name">B5</field>
+        <field name="group_id" ref="group3" />
+    </record>
+    <record model="hr.contract.category" id="C4G3">
+        <field name="name">C4</field>
+        <field name="group_id" ref="group3" />
+    </record>
+    <record model="hr.contract.category" id="D4G3">
+        <field name="name">D4</field>
+        <field name="group_id" ref="group3" />
+    </record>
+</odoo>

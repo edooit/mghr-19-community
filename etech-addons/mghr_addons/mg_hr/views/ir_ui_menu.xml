@@ -1,0 +1,17 @@
+<odoo>
+  <menuitem
+      id="hr_dependent_menu"
+      parent="hr.menu_config_employee"
+      name="Hr dependent"
+      action="mg_hr.action_hr_dependent"
+      sequence="1"
+  />
+
+  <menuitem
+      id="hr_work_zone_menu"
+      parent="hr.menu_config_employee"
+      name="Hr Work Zone"
+      action="mg_hr.hr_work_zone_action"
+      sequence="5"
+  />
+</odoo>

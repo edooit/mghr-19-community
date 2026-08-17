@@ -1,0 +1,51 @@
+<odoo>
+  <record id="view_attendance_tree_inherit" model="ir.ui.view">
+    <field name="name">hr.attendance.tree.inherit</field>
+    <field name="model">hr.attendance</field>
+    <field name="inherit_id" ref="hr_attendance.view_attendance_tree"/>
+    <field name="arch" type="xml">
+      <button name="action_approve_overtime" position="after">
+        <button
+            class="btn-secondary"
+            string="Validate night hours"
+            name="validate_night_hours"
+            type="object"
+        />
+        <button
+            class="btn-secondary"
+            string="Validate sunday hours"
+            name="validate_sunday_hours"
+            type="object"
+        />
+        <button
+            class="btn-secondary"
+            string="Validate public holidays hours"
+            name="validate_public_holydays_hours"
+            type="object"
+        />
+      </button>
+      <field name="validated_overtime_hours" position="after">
+        <field name="night_hours" widget="float_time"/>
+        <field name="sunday_hours" widget="float_time"/>
+        <field name="public_holiday_hours" widget="float_time"/>
+        <field name="is_sunday" column_invisible="1"/>
+        <field name="is_public_holiday" column_invisible="1"/>
+        <field
+            name="validated_night_hours"
+            widget="float_time"
+            optional="hide"
+        />
+        <field
+            name="validated_sunday_hours"
+            widget="float_time"
+            optional="hide"
+        />
+        <field
+            name="validated_public_holidays_hours"
+            widget="float_time"
+            optional="hide"
+        />
+      </field>
+    </field>
+  </record>
+</odoo>

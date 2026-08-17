@@ -1,0 +1,19 @@
+<odoo>
+  <record id="etech_view_partner_form_inherit" model="ir.ui.view">
+    <field name="name">etech.view.partner.form.inherit</field>
+    <field name="model">res.partner</field>
+    <field name="inherit_id" ref="base.view_partner_form"/>
+    <field name="arch" type="xml">
+      <xpath expr="//label[@for='vat']" position="attributes">
+        <attribute name="string">NIF</attribute>
+      </xpath>
+      <xpath expr="//group[1]" position="inside">
+        <group name="fiscal_group">
+          <field name="rcs"/>
+          <field name="stat"/>
+          <field name="cin"/>
+        </group>
+      </xpath>
+    </field>
+  </record>
+</odoo>

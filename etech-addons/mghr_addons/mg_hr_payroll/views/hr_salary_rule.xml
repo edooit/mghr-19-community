@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+  <record id="mg_payroll_hr_salary_view_form_inherit" model="ir.ui.view">
+    <field name="name">mg.payroll.hr.salary.rule.view.form.inherit</field>
+    <field name="model">hr.salary.rule</field>
+    <field name="inherit_id" ref="hr_payroll.hr_salary_rule_form"/>
+    <field name="arch" type="xml">
+      <xpath expr="//field[@name='code']" position="after">
+        <field name="is_rate"/>
+        <field name="rate_id" invisible="is_rate"/>
+      </xpath>
+    </field>
+  </record>
+</odoo>

@@ -1,0 +1,23 @@
+<odoo>
+  <record id="view_inherit_hr_employee_form" model="ir.ui.view">
+    <field name="name">view.inherit.hr.employee.form</field>
+    <field name="model">hr.employee</field>
+    <field name="inherit_id" ref="hr.view_employee_form" />
+    <field name="arch" type="xml">
+      <xpath expr="//div[@class='oe_button_box']" position="inside">
+        <button
+          class="oe_stat_button"
+          type="object"
+          name="get_sanction_active_id"
+          icon="fa-folder-open"
+        >
+          <field
+              string="Sanction(s)"
+              name="sanction_count"
+              widget="statinfo"
+          />
+        </button>
+      </xpath>
+    </field>
+  </record>
+</odoo>

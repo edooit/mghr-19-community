@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<odoo>
+  <record id="hr_internal_classification_view_form" model="ir.ui.view">
+    <field name="name">hr.internal.classification.view.form</field>
+    <field name="model">hr.internal.classification</field>
+    <field name="arch" type="xml">
+      <form>
+        <sheet>
+          <group>
+            <h1 class="d-flex">
+              <field name="name" placeholder="Name of internal classification"/>
+            </h1>
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
+</odoo>

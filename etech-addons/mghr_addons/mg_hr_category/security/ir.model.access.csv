@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_hr_category_manager,hr.category.manager,model_hr_contract_category,base.group_user,1,1,1,1
+access_hr_group_manager,hr.group.manager,model_hr_contract_group,base.group_user,1,1,1,1
+access_hr_index_manager,hr.index.manager,model_hr_contract_index,base.group_user,1,1,1,1
+access_hr_contract_category,hr.contract.category.manager,model_hr_contract_category,base.group_user,1,1,1,1

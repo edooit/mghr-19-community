@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+  <record id="view_employee_form_inherit" model="ir.ui.view">
+    <field name="name">hr.employee.form.inherit</field>
+    <field name="model">hr.employee</field>
+    <field name="inherit_id" ref="hr.view_employee_form"/>
+    <field name="arch" type="xml">
+      <field name="identification_id" position="attributes">
+        <attribute name="string">N° CIN</attribute>
+      </field>
+      <field name="identification_id" position="after">
+        <label for="cin_date_of_issue"/>
+        <div class="oe_inline">
+          <field name="cin_date_of_issue" class="oe_inline"/>
+          <span>at</span>
+          <field name="cin_place_of_issue" class="oe_inline"/>
+        </div>
+        <label for="cin_duplicate_date"/>
+        <div class="oe_inline">
+          <field name="cin_duplicate_date" class="oe_inline"/>
+          <span>at</span>
+          <field name="cin_duplicate_place" class="oe_inline"/>
+        </div>
+      </field>
+
+      <xpath expr="//group[@name='settings_group']" position="inside">
+        <group string="Seniority">
+          <field name="hiring_date" string="True"/>
+          <field name="seniority"/>
+          <field name="years" invisible="1"/>
+          <field name="months" invisible="1"/>
+          <field name="days" invisible="1"/>
+        </group>
+      </xpath>
+      <field name="passport_id" position="after">
+        <field name="passport_validity_date"/>
+      </field>
+      <field name="visa_no" position="before">
+        <field name="cnaps_number"/>
+      </field>
+      <xpath expr="//div[hasclass('oe_title')]" position="inside">
+        <h5 class="d-flex align-items-baseline mb-0">
+          <i class="fa fa-briefcase fa-fw me-1 text-primary"/>
+          <field name="job_title" readonly="1" class="w-100"/>
+          <span invisible="not job_code" class="ms-1">(</span>
+          <field name="job_code" readonly="1"/>
+          <span invisible="not job_code">)</span>
+        </h5>
+      </xpath>
+      <field name="work_location_id" position="after">
+        <field name="work_zone_id"/>
+      </field>
+      <field name="spouse_complete_name" position="after">
+        <field name="spouse_gender" invisible="marital != 'married'" required="marital == 'married'"/>
+      </field>
+    </field>
+  </record>
+
+  <record id="view_employee_kanban_inherit" model="ir.ui.view">
+    <field name="name">view.employee.kanban.inherit</field>
+    <field name="model">hr.employee</field>
+    <field name="inherit_id" ref="hr.hr_kanban_view_employees"/>
+    <field name="arch" type="xml">
+      <xpath expr="//i[contains(@class, 'fa-suitcase')]/parent::div" position="after">
+        <div t-if="record.registration_number.raw_value" class="text-truncate">
+          <i class="fa fa-fw me-2 fa-id-badge text-primary"
+             title="Registration Number"/>
+          <field name="registration_number"/>
+        </div>
+      </xpath>
+    </field>
+  </record>
+</odoo>

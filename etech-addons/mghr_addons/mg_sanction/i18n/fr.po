@@ -1,0 +1,187 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* mg_sanction
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0+e-20260112\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-26 14:08+0000\n"
+"PO-Revision-Date: 2026-01-26 14:08+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: mg_sanction
+#: model:ir.model.fields,field_description:mg_sanction.field_hr_sanction__company_id
+#: model_terms:ir.ui.view,arch_db:mg_sanction.hr_sanction_search
+msgid "Company"
+msgstr "Société"
+
+#. module: mg_sanction
+#: model:ir.model.fields,field_description:mg_sanction.field_hr_sanction__create_uid
+#: model:ir.model.fields,field_description:mg_sanction.field_hr_sanction_type__create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: mg_sanction
+#: model:ir.model.fields,field_description:mg_sanction.field_hr_sanction__create_date
+#: model:ir.model.fields,field_description:mg_sanction.field_hr_sanction_type__create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: mg_sanction
+#: model:ir.model.fields,field_description:mg_sanction.field_hr_sanction__delivery_date
+msgid "Delivery Date"
+msgstr "Date de remise"
+
+#. module: mg_sanction
+#: model_terms:ir.ui.view,arch_db:mg_sanction.hr_sanction_search
+msgid "Delivery date"
+msgstr "Date de remise"
+
+#. module: mg_sanction
+#: model:hr.sanction.type,name:mg_sanction.sanction_type_dismissal
+msgid "Dismissal"
+msgstr "Mise à pied"
+
+#. module: mg_sanction
+#: model:ir.model.fields,field_description:mg_sanction.field_hr_employee__display_name
+#: model:ir.model.fields,field_description:mg_sanction.field_hr_sanction__display_name
+#: model:ir.model.fields,field_description:mg_sanction.field_hr_sanction_type__display_name
+msgid "Display Name"
+msgstr "Nom d'affichage"
+
+#. module: mg_sanction
+#: model:ir.model,name:mg_sanction.model_hr_employee
+#: model:ir.model.fields,field_description:mg_sanction.field_hr_sanction__employee_id
+#: model_terms:ir.ui.view,arch_db:mg_sanction.hr_sanction_search
+msgid "Employee"
+msgstr "Employé"
+
+#. module: mg_sanction
+#: model_terms:ir.ui.view,arch_db:mg_sanction.hr_sanction_view_form
+msgid "Employee's Sanction"
+msgstr "Sanction"
+
+#. module: mg_sanction
+#: model:ir.model.fields,field_description:mg_sanction.field_hr_sanction__end_date
+msgid "End Date"
+msgstr "Date de fin"
+
+#. module: mg_sanction
+#: model_terms:ir.ui.view,arch_db:mg_sanction.hr_sanction_search
+msgid "End date"
+msgstr "Date de fin"
+
+#. module: mg_sanction
+#: model:ir.model,name:mg_sanction.model_hr_sanction
+msgid "HR Sanction"
+msgstr ""
+
+#. module: mg_sanction
+#: model:ir.model,name:mg_sanction.model_hr_sanction_type
+msgid "HR Sanction type"
+msgstr ""
+
+#. module: mg_sanction
+#: model:ir.model.fields,field_description:mg_sanction.field_hr_employee__id
+#: model:ir.model.fields,field_description:mg_sanction.field_hr_sanction__id
+#: model:ir.model.fields,field_description:mg_sanction.field_hr_sanction_type__id
+msgid "ID"
+msgstr ""
+
+#. module: mg_sanction
+#: model:ir.model.fields,field_description:mg_sanction.field_hr_sanction__write_uid
+#: model:ir.model.fields,field_description:mg_sanction.field_hr_sanction_type__write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: mg_sanction
+#: model:ir.model.fields,field_description:mg_sanction.field_hr_sanction__write_date
+#: model:ir.model.fields,field_description:mg_sanction.field_hr_sanction_type__write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour le"
+
+#. module: mg_sanction
+#: model:ir.model.fields.selection,name:mg_sanction.selection__hr_sanction_type__type__layoff
+msgid "Layoff"
+msgstr ""
+
+#. module: mg_sanction
+#: model:ir.model.fields,field_description:mg_sanction.field_hr_sanction__motif
+msgid "Motif"
+msgstr ""
+
+#. module: mg_sanction
+#: model:ir.model.fields,field_description:mg_sanction.field_hr_sanction__name
+#: model:ir.model.fields,field_description:mg_sanction.field_hr_sanction_type__name
+msgid "Name"
+msgstr "Nom"
+
+#. module: mg_sanction
+#: model:ir.model.fields,field_description:mg_sanction.field_hr_sanction__department_parent_id
+#: model_terms:ir.ui.view,arch_db:mg_sanction.hr_sanction_search
+#: model_terms:ir.ui.view,arch_db:mg_sanction.hr_sanction_view_form
+msgid "Parent department"
+msgstr "Département parent"
+
+#. module: mg_sanction
+#: model:hr.sanction.type,name:mg_sanction.sanction_information
+msgid "Requests for information"
+msgstr "Demande d’explication"
+
+#. module: mg_sanction
+#: model:ir.actions.act_window,name:mg_sanction.action_sanction_view
+#: model:ir.model.fields,field_description:mg_sanction.field_hr_employee__sanction_count
+#: model:ir.ui.menu,name:mg_sanction.menu_sanction_view
+#: model:ir.ui.menu,name:mg_sanction.sanction_root
+#: model_terms:ir.ui.view,arch_db:mg_sanction.hr_sanction_type_view_form
+#: model_terms:ir.ui.view,arch_db:mg_sanction.hr_sanction_view_pivot
+msgid "Sanction"
+msgstr ""
+
+#. module: mg_sanction
+#: model_terms:ir.ui.view,arch_db:mg_sanction.hr_sanction_type_view_form
+msgid "Sanction name"
+msgstr "Nom de la sanction"
+
+#. module: mg_sanction
+#: model_terms:ir.ui.view,arch_db:mg_sanction.hr_sanction_search
+#: model_terms:ir.ui.view,arch_db:mg_sanction.view_inherit_hr_employee_form
+msgid "Sanction(s)"
+msgstr ""
+
+#. module: mg_sanction
+#: model:ir.model.fields,field_description:mg_sanction.field_hr_sanction__department_id
+#: model_terms:ir.ui.view,arch_db:mg_sanction.hr_sanction_view_form
+#: model_terms:ir.ui.view,arch_db:mg_sanction.hr_sanction_view_pivot
+msgid "Service"
+msgstr ""
+
+#. module: mg_sanction
+#: model:ir.model.fields,field_description:mg_sanction.field_hr_sanction__type_id
+#: model:ir.model.fields,field_description:mg_sanction.field_hr_sanction_type__type
+#: model_terms:ir.ui.view,arch_db:mg_sanction.hr_sanction_search
+msgid "Type"
+msgstr ""
+
+#. module: mg_sanction
+#: model:ir.actions.act_window,name:mg_sanction.action_sanction_type_view
+#: model:ir.ui.menu,name:mg_sanction.menu_sanction_type_view
+msgid "Type de sanction"
+msgstr ""
+
+#. module: mg_sanction
+#: model:hr.sanction.type,name:mg_sanction.sanction_type_warning
+#: model:ir.model.fields.selection,name:mg_sanction.selection__hr_sanction_type__type__caution
+msgid "Warning"
+msgstr "Avertissement"
+
+#. module: mg_sanction
+#: model:hr.sanction.type,name:mg_sanction.sanction_type_order
+msgid "call to order"
+msgstr "Rappel à l’ordre"

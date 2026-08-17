@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_partner_bank_form_inherit" model="ir.ui.view">
+      <field name="name">res.partner.bank.inherit</field>
+      <field name="model">res.partner.bank</field>
+      <field name="inherit_id" ref="base.view_partner_bank_form" />
+      <field name="arch" type="xml">
+        <field name="bank_id" position="after">
+<!--          <field name="bank_code" />-->
+          <field name="agency_code" />
+<!--          <field name="box_code" />-->
+          <field name="rib_key" />
+<!--          <field name="ref_transfert" />-->
+        </field>
+      </field>
+    </record>
+</odoo>

@@ -1,0 +1,122 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* mg_hr_payslip_holidays
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0+e-20230213\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-31 12:57+0000\n"
+"PO-Revision-Date: 2023-03-31 12:57+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: mg_hr_payslip_holidays
+#. odoo-python
+#: code:addons/mg_hr_payslip_holidays/models/hr_leave_accrual_plan.py:0
+#, python-format
+msgid " appears "
+msgstr " apparaît "
+
+#. module: mg_hr_payslip_holidays
+#. odoo-python
+#: code:addons/mg_hr_payslip_holidays/models/hr_leave_accrual_plan.py:0
+#, python-format
+msgid " day(s)"
+msgstr " jour(s)"
+
+#. module: mg_hr_payslip_holidays
+#. odoo-python
+#: code:addons/mg_hr_payslip_holidays/models/hr_leave_accrual_plan.py:0
+#, python-format
+msgid " month(s)"
+msgstr " mois"
+
+#. module: mg_hr_payslip_holidays
+#. odoo-python
+#: code:addons/mg_hr_payslip_holidays/models/hr_leave_accrual_plan.py:0
+#, python-format
+msgid " time (Level "
+msgstr " fois (Niveau "
+
+#. module: mg_hr_payslip_holidays
+#. odoo-python
+#: code:addons/mg_hr_payslip_holidays/models/hr_leave_accrual_plan.py:0
+#, python-format
+msgid " year(s)"
+msgstr " année(s)"
+
+#. module: mg_hr_payslip_holidays
+#. odoo-python
+#: code:addons/mg_hr_payslip_holidays/models/hr_leave_accrual_plan.py:0
+#, python-format
+msgid ", Level "
+msgstr ", Niveau "
+
+#. module: mg_hr_payslip_holidays
+#: model_terms:ir.ui.view,arch_db:mg_hr_payslip_holidays.pmrh_report_payslip_inherit
+msgid "<strong>Classification</strong>"
+msgstr ""
+
+#. module: mg_hr_payslip_holidays
+#: model_terms:ir.ui.view,arch_db:mg_hr_payslip_holidays.pmrh_report_payslip_inherit
+msgid "<strong>Indice</strong>"
+msgstr ""
+
+#. module: mg_hr_payslip_holidays
+#: model_terms:ir.ui.view,arch_db:mg_hr_payslip_holidays.pmrh_report_payslip_inherit
+msgid "<strong>Solde de congé actuel</strong>"
+msgstr ""
+
+#. module: mg_hr_payslip_holidays
+#: model:ir.model,name:mg_hr_payslip_holidays.model_hr_leave_accrual_plan
+msgid "Accrual Plan"
+msgstr "Plan de cumul de congés"
+
+#. module: mg_hr_payslip_holidays
+#: model:ir.model.fields,field_description:mg_hr_payslip_holidays.field_hr_payslip__leave_allocation
+msgid "Current Leave Balance"
+msgstr "Solde de congé actuel"
+
+#. module: mg_hr_payslip_holidays
+#: model:ir.model,name:mg_hr_payslip_holidays.model_hr_payslip
+msgid "Pay Slip"
+msgstr "Fiche de paie"
+
+#. module: mg_hr_payslip_holidays
+#: model:ir.model,name:mg_hr_payslip_holidays.model_hr_payroll_structure
+msgid "Salary Structure"
+msgstr "Structure salariale"
+
+#. module: mg_hr_payslip_holidays
+#: model:ir.model.fields,field_description:mg_hr_payslip_holidays.field_hr_payroll_structure__show_work100
+msgid "Show WORK100"
+msgstr "Afficher le nombre de jours travaillés"
+
+#. module: mg_hr_payslip_holidays
+#: model:ir.model.fields,field_description:mg_hr_payslip_holidays.field_hr_payroll_structure__show_leave_allocation
+#: model:ir.model.fields,field_description:mg_hr_payslip_holidays.field_hr_payslip__show_leave_allocation
+msgid "Show leave allocation"
+msgstr "Afficher la solde de congé"
+
+#. module: mg_hr_payslip_holidays
+#. odoo-python
+#: code:addons/mg_hr_payslip_holidays/models/hr_leave_accrual_plan.py:0
+#, python-format
+msgid ""
+"The number of days, months or years to start the accumulation must be "
+"different for each level!\n"
+msgstr ""
+"Le nombre de jour, mois ou année de démarrage du cumul doit être différent "
+"pour chaque niveau !\n"
+
+#. module: mg_hr_payslip_holidays
+#. odoo-python
+#: code:addons/mg_hr_payslip_holidays/models/hr_leave_accrual_plan.py:0
+#, python-format
+msgid "immediately"
+msgstr "immédiatement"

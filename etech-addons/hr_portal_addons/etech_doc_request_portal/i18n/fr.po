@@ -1,0 +1,243 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* etech_doc_request_portal
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-07-30 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: etech_doc_request_portal
+#: model:ir.model,name:etech_doc_request_portal.model_res_company
+msgid "Companies"
+msgstr "Sociétés"
+
+#. module: etech_doc_request_portal
+#: model:ir.model.fields,field_description:etech_doc_request_portal.field_res_company__email_docs
+msgid "Email Docs"
+msgstr "Destinataires de demande des documents"
+
+#. module: etech_doc_request_portal
+#: model_terms:ir.ui.view,arch_db:etech_doc_request_portal.portal_view_company_form
+msgid "Email to send docs request"
+msgstr "E-mail pour envoyer la demande de documents"
+
+#. module: etech_doc_request_portal
+#: model_terms:ir.ui.view,arch_db:etech_doc_request_portal.portal_my_home_docs
+msgid "Docs request"
+msgstr "Demande de documents"
+
+#. module: etech_doc_request_portal
+#: model_terms:ir.ui.view,arch_db:etech_doc_request_portal.portal_my_home_docs
+msgid "Make your document request"
+msgstr "Faire une demande de document"
+
+#. module: etech_doc_request_portal
+#. odoo-python
+#: code:addons/etech_doc_request_portal/models/hr_document_request.py:0
+msgid "New"
+msgstr "Nouveau"
+
+#. module: etech_doc_request_portal
+#: model:ir.model.fields.selection,name:etech_doc_request_portal.selection__hr_document_request__state__draft
+#: model:ir.model.fields.selection,name:etech_doc_request_portal.selection__hr_document_request_line__state__draft
+#: model_terms:ir.ui.view,arch_db:etech_doc_request_portal.hr_document_request_line_view_search
+#: model_terms:ir.ui.view,arch_db:etech_doc_request_portal.doc_request_card
+#: model_terms:ir.ui.view,arch_db:etech_doc_request_portal.doc_request_line_row
+msgid "Brouillon"
+msgstr "Brouillon"
+
+#. module: etech_doc_request_portal
+#: model:ir.model.fields.selection,name:etech_doc_request_portal.selection__hr_document_request__state__in_progress
+#: model:ir.model.fields.selection,name:etech_doc_request_portal.selection__hr_document_request_line__state__in_progress
+#: model_terms:ir.ui.view,arch_db:etech_doc_request_portal.hr_document_request_line_view_search
+#: model_terms:ir.ui.view,arch_db:etech_doc_request_portal.doc_request_card
+#: model_terms:ir.ui.view,arch_db:etech_doc_request_portal.doc_request_line_row
+msgid "En cours"
+msgstr "En cours"
+
+#. module: etech_doc_request_portal
+#: model:ir.model.fields.selection,name:etech_doc_request_portal.selection__hr_document_request__state__done
+#: model:ir.model.fields.selection,name:etech_doc_request_portal.selection__hr_document_request_line__state__done
+#: model_terms:ir.ui.view,arch_db:etech_doc_request_portal.doc_request_card
+#: model_terms:ir.ui.view,arch_db:etech_doc_request_portal.doc_request_line_row
+msgid "Traité"
+msgstr "Traité"
+
+#. module: etech_doc_request_portal
+#: model:ir.model.fields.selection,name:etech_doc_request_portal.selection__hr_document_request_line__delivery_mode__physical
+#: model_terms:ir.ui.view,arch_db:etech_doc_request_portal.hr_document_request_line_view_search
+#: model_terms:ir.ui.view,arch_db:etech_doc_request_portal.portal_docs_request
+#: model_terms:ir.ui.view,arch_db:etech_doc_request_portal.doc_request_line_row
+msgid "Physique"
+msgstr "Physique"
+
+#. module: etech_doc_request_portal
+#: model:ir.model.fields.selection,name:etech_doc_request_portal.selection__hr_document_request_line__delivery_mode__electronic
+#: model_terms:ir.ui.view,arch_db:etech_doc_request_portal.hr_document_request_line_view_search
+#: model_terms:ir.ui.view,arch_db:etech_doc_request_portal.portal_docs_request
+#: model_terms:ir.ui.view,arch_db:etech_doc_request_portal.doc_request_line_row
+msgid "Électronique"
+msgstr "Électronique"
+
+#. module: etech_doc_request_portal
+#: model:ir.actions.act_window,name:etech_doc_request_portal.action_hr_document_type
+#: model:ir.ui.menu,name:etech_doc_request_portal.menu_hr_document_type
+msgid "Liste documents"
+msgstr "Liste documents"
+
+#. module: etech_doc_request_portal
+#: model:ir.actions.act_window,name:etech_doc_request_portal.action_hr_document_request_line
+#: model:ir.ui.menu,name:etech_doc_request_portal.menu_hr_document_request
+msgid "Demande de documents"
+msgstr "Demande de documents"
+
+#. module: etech_doc_request_portal
+#: model_terms:ir.ui.view,arch_db:etech_doc_request_portal.hr_document_request_line_view_list
+msgid "Démarrer"
+msgstr "Démarrer"
+
+#. module: etech_doc_request_portal
+#: model_terms:ir.ui.view,arch_db:etech_doc_request_portal.hr_document_request_line_view_form
+msgid "Démarrer le traitement"
+msgstr "Démarrer le traitement"
+
+#. module: etech_doc_request_portal
+#: model_terms:ir.ui.view,arch_db:etech_doc_request_portal.hr_document_request_line_view_list
+#: model_terms:ir.ui.view,arch_db:etech_doc_request_portal.hr_document_request_line_view_form
+msgid "Marquer traité"
+msgstr "Marquer traité"
+
+#. module: etech_doc_request_portal
+#: model:ir.model.fields,field_description:etech_doc_request_portal.field_hr_document_request_line__pickup_date
+msgid "Pickup date"
+msgstr "Date de retrait"
+
+#. module: etech_doc_request_portal
+#: model_terms:ir.ui.view,arch_db:etech_doc_request_portal.hr_document_request_line_view_search
+msgid "À traiter"
+msgstr "À traiter"
+
+#. module: etech_doc_request_portal
+#: model_terms:ir.ui.view,arch_db:etech_doc_request_portal.hr_document_request_line_view_search
+msgid "Regrouper par"
+msgstr "Regrouper par"
+
+#. module: etech_doc_request_portal
+#: model_terms:ir.ui.view,arch_db:etech_doc_request_portal.hr_document_request_line_view_search
+msgid "Demande"
+msgstr "Demande"
+
+#. module: etech_doc_request_portal
+#: model_terms:ir.ui.view,arch_db:etech_doc_request_portal.hr_document_request_line_view_search
+msgid "Employé"
+msgstr "Employé"
+
+#. module: etech_doc_request_portal
+#: model_terms:ir.ui.view,arch_db:etech_doc_request_portal.hr_document_request_line_view_search
+msgid "Statut"
+msgstr "Statut"
+
+#. module: etech_doc_request_portal
+#: model_terms:ir.ui.view,arch_db:etech_doc_request_portal.hr_document_type_view_search
+msgid "Archived"
+msgstr "Archivé"
+
+#. module: etech_doc_request_portal
+#. odoo-python
+#: code:addons/etech_doc_request_portal/models/hr_document_request_line.py:0
+msgid "Cannot mark \"%s\" as done: no electronic document has been uploaded."
+msgstr "Impossible de marquer « %s » comme traité : aucun document électronique n'a été téléversé."
+
+#. module: etech_doc_request_portal
+#. odoo-python
+#: code:addons/etech_doc_request_portal/models/hr_document_request_line.py:0
+msgid "Cannot mark \"%s\" as done: no pickup date has been set."
+msgstr "Impossible de marquer « %s » comme traité : aucune date de retrait n'a été renseignée."
+
+#. module: etech_doc_request_portal
+#. odoo-python
+#: code:addons/etech_doc_request_portal/models/hr_document_request.py:0
+msgid "New document request: %s"
+msgstr "Nouvelle demande de documents : %s"
+
+#. module: etech_doc_request_portal
+#. odoo-python
+#: code:addons/etech_doc_request_portal/models/hr_document_request.py:0
+msgid "Your document request %s has been processed"
+msgstr "Votre demande de documents %s a été traitée"
+
+#. module: etech_doc_request_portal
+#. odoo-python
+#: code:addons/etech_doc_request_portal/controllers/docs_request_controller.py:0
+msgid "Please select at least one document with a valid delivery mode."
+msgstr "Veuillez sélectionner au moins un document avec un mode de remise valide."
+
+#. module: etech_doc_request_portal
+#. odoo-python
+#: code:addons/etech_doc_request_portal/controllers/docs_request_controller.py:0
+msgid "This request does not exist."
+msgstr "Cette demande n'existe pas."
+
+#. module: etech_doc_request_portal
+#: model_terms:ir.ui.view,arch_db:etech_doc_request_portal.portal_docs_request
+msgid "Sélectionnez les documents dont vous avez besoin et suivez leur traitement."
+msgstr "Sélectionnez les documents dont vous avez besoin et suivez leur traitement."
+
+#. module: etech_doc_request_portal
+#: model_terms:ir.ui.view,arch_db:etech_doc_request_portal.portal_docs_request
+msgid "Demandes"
+msgstr "Demandes"
+
+#. module: etech_doc_request_portal
+#: model_terms:ir.ui.view,arch_db:etech_doc_request_portal.portal_docs_request
+msgid "Traitées"
+msgstr "Traitées"
+
+#. module: etech_doc_request_portal
+#: model_terms:ir.ui.view,arch_db:etech_doc_request_portal.portal_docs_request
+msgid "Nouvelle demande"
+msgstr "Nouvelle demande"
+
+#. module: etech_doc_request_portal
+#: model_terms:ir.ui.view,arch_db:etech_doc_request_portal.portal_docs_request
+msgid "Cochez un ou plusieurs documents et choisissez, pour chacun, le mode de remise souhaité."
+msgstr "Cochez un ou plusieurs documents et choisissez, pour chacun, le mode de remise souhaité."
+
+#. module: etech_doc_request_portal
+#: model_terms:ir.ui.view,arch_db:etech_doc_request_portal.portal_docs_request
+msgid "Aucun type de document n'est configuré pour le moment."
+msgstr "Aucun type de document n'est configuré pour le moment."
+
+#. module: etech_doc_request_portal
+#: model_terms:ir.ui.view,arch_db:etech_doc_request_portal.portal_docs_request
+msgid "Envoyer la demande"
+msgstr "Envoyer la demande"
+
+#. module: etech_doc_request_portal
+#: model_terms:ir.ui.view,arch_db:etech_doc_request_portal.portal_docs_request
+#: model_terms:ir.ui.view,arch_db:etech_doc_request_portal.portal_docs_request_detail
+msgid "Mes demandes"
+msgstr "Mes demandes"
+
+#. module: etech_doc_request_portal
+#: model_terms:ir.ui.view,arch_db:etech_doc_request_portal.portal_docs_request
+msgid "Vous n'avez encore fait aucune demande de document."
+msgstr "Vous n'avez encore fait aucune demande de document."
+
+#. module: etech_doc_request_portal
+#: model_terms:ir.ui.view,arch_db:etech_doc_request_portal.doc_request_line_row
+msgid "Retrait :"
+msgstr "Retrait :"
+
+#. module: etech_doc_request_portal
+#: model_terms:ir.ui.view,arch_db:etech_doc_request_portal.doc_request_line_row
+msgid "Télécharger"
+msgstr "Télécharger"

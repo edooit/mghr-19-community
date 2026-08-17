@@ -1,0 +1,58 @@
+<odoo>
+  <template id="portal_my_payslip" name="My Payslip">
+    <t t-call="portal.portal_layout">
+      <t t-set="breadcrumbs_searchbar" t-value="True" />
+
+      <div t-if="not payslips" class="o_etech_empty_state">
+        <div class="o_etech_empty_icon">
+          <i class="fa fa-file-text-o" />
+        </div>
+        <p>There are currently no payslips for your account.</p>
+      </div>
+
+      <t t-if="payslips">
+        <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-4">
+          <h2 class="mb-0">Your payslips</h2>
+          <t t-call="portal.portal_searchbar" />
+        </div>
+
+        <t t-foreach="sorted({p.date_from.year for p in payslips}, reverse=True)" t-as="year">
+          <p class="o_etech_year_label">
+            <t t-esc="year" />
+          </p>
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3 mb-4">
+            <t
+              t-foreach="payslips.filtered(lambda l: l.date_from.year == year)"
+              t-as="l"
+            >
+              <div class="col">
+                <div class="o_etech_payslip_card">
+                  <div class="o_etech_payslip_month">
+                    <t t-esc="l.date_from.strftime('%B')" />
+                  </div>
+                  <div class="o_etech_payslip_period text-muted">
+                    <span t-field="l.date_from" t-options="{'widget': 'date'}" /> -
+                    <span t-field="l.date_to" t-options="{'widget': 'date'}" />
+                  </div>
+                  <div class="o_etech_payslip_footer">
+                    <span
+                      t-attf-class="badge rounded-pill #{'text-bg-success' if l.state == 'paid' else 'text-bg-info'}"
+                      t-field="l.state"
+                    />
+                    <a
+                      class="o_etech_payslip_download"
+                      t-att-href="l.get_portal_url(report_type='pdf', download=True)"
+                      title="Download"
+                    >
+                      <i class="fa fa-download" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </t>
+          </div>
+        </t>
+      </t>
+    </t>
+  </template>
+</odoo>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+  <menuitem
+    id="health_organization_parent_menu"
+    name="Health organization"
+    parent="hr.menu_human_resources_configuration"
+  >
+    <menuitem
+      id="health_organization_menu"
+      name="Health organization"
+      action="action_health_organization"
+      sequence="1"
+    />
+  </menuitem>
+</odoo>

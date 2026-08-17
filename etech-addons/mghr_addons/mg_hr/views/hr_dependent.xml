@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<odoo>
+  <record id="dependent_hr_employee_view_form_inherit" model="ir.ui.view">
+    <field name="name">hr.employee.view.form.inherit</field>
+    <field name="model">hr.employee</field>
+    <field name="inherit_id" ref="hr.view_employee_form"/>
+    <field name="arch" type="xml">
+      <xpath expr="//page[@name='personal_information']" position="after">
+        <page name="dependent" string="Dependents" groups="hr.group_hr_user">
+          <field name="dependent_ids">
+            <list editable="bottom">
+              <field name="lastname"/>
+              <field name="firstname"/>
+              <field name="birthdate"/>
+              <field name="age_txt"/>
+              <field name="gender"/>
+              <field name="is_handicap"/>
+              <field name="cnaps"/>
+            </list>
+          </field>
+        </page>
+      </xpath>
+    </field>
+  </record>
+  <record id="hr_dependent_view_list" model="ir.ui.view">
+    <field name="name">hr.dependent.view.list</field>
+    <field name="model">hr.dependent</field>
+    <field name="arch" type="xml">
+      <list editable="top">
+        <field name="registration_number"/>
+        <field name="employee_id"/>
+        <field name="lastname"/>
+        <field name="firstname"/>
+        <field name="birthdate"/>
+        <field name="age_txt"/>
+        <field name="gender"/>
+        <field name="is_handicap"/>
+        <field name="cnaps"/>
+      </list>
+    </field>
+  </record>
+  <record id="hr_dependent_view_list_filter" model="ir.ui.view">
+    <field name="name">hr.dependent.view.list.filter</field>
+    <field name="model">hr.dependent</field>
+    <field name="arch" type="xml">
+      <search string="Registration number">
+        <field name="registration_number"/>
+        <filter
+            string="Registration number"
+            name="registration_number"
+            context="{'group_by': 'registration_number'}"
+        />
+      </search>
+    </field>
+  </record>
+</odoo>

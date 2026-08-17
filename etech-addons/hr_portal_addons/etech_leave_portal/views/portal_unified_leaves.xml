@@ -1,0 +1,368 @@
+<!-- portal_unified_leaves.xml -->
+<odoo>
+  <template id="portal_unified_leaves">
+    <t t-call="portal.portal_layout">
+      <t t-set="breadcrumbs_searchbar" t-value="True" />
+
+      <t t-set="_state_variant" t-value="{'draft': 'secondary', 'confirm': 'info', 'validate1': 'warning', 'validate': 'success', 'refuse': 'danger'}" />
+      <t t-set="_state_label" t-value="{'draft': 'Draft', 'confirm': 'To Approve', 'validate1': 'To Validate', 'validate': 'Approved', 'refuse': 'Refused'}" />
+
+      <div class="o_etech_leaves_portal container-fluid mt-3">
+
+        <div class="row mb-3">
+          <div class="col-12">
+            <t t-call="portal.portal_searchbar">
+              <t t-set="title">Leave Management</t>
+            </t>
+          </div>
+        </div>
+
+        <!-- Dashboard Statistics -->
+        <div class="o_etech_leave_stats mb-4">
+          <t t-if="view_type == 'my_leaves'">
+            <div class="o_etech_stat_tile">
+              <div class="stat-icon o_etech_chip-primary"><i class="fa fa-list-alt" /></div>
+              <div><div class="stat-number" t-esc="total_my_leaves" /><div class="stat-label">Total Leaves</div></div>
+            </div>
+            <div class="o_etech_stat_tile">
+              <div class="stat-icon o_etech_chip-info"><i class="fa fa-clock-o" /></div>
+              <div><div class="stat-number" t-esc="to_approve_count" /><div class="stat-label">To Approve</div></div>
+            </div>
+            <div class="o_etech_stat_tile">
+              <div class="stat-icon o_etech_chip-warning"><i class="fa fa-hourglass-half" /></div>
+              <div><div class="stat-number" t-esc="pending_count" /><div class="stat-label">To Validate</div></div>
+            </div>
+            <div class="o_etech_stat_tile">
+              <div class="stat-icon o_etech_chip-success"><i class="fa fa-check-circle" /></div>
+              <div><div class="stat-number" t-esc="approved_count" /><div class="stat-label">Approved</div></div>
+            </div>
+            <div class="o_etech_stat_tile">
+              <div class="stat-icon o_etech_chip-danger"><i class="fa fa-times-circle" /></div>
+              <div><div class="stat-number" t-esc="refused_count" /><div class="stat-label">Refused</div></div>
+            </div>
+          </t>
+          <t t-else="">
+            <div class="o_etech_stat_tile">
+              <div class="stat-icon o_etech_chip-primary"><i class="fa fa-users" /></div>
+              <div><div class="stat-number" t-esc="total_team_leaves" /><div class="stat-label">Team Leaves</div></div>
+            </div>
+            <div class="o_etech_stat_tile">
+              <div class="stat-icon o_etech_chip-info"><i class="fa fa-clock-o" /></div>
+              <div><div class="stat-number" t-esc="to_approve_count" /><div class="stat-label">To Approve</div></div>
+            </div>
+            <div class="o_etech_stat_tile">
+              <div class="stat-icon o_etech_chip-warning"><i class="fa fa-hourglass-half" /></div>
+              <div><div class="stat-number" t-esc="pending_count" /><div class="stat-label">To Validate</div></div>
+            </div>
+            <div class="o_etech_stat_tile">
+              <div class="stat-icon o_etech_chip-success"><i class="fa fa-check-circle" /></div>
+              <div><div class="stat-number" t-esc="approved_count" /><div class="stat-label">Approved</div></div>
+            </div>
+          </t>
+        </div>
+
+        <!-- Header with Toggle and Actions -->
+        <div class="row mb-3 align-items-center">
+          <div class="col-md-6">
+            <div class="btn-group" role="group">
+              <a t-attf-href="/my/leaves/my_leaves?view_display=#{view_display}"
+                 t-attf-class="btn btn-etech-outline #{'active' if view_type == 'my_leaves' else ''}">
+                <i class="fa fa-user me-1" />My Leaves
+              </a>
+              <t t-if="is_leave_manager">
+                <a t-attf-href="/my/leaves/team_leaves?view_display=#{view_display}"
+                   t-attf-class="btn btn-etech-outline #{'active' if view_type == 'team_leaves' else ''}">
+                  <i class="fa fa-users me-1" />Team Leaves
+                  <span t-if="team_to_approve_count > 0" class="badge rounded-pill bg-danger ms-1" t-esc="team_to_approve_count" />
+                </a>
+              </t>
+            </div>
+          </div>
+          <div class="col-md-6 text-md-end mt-2 mt-md-0">
+            <div class="btn-group me-2" role="group">
+              <a t-attf-href="/my/leaves/#{view_type}?view_display=cards"
+                 t-attf-class="btn btn-etech-outline #{'active' if view_display == 'cards' else ''}">
+                <i class="fa fa-th-large me-1" />Cards
+              </a>
+              <a t-attf-href="/my/leaves/#{view_type}?view_display=calendar"
+                 t-attf-class="btn btn-etech-outline #{'active' if view_display == 'calendar' else ''}">
+                <i class="fa fa-calendar me-1" />Calendar
+              </a>
+            </div>
+            <a class="btn btn-success ms-1" href="/my/leaves/create">
+              <i class="fa fa-plus me-1" />New Leave
+            </a>
+            <button class="btn btn-info ms-1" id="leave_balance" type="button">
+              <i class="fa fa-chart-pie me-1" />Balance
+            </button>
+          </div>
+        </div>
+
+        <t t-if="view_display == 'calendar'">
+          <t t-call="etech_leave_portal.leave_calendar_view" />
+        </t>
+        <t t-else="">
+          <t t-call="etech_leave_portal.leave_cards_view" />
+        </t>
+      </div>
+
+      <t t-call="etech_leave_portal.leave_balance_modal" />
+    </t>
+  </template>
+
+  <template id="leave_cards_view">
+    <t t-set="_state_variant" t-value="{'draft': 'secondary', 'confirm': 'info', 'validate1': 'warning', 'validate': 'success', 'refuse': 'danger'}" />
+    <t t-set="_state_label" t-value="{'draft': 'Draft', 'confirm': 'To Approve', 'validate1': 'To Validate', 'validate': 'Approved', 'refuse': 'Refused'}" />
+    <t t-set="_state_color" t-value="{'draft': '#6c757d', 'confirm': '#0dcaf0', 'validate1': '#f0ad4e', 'validate': '#198754', 'refuse': '#dc3545'}" />
+
+    <div class="row">
+      <t t-if="not grouped_leaves or not any(grouped_leaves)">
+        <div class="col-12">
+          <div class="o_etech_leave_card text-center py-5">
+            <i class="fa fa-file-text-o fa-3x text-muted mb-3" />
+            <h5 class="text-muted">No leaves found</h5>
+            <p class="text-muted">
+              <t t-if="view_type == 'my_leaves'">You don't have any leave requests yet.</t>
+              <t t-else="">No team leave requests found.</t>
+            </p>
+            <t t-if="view_type == 'my_leaves'">
+              <a class="btn btn-success" href="/my/leaves/create">
+                <i class="fa fa-plus me-1" />Create Your First Leave
+              </a>
+            </t>
+          </div>
+        </div>
+      </t>
+      <t t-else="">
+        <div class="col-12">
+          <div class="accordion" id="leavesAccordion">
+            <t t-foreach="grouped_leaves" t-as="group">
+              <t t-set="group_key" t-value="group[0] if group else ''" />
+              <t t-set="group_leaves" t-value="group[1] if group else []" />
+
+              <div class="accordion-item border-0 mb-3">
+                <h2 class="accordion-header" t-att-id="'heading_' + str(group_index)">
+                  <button t-attf-class="accordion-button #{'collapsed' if group_index > 0 else ''} o_etech_bg_soft rounded"
+                          type="button" data-bs-toggle="collapse"
+                          t-att-data-bs-target="'#collapse_' + str(group_index)"
+                          aria-expanded="true"
+                          t-att-aria-controls="'collapse_' + str(group_index)">
+                    <div class="d-flex justify-content-between align-items-center w-100 me-3">
+                      <div class="d-flex align-items-center">
+                        <t t-if="groupby == 'employee'">
+                          <img t-if="group_key.avatar_128" t-att-src="image_data_uri(group_key.avatar_128)"
+                               class="o_etech_employee_avatar me-3" alt="Employee" />
+                          <div t-else="" class="o_etech_employee_avatar bg-primary text-white d-flex align-items-center justify-content-center me-3">
+                            <i class="fa fa-user" />
+                          </div>
+                          <div>
+                            <h6 class="mb-0 fw-bold" t-esc="group_key.name or 'Unknown Employee'" />
+                            <small class="text-muted" t-esc="group_key.job_title or 'Employee'" />
+                          </div>
+                        </t>
+                        <t t-elif="groupby == 'department'">
+                          <div class="o_etech_employee_avatar bg-primary text-white d-flex align-items-center justify-content-center me-3">
+                            <i class="fa fa-building" />
+                          </div>
+                          <div>
+                            <h6 class="mb-0 fw-bold" t-esc="group_key.name or 'No Department'" />
+                            <small class="text-muted"><span t-esc="len(group_leaves)" /> leave(s)</small>
+                          </div>
+                        </t>
+                        <t t-elif="groupby == 'leave_type'">
+                          <div class="o_etech_employee_avatar bg-info text-white d-flex align-items-center justify-content-center me-3">
+                            <i class="fa fa-calendar" />
+                          </div>
+                          <div>
+                            <h6 class="mb-0 fw-bold" t-esc="group_key.name or 'Unknown Type'" />
+                            <small class="text-muted"><span t-esc="len(group_leaves)" /> leave(s)</small>
+                          </div>
+                        </t>
+                        <t t-elif="groupby == 'status'">
+                          <div t-attf-class="o_etech_employee_avatar bg-#{_state_variant.get(group_key, 'secondary')} text-white d-flex align-items-center justify-content-center me-3">
+                            <i class="fa fa-tag" />
+                          </div>
+                          <div>
+                            <h6 class="mb-0 fw-bold" t-esc="_state_label.get(group_key, group_key)" />
+                            <small class="text-muted"><span t-esc="len(group_leaves)" /> leave(s)</small>
+                          </div>
+                        </t>
+                        <t t-else="">
+                          <div class="o_etech_employee_avatar bg-secondary text-white d-flex align-items-center justify-content-center me-3">
+                            <i class="fa fa-list" />
+                          </div>
+                          <div>
+                            <h6 class="mb-0 fw-bold">Leaves</h6>
+                            <small class="text-muted"><span t-esc="len(group_leaves)" /> leave(s)</small>
+                          </div>
+                        </t>
+                      </div>
+                      <span class="badge bg-primary rounded-pill" t-esc="len(group_leaves)" />
+                    </div>
+                  </button>
+                </h2>
+
+                <div t-att-id="'collapse_' + str(group_index)"
+                     t-attf-class="accordion-collapse collapse #{'show' if group_index == 0 else ''}"
+                     t-att-aria-labelledby="'heading_' + str(group_index)"
+                     data-bs-parent="#leavesAccordion">
+                  <div class="accordion-body p-0 pt-3">
+                    <div class="row g-3">
+                      <t t-foreach="group_leaves" t-as="leave">
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                          <div class="o_etech_leave_card" t-attf-style="--card-accent: #{_state_color.get(leave.state, '#6c757d')}">
+                            <div class="o_etech_leave_card_header d-flex justify-content-between align-items-center">
+                              <span t-esc="leave.holiday_status_id.name" />
+                              <small t-if="view_type == 'team_leaves' and groupby != 'department'"
+                                     class="badge o_etech_chip-secondary"
+                                     t-esc="leave.employee_id.department_id.name or 'No Department'" />
+                            </div>
+                            <div class="o_etech_leave_card_body">
+                              <div t-if="groupby != 'employee'" class="d-flex align-items-center">
+                                <img t-att-src="image_data_uri(leave.employee_id.avatar_128)"
+                                     class="o_etech_employee_avatar me-2" alt="Employee"
+                                     t-att-title="leave.employee_id.name" />
+                                <div>
+                                  <div class="fw-bold small" t-esc="leave.employee_id.name" />
+                                  <small class="text-muted" t-esc="leave.employee_id.job_title or 'Employee'" />
+                                </div>
+                              </div>
+                              <small class="text-muted">
+                                Created on <t t-esc="leave.create_date.strftime('%d/%m/%y')" />
+                              </small>
+
+                              <div class="o_etech_leave_meta">
+                                <div class="d-flex align-items-center justify-content-between">
+                                  <strong t-esc="leave.duration_display" />
+                                  <span t-if="leave.request_unit_half" class="badge rounded-pill o_etech_chip-secondary">
+                                    <span t-field="leave.request_date_from_period" />
+                                  </span>
+                                </div>
+                                <div class="text-muted mt-1">
+                                  <i class="fa fa-calendar me-1" />
+                                  <t t-esc="leave.date_from.strftime('%d/%m/%Y')" /> - <t t-esc="leave.date_to.strftime('%d/%m/%Y')" />
+                                </div>
+                                <div t-if="leave.name" class="text-muted mt-1">
+                                  <strong>Description:</strong> <span t-esc="leave.reason" />
+                                </div>
+                              </div>
+
+                              <div t-if="groupby != 'status'" class="text-center">
+                                <span t-attf-class="badge rounded-pill o_etech_chip-#{_state_variant.get(leave.state, 'secondary')}"
+                                      t-esc="_state_label.get(leave.state, leave.state)" />
+                              </div>
+
+                              <div class="mt-auto">
+                                <t t-if="view_type == 'team_leaves' and leave.state == 'confirm'">
+                                  <div class="d-flex gap-2">
+                                    <a t-attf-href="/confirm/#{leave.id}" class="btn btn-success btn-sm flex-fill">
+                                      <i class="fa fa-check me-1" />Approve
+                                    </a>
+                                    <a t-attf-href="/refuse/#{leave.id}" class="btn btn-danger btn-sm flex-fill">
+                                      <i class="fa fa-times me-1" />Refuse
+                                    </a>
+                                  </div>
+                                </t>
+                                <t t-elif="view_type == 'my_leaves' and leave.state in ['draft', 'confirm']">
+                                  <div class="d-flex gap-2">
+                                    <a t-attf-href="/my/leaves/edit/#{leave.id}" class="btn btn-info btn-sm flex-fill">
+                                      <i class="fa fa-edit me-1" />Edit
+                                    </a>
+                                    <a t-attf-href="/leave/cancel/#{leave.id}" class="btn btn-etech-outline btn-sm flex-fill">
+                                      <i class="fa fa-trash me-1" />Cancel
+                                    </a>
+                                  </div>
+                                </t>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </t>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </t>
+          </div>
+        </div>
+      </t>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col-12">
+        <t t-call="portal.pager" />
+      </div>
+    </div>
+  </template>
+
+  <template id="leave_calendar_view">
+    <div class="o_etech_leave_card">
+      <div class="o_etech_leave_card_header d-flex align-items-center">
+        <i class="fa fa-calendar me-2" />Leave Calendar
+        <small class="ms-auto text-muted">
+          <i class="fa fa-circle text-success me-1" />Approved
+          <i class="fa fa-circle text-warning mx-2" />To Validate
+          <i class="fa fa-circle text-info me-1" />To Approve
+          <i class="fa fa-circle text-danger me-1 ms-2" />Refused
+        </small>
+      </div>
+      <div class="p-0">
+        <t t-call-assets="etech_leave_portal.assets_calendar" t-js="true" t-css="false" />
+        <div id="leave_calendar" class="o_etech_leave_calendar"
+             t-att-data-events="calendar_data and json.dumps(calendar_data) or '[]'">
+          <div class="calendar-loading">
+            <div class="spinner-border text-primary mb-3" role="status">
+              <span class="visually-hidden">Loading calendar...</span>
+            </div>
+            <p class="text-muted mb-0">Loading calendar view...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <template id="leave_balance_modal">
+    <div class="modal fade" id="leaveBalanceModal" tabindex="-1" aria-labelledby="leaveBalanceModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header bg-primary text-white">
+            <h5 class="modal-title" id="leaveBalanceModalLabel">
+              <i class="fa fa-chart-pie me-2" />Leave Balance
+            </h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close" />
+          </div>
+          <div class="modal-body">
+            <t t-call="etech_leave_portal.leave_balance_card" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <template id="leave_balance_card">
+    <div class="text-center">
+      <div class="o_etech_balance_circle">
+        <div class="balance-number" t-esc="leave_balance" />
+        <div class="balance-label">Days Available</div>
+      </div>
+      <div class="o_etech_balance_details">
+        <div class="balance-item">
+          <span>Total Allocated:</span>
+          <span class="value text-success" t-esc="leave_allocations" />
+        </div>
+        <div class="balance-item">
+          <span>Leave Taken:</span>
+          <span class="value text-danger" t-esc="leave_taken" />
+        </div>
+        <div class="balance-item">
+          <span>Remaining Balance:</span>
+          <span class="value text-primary" t-esc="leave_balance" />
+        </div>
+        <div class="balance-item">
+          <span>Last Update:</span>
+          <span class="value text-muted" t-esc="current_date" />
+        </div>
+      </div>
+    </div>
+  </template>
+</odoo>

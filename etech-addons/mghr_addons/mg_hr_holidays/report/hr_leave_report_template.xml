@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <template id="mg_hr_leave_template" name="MG HR Leave Template">
+    <t t-call="web.basic_layout">
+      <t t-foreach="docs" t-as="doc">
+        <div style="display:flex">
+          <table width="100%">
+            <tr width="100%">
+              <th style="border:1px transparent;width: 49%; padding-right: 25px;padding-left: 25px; max-width: 49%;">
+                <div style="margin-bottom: 10px;margin-top: 0;font-size:10pt">
+                  <img t-if="doc.env.company.logo" t-att-src="image_data_uri(doc.env.company.logo)"
+                       style="max-height: 70px; opacity:1;" alt="Logo"/>
+                </div>
+                <div cstyle="font-size:12pt;">
+                  <h1 class="text-center border" style="font:12pt bold;">
+                    <strong>REQUEST TIME OFF</strong>
+                  </h1>
+                </div>
+                <div style="text-align: left;">
+                  <p>Employee Registrement Number:
+                    <span style="color: #464646;" t-if="doc.employee_id.registration_number"
+                          t-esc="doc.employee_id.registration_number"/>
+                  </p>
+                  <p>Employee Name:
+                    <span style="color: #464646;" t-esc="doc.employee_id.name"/>
+                  </p>
+                  <p>Role:
+                    <span style="color: #464646;" t-if="doc.employee_id.job_id and doc.employee_id.job_id.name"
+                          t-esc="doc.employee_id.job_id.name"/>
+                  </p>
+                  <p>Date leave request:
+                    <span style="color: #464646;" t-esc="doc.create_date.strftime(&quot;%d/%m/%Y&quot;)"/>
+                  </p>
+                  <p>Time off type:
+                    <span style="color: #464646;" t-esc="doc.holiday_status_id.name"/>
+                  </p>
+                  <p>Time off from:
+                    <span style="color: #464646;" t-esc="doc.date_from.strftime(&quot;%d/%m/%Y&quot;)"/>
+                    to
+                    <span style="color: #464646;" t-esc="doc.date_to.strftime(&quot;%d/%m/%Y&quot;)"/>
+                  </p>
+                  <t t-set="number_days_off" t-value="doc.number_of_days if doc.state == 'validate' else 0"/>
+                  <p>Nombre de jour(s) pris:
+                    <span style="color: #464646;" t-esc="number_days_off"/>
+                    <span style="color: #464646;">days</span>
+                  </p>
+                  <t t-set="total_avant"
+                     t-value="sum([leave.number_of_days for leave in doc.env['hr.leave'].search([('employee_id.id', '=', doc.employee_id.id), ('holiday_status_id.id', '=', doc.holiday_status_id.id), ('request_date_from', '&lt;', doc.request_date_from), ('state', '=', 'validate')])])"/>
+                  <t t-set="solde_conge_avt"
+                     t-value="sum([ allocation.number_of_days for allocation in doc.env['hr.leave.allocation'].search([('employee_id.id', '=', doc.employee_id.id), ('holiday_status_id.id', '=', doc.holiday_status_id.id)]) ])"/>
+                  <t t-set="solde_conge_apr" t-value="solde_conge_avt - number_days_off - total_avant"/>
+                  <p t-if="doc.holiday_status_id.work_entry_type_id.code == 'LEAVE120'">Number of leave before request:
+                    <span style="color: #464646;" t-esc="doc.format_leave(solde_conge_avt - total_avant)"/>
+                    <span style="color: #464646;">days</span>
+                  </p>
+                  <p t-if="doc.holiday_status_id.work_entry_type_id.code == 'LEAVE120'">Number of leave left:
+                    <span style="color: #464646;" t-esc="doc.format_leave(solde_conge_apr)"/>
+                    <span style="color: #464646;">days</span>
+                  </p>
+                </div>
+                <div style="margin-top: 15px; text-align: center, width:250px">
+                  <div>
+                    <table class="table" style="margin-top:10px; font-size:12pt;">
+                      <thead>
+                        <tr>
+                          <th height="20px" style="border: 0; vertical-align:top;">
+                            Company signature
+                          </th>
+                          <td height="20px" style="border: 0; vertical-align:top;">
+                          </td>
+                          <th height="20px" style="border: 0; vertical-align:top;">
+                            Employee Signature
+                          </th>
+                        </tr>
+                      </thead>
+                    </table>
+                  </div>
+                </div>
+              </th>
+            </tr>
+          </table>
+        </div>
+        <div style="page-break-after:always;"/>
+      </t>
+    </t>
+  </template>
+</odoo>

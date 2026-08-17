@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+  <record id="view_generic_hr_payslip_form_inheritance" model="ir.ui.view">
+    <field name="name">view.generic.hr.payslip.form.inheritance</field>
+    <field name="model">hr.payslip</field>
+    <field name="inherit_id" ref="hr_payroll.view_hr_payslip_form" />
+    <field name="arch" type="xml">
+      <xpath expr="//field[@name='struct_id']" position="after">
+        <field name="leave_allocation" invisible="not show_leave_allocation" />
+        <field name="show_leave_allocation" invisible="1" />
+      </xpath>
+      <xpath expr="//field[@name='number_of_hours']" position="attributes">
+        <attribute name="widget" />
+      </xpath>
+    </field>
+  </record>
+</odoo>

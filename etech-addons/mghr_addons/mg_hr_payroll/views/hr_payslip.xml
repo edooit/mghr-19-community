@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+  <record id="mg_payroll_hr_payslip_view_form_inherit" model="ir.ui.view">
+    <field name="name">mg.payroll.hr.payslip.view.form.inherit</field>
+    <field name="model">hr.payslip</field>
+    <field name="inherit_id" ref="hr_payroll.view_hr_payslip_form"/>
+    <field name="arch" type="xml">
+      <xpath expr="//field[@name='struct_id']" position="after">
+        <field name="stc"/>
+        <field name="category_id" invisible="not show_classification"/>
+        <field name="index_id" invisible="not show_classification"/>
+        <field name="show_classification" invisible="1"/>
+      </xpath>
+    </field>
+  </record>
+</odoo>
