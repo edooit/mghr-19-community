@@ -91,7 +91,6 @@ Requirements
         ],
     },
 
-    'images': ['static/description/banner.png'],
     'installable': True,
     'application': False,
     'auto_install': False,
